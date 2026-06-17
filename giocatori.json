@@ -1,0 +1,869 @@
+{
+  "sedeCorrente": "Levico",
+  "giocatori": [
+    {
+      "nome": "Andrea",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Archimede",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Baraldo Andrea",
+      "sede": "Cantù"
+    },
+    {
+      "nome": "Bassettoni",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Carcarlo Pravettoni",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Carlo",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Claudio",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Claudio T",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Cojocaru Dan",
+      "sede": "Cantù"
+    },
+    {
+      "nome": "Enrico",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Franco",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Gemingnani Roberto",
+      "sede": "Cantù"
+    },
+    {
+      "nome": "Giacomo",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Ivan",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Lucia",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Matteo",
+      "sede": "Levico"
+    },
+    {
+      "nome": "minni",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Mirko",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Nonna Papera",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Paolo",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Paperino",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Paperono",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Paperota",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Pinco Panco",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Pippo",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Pittioni Alberto",
+      "sede": "Cantù"
+    },
+    {
+      "nome": "Pluto",
+      "sede": "Levico"
+    },
+    {
+      "nome": "qua",
+      "sede": "Levico"
+    },
+    {
+      "nome": "qui",
+      "sede": "Levico"
+    },
+    {
+      "nome": "quo",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Ratti Roberto",
+      "sede": "Cantù"
+    },
+    {
+      "nome": "Simone",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Simone Dell'oro",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Sonia",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Topolino",
+      "sede": "Levico"
+    }
+  ],
+  "partite": [
+    {
+      "id": "MATCH-MPXKA9P9",
+      "blu": [
+        "Andrea",
+        "Carlo"
+      ],
+      "rossi": [
+        "Claudio",
+        "Claudio T"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780460580000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKAKNO",
+      "blu": [
+        "Carlo",
+        "Sonia"
+      ],
+      "rossi": [
+        "Andrea",
+        "Enrico"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1780460580000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKAYHC",
+      "blu": [
+        "Claudio",
+        "Claudio T"
+      ],
+      "rossi": [
+        "Enrico",
+        "Franco"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1780460580000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKBBE5",
+      "blu": [
+        "Claudio T",
+        "Enrico"
+      ],
+      "rossi": [
+        "Franco",
+        "Giacomo"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1780460580000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKJKI7",
+      "blu": [
+        "Carlo",
+        "Ivan"
+      ],
+      "rossi": [
+        "Giacomo",
+        "Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1780461000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKJVV0",
+      "blu": [
+        "Carlo",
+        "Claudio"
+      ],
+      "rossi": [
+        "Ivan",
+        "Matteo"
+      ],
+      "golBlu": 13,
+      "golRossi": 11,
+      "timestampGara": 1780461000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKK99E",
+      "blu": [
+        "Carlo",
+        "Claudio"
+      ],
+      "rossi": [
+        "Lucia",
+        "Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1780461000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKKF1Q",
+      "blu": [
+        "Carlo",
+        "Franco"
+      ],
+      "rossi": [
+        "Lucia",
+        "Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKKNBF",
+      "blu": [
+        "Carlo",
+        "Franco"
+      ],
+      "rossi": [
+        "Paolo",
+        "Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKKSKR",
+      "blu": [
+        "Carlo",
+        "Ivan"
+      ],
+      "rossi": [
+        "Simone",
+        "Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKKYI6",
+      "blu": [
+        "Carlo",
+        "Lucia"
+      ],
+      "rossi": [
+        "Simone",
+        "Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKM1ZW",
+      "blu": [
+        "Carlo",
+        "Matteo"
+      ],
+      "rossi": [
+        "Simone Dell'oro",
+        "Mirko"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKM6JT",
+      "blu": [
+        "Carlo",
+        "Sonia"
+      ],
+      "rossi": [
+        "Simone Dell'oro",
+        "Paolo"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKMBRA",
+      "blu": [
+        "Carlo",
+        "Andrea"
+      ],
+      "rossi": [
+        "Simone Dell'oro",
+        "Paolo"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKMJ7T",
+      "blu": [
+        "Carlo",
+        "Enrico"
+      ],
+      "rossi": [
+        "Simone Dell'oro",
+        "Simone"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKMTT9",
+      "blu": [
+        "Carlo",
+        "Franco"
+      ],
+      "rossi": [
+        "Simone Dell'oro",
+        "Sonia"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKN309",
+      "blu": [
+        "Carlo",
+        "Giacomo"
+      ],
+      "rossi": [
+        "Simone Dell'oro",
+        "Andrea"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKNCN0",
+      "blu": [
+        "Carlo",
+        "Ivan"
+      ],
+      "rossi": [
+        "Simone Dell'oro",
+        "Andrea"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKPWMH",
+      "blu": [
+        "Carlo",
+        "Mirko"
+      ],
+      "rossi": [
+        "Lucia",
+        "Paolo"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKRQCN",
+      "blu": [
+        "Carlo",
+        "Paolo"
+      ],
+      "rossi": [
+        "Lucia",
+        "Simone"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKRYW2",
+      "blu": [
+        "Carlo",
+        "Simone"
+      ],
+      "rossi": [
+        "Lucia",
+        "Simone Dell'oro"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKS4GJ",
+      "blu": [
+        "Carlo",
+        "Simone Dell'oro"
+      ],
+      "rossi": [
+        "Lucia",
+        "Sonia"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPXKTEBE",
+      "blu": [
+        "Carlo",
+        "Andrea"
+      ],
+      "rossi": [
+        "Lucia",
+        "Simone Dell'oro"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780461300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPYBTUPZ",
+      "blu": [
+        "Sonia",
+        "Archimede"
+      ],
+      "rossi": [
+        "Bassettoni",
+        "Simone"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1780506780000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPYBUFUM",
+      "blu": [
+        "Sonia",
+        "Carlo"
+      ],
+      "rossi": [
+        "quo",
+        "qui"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1780506780000,
+      "invalidati": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPYBVDST",
+      "blu": [
+        "Sonia",
+        "Claudio"
+      ],
+      "rossi": [
+        "Andrea",
+        "Bassettoni"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780506900000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPYBVTXC",
+      "blu": [
+        "Sonia",
+        "Bassettoni"
+      ],
+      "rossi": [
+        "Carcarlo Pravettoni",
+        "Claudio T"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780506900000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPYBW5SN",
+      "blu": [
+        "Sonia",
+        "Carcarlo Pravettoni"
+      ],
+      "rossi": [
+        "Enrico",
+        "Lucia"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780506900000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPYBWRNV",
+      "blu": [
+        "Sonia",
+        "Carlo"
+      ],
+      "rossi": [
+        "Franco",
+        "Matteo"
+      ],
+      "golBlu": 18,
+      "golRossi": 16,
+      "timestampGara": 1780506900000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPYBX03U",
+      "blu": [
+        "Sonia",
+        "Carlo"
+      ],
+      "rossi": [
+        "Franco",
+        "Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780506900000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MPYBXBXS",
+      "blu": [
+        "Sonia",
+        "Mirko"
+      ],
+      "rossi": [
+        "Carlo",
+        "Claudio"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780506900000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
+      "id": "MATCH-MQ00XKZQ",
+      "blu": [
+        "Andrea",
+        "Baraldo Andrea"
+      ],
+      "rossi": [
+        "Bassettoni",
+        "Cojocaru Dan"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1780609440000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true
+    }
+  ],
+  "parametri": {
+    "Cantù": {
+      "sogliaPercentuale": 0.2,
+      "sogliaAvversario": 0.3,
+      "gareMinimeRichieste": 5,
+      "gareMassimeConsentite": 20,
+      "pesoSingolo": 75,
+      "pesoCompagno": 25
+    },
+    "Levico": {
+      "sogliaPercentuale": 0.25,
+      "sogliaAvversario": 0.3,
+      "gareMinimeRichieste": 8,
+      "gareMassimeConsentite": 20,
+      "pesoSingolo": 75,
+      "pesoCompagno": 25
+    }
+  }
+}
