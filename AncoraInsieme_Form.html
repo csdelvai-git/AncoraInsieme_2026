@@ -437,26 +437,15 @@ function impostaDataOraOggi() {
 async function caricaGiocatori() {
   let dati = null;
 
-  // 1. Prova dalla Web App (fonte primaria — sempre aggiornata)
+  // 1. Prova dal file JSON esterno (stessa cartella)
   try {
-    const res = await fetch(APPS_SCRIPT_URL);
+    const res = await fetch(GIOCATORI_JSON_URL);
     if (res.ok) dati = await res.json();
   } catch {}
 
-  // 2. Prova dal file JSON esterno (SharePoint — stessa cartella)
-  if (!dati) {
-    try {
-      const res2 = await fetch(GIOCATORI_JSON_URL);
-      if (res2.ok) dati = await res2.json();
-    } catch {}
-  }
-
-  // 3. Fallback locale incorporato
+  // 2. Fallback locale incorporato (aggiornato dal DdT)
   if (!dati) {
     dati = GIOCATORI_FALLBACK;
-    mostraAlert('alertGenerico', 'alert-warn',
-      '⚠️ Elenco giocatori caricato dalla versione locale (potrebbe non essere aggiornato).');
-    setTimeout(() => nascondiAlert('alertGenerico'), 4000);
   }
 
   // Popola dai dati
