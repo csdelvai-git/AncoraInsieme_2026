@@ -470,23 +470,6 @@ async function caricaGiocatori() {
   }
   popolaCombo();
 }
-    }
-    popolaCombo();
-  } catch(err) {
-    // Fallback — prova a caricare dalla Web App direttamente
-    try {
-      const res2 = await fetch(APPS_SCRIPT_URL);
-      const dati2 = await res2.json();
-      if (dati2.giocatori) {
-        giocatori = dati2.giocatori.map(g => g.nome || g).sort();
-        popolaCombo();
-      }
-    } catch {
-      mostraAlert('alertGenerico', 'alert-warn',
-        '⚠️ Impossibile caricare l\'elenco giocatori. Ricarica la pagina o contatta il DdT.');
-    }
-  }
-}
 
 function caricaDaLocalStorage() {
   // Se l'utente ha già usato il form, precompila nome ed email
