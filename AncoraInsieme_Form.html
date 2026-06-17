@@ -402,7 +402,7 @@
 <script>
 // ── CONFIGURAZIONE ─────────────────────────────────────────
 // Sostituisci con la tua URL Apps Script dopo la pubblicazione
-const APPS_SCRIPT_URL = 'INSERISCI_QUI_LA_URL_DELLA_WEB_APP';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxB8iWlnkO5f15vvwiaVU9vmmNFUQ0ZndO5pjQuj9as8-nNFp_hUOu7M3WwYYTTqheJ/exec';
 
 // URL del JSON giocatori su SharePoint (stesso path relativo)
 const GIOCATORI_JSON_URL = './giocatori.json';
@@ -411,7 +411,7 @@ const GIOCATORI_JSON_URL = './giocatori.json';
 // Usato se il file giocatori.json non è raggiungibile
 // (es. apertura diretta dal filesystem invece che da SharePoint)
 // Aggiorna questo blocco ogni volta che esporti il JSON dall'app
-const GIOCATORI_FALLBACK = {"sedeCorrente":"Levico","giocatori":[{"nome":"Andrea","sede":"Levico"},{"nome":"Archimede","sede":"Levico"},{"nome":"Baraldo Andrea","sede":"Cantù"},{"nome":"Bassettoni","sede":"Levico"},{"nome":"Carcarlo Pravettoni","sede":"Levico"},{"nome":"Carlo","sede":"Levico"},{"nome":"Claudio","sede":"Levico"},{"nome":"Claudio T","sede":"Levico"},{"nome":"Cojocaru Dan","sede":"Cantù"},{"nome":"Enrico","sede":"Levico"},{"nome":"Franco","sede":"Levico"},{"nome":"Gemingnani Roberto","sede":"Cantù"},{"nome":"Giacomo","sede":"Levico"},{"nome":"Ivan","sede":"Levico"},{"nome":"Lucia","sede":"Levico"},{"nome":"Matteo","sede":"Levico"},{"nome":"Mirko","sede":"Levico"},{"nome":"Paolo","sede":"Levico"},{"nome":"Ratti Roberto","sede":"Cantù"},{"nome":"Simone","sede":"Levico"},{"nome":"Simone Dell\u2019oro","sede":"Levico"},{"nome":"Sonia","sede":"Levico"},{"nome":"Pittioni Alberto","sede":"Cantù"}]};
+const GIOCATORI_FALLBACK = {"giocatori": [{"nome": "Andrea", "sede": "Levico"}, {"nome": "Archimede", "sede": "Levico"}, {"nome": "Baraldo Andrea", "sede": "Cantù"}, {"nome": "Bassettoni", "sede": "Levico"}, {"nome": "Carcarlo Pravettoni", "sede": "Levico"}, {"nome": "Carlo", "sede": "Levico"}, {"nome": "Claudio", "sede": "Levico"}, {"nome": "Claudio T", "sede": "Levico"}, {"nome": "Cojocaru Dan", "sede": "Cantù"}, {"nome": "Enrico", "sede": "Levico"}, {"nome": "Franco", "sede": "Levico"}, {"nome": "Gemingnani Roberto", "sede": "Cantù"}, {"nome": "Giacomo", "sede": "Levico"}, {"nome": "Ivan", "sede": "Levico"}, {"nome": "Lucia", "sede": "Levico"}, {"nome": "Matteo", "sede": "Levico"}, {"nome": "minni", "sede": "Levico"}, {"nome": "Mirko", "sede": "Levico"}, {"nome": "Nonna Papera", "sede": "Levico"}, {"nome": "Paolo", "sede": "Levico"}, {"nome": "Paperino", "sede": "Levico"}, {"nome": "Paperono", "sede": "Levico"}, {"nome": "Paperota", "sede": "Levico"}, {"nome": "Pinco Panco", "sede": "Levico"}, {"nome": "Pippo", "sede": "Levico"}, {"nome": "Pittioni Alberto", "sede": "Cantù"}, {"nome": "Pluto", "sede": "Levico"}, {"nome": "qua", "sede": "Levico"}, {"nome": "qui", "sede": "Levico"}, {"nome": "quo", "sede": "Levico"}, {"nome": "Ratti Roberto", "sede": "Cantù"}, {"nome": "Simone", "sede": "Levico"}, {"nome": "Simone Dell’oro", "sede": "Levico"}, {"nome": "Sonia", "sede": "Levico"}, {"nome": "Topolino", "sede": "Levico"}]};
 
 // ── STATO ──────────────────────────────────────────────────
 let giocatori = [];
@@ -437,17 +437,17 @@ function impostaDataOraOggi() {
 async function caricaGiocatori() {
   let dati = null;
 
-  // 1. Prova dal file JSON esterno (SharePoint)
+  // 1. Prova dalla Web App (fonte primaria — sempre aggiornata)
   try {
-    const res = await fetch(GIOCATORI_JSON_URL);
+    const res = await fetch(APPS_SCRIPT_URL);
     if (res.ok) dati = await res.json();
   } catch {}
 
-  // 2. Prova dalla Web App (se configurata)
-  if (!dati && APPS_SCRIPT_URL !== 'INSERISCI_QUI_LA_URL_DELLA_WEB_APP') {
+  // 2. Prova dal file JSON esterno (SharePoint — stessa cartella)
+  if (!dati) {
     try {
-      const res2 = await fetch(APPS_SCRIPT_URL);
-      dati = await res2.json();
+      const res2 = await fetch(GIOCATORI_JSON_URL);
+      if (res2.ok) dati = await res2.json();
     } catch {}
   }
 
