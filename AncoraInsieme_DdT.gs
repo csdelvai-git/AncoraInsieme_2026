@@ -964,7 +964,15 @@ function _notificaSegnalante(email, dati, problemi, problemiRisultato) {
 
 function doPost(e) {
   try {
-    const dati = JSON.parse(e.postData.contents);
+    // Accetta sia JSON che form fields
+    let dati;
+    if (e.postData && e.postData.type === 'application/json') {
+      dati = JSON.parse(e.postData.contents);
+    } else if (e.parameter) {
+      dati = e.parameter;
+    } else {
+      dati = JSON.parse(e.postData.contents);
+    }
     const ss = SpreadsheetApp.getActiveSpreadsheet();
     const sh = ss.getSheetByName(FOGLI.SEGNALAZIONI);
     if (!sh) return _rispostaJSON({ ok: false, errore: "Foglio non trovato" });
@@ -1038,14 +1046,20 @@ function _rispostaJSON(obj) {
 function doGet(e) {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const sh = ss.getSheetByName(FOGLI.GIOCATORI);
-  if (!sh || sh.getLastRow() < 2) return _rispostaJSON({ giocatori: [] });
+  
+  let giocatori = [];
+  if (sh && sh.getLastRow() >= 2) {
+    const dati = sh.getRange(2, 1, sh.getLastRow()-1, 2).getValues();
+    giocatori = dati
+      .map(r => ({ nome: r[0].toString().trim(), sede: r[1].toString().trim() }))
+      .filter(g => g.nome && !g.nome.startsWith('\u2190'));
+  }
 
-  const dati = sh.getRange(2, 1, sh.getLastRow()-1, 2).getValues();
-  const giocatori = dati
-    .map(r => ({ nome: r[0].toString().trim(), sede: r[1].toString().trim() }))
-    .filter(g => g.nome && !g.nome.startsWith('←'));
-
-  return _rispostaJSON({ giocatori });
+  const output = ContentService
+    .createTextOutput(JSON.stringify({ giocatori }))
+    .setMimeType(ContentService.MimeType.JSON);
+  
+  return output;
 }
 
 // ============================================================

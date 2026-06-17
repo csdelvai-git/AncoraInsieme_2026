@@ -293,7 +293,17 @@ async function invia() {
   const btn = document.getElementById('btnInvia');
   btn.disabled = true;
   btn.textContent = 'Invio in corso…';
-  const payload = {
+
+  localStorage.setItem('ai_segnalatore', document.getElementById('segnalatore').value.trim());
+  localStorage.setItem('ai_email', document.getElementById('emailSegnalatore').value.trim());
+
+  // Costruisce un form nascosto e lo invia — evita problemi CORS con Apps Script
+  const f = document.createElement('form');
+  f.method = 'POST';
+  f.action = APPS_SCRIPT_URL;
+  f.target = 'hidden_iframe';
+
+  const campi = {
     segnalatore: document.getElementById('segnalatore').value.trim(),
     emailSegnalatore: document.getElementById('emailSegnalatore').value.trim(),
     dataGara: document.getElementById('dataGara').value,
@@ -306,20 +316,26 @@ async function invia() {
     rossi2: document.getElementById('rossi2').value,
     note: document.getElementById('note').value.trim(),
   };
-  localStorage.setItem('ai_segnalatore', payload.segnalatore);
-  localStorage.setItem('ai_email', payload.emailSegnalatore);
-  try {
-    await fetch(APPS_SCRIPT_URL, { method:'POST', body: JSON.stringify(payload), mode:'no-cors' });
+
+  Object.entries(campi).forEach(([k,v]) => {
+    const inp = document.createElement('input');
+    inp.type = 'hidden'; inp.name = k; inp.value = v;
+    f.appendChild(inp);
+  });
+
+  document.body.appendChild(f);
+  f.submit();
+  document.body.removeChild(f);
+
+  // Mostra successo dopo breve attesa
+  setTimeout(() => {
     document.getElementById('formPanel').style.display = 'none';
     const sp = document.getElementById('successPanel');
     sp.style.display = 'block';
+    const dg = campi.dataGara.split('-').reverse().join('/');
     document.getElementById('successMsg').textContent =
-      `Partita del ${payload.dataGara.split('-').reverse().join('/')} alle ${payload.oraGara} registrata. Il Direttore di Torneo la validerà a breve.`;
-  } catch {
-    mostraAlert('alert-err','Errore di connessione. Riprova.');
-    btn.disabled = false;
-    btn.textContent = 'Invia Segnalazione →';
-  }
+      `Partita del ${dg} alle ${campi.oraGara} registrata. Il Direttore di Torneo la validerà a breve.`;
+  }, 1500);
 }
 
 function resetForm() {
@@ -337,5 +353,6 @@ function resetForm() {
   impostaOggi();
 }
 </script>
+<iframe name="hidden_iframe" style="display:none"></iframe>
 </body>
 </html>
