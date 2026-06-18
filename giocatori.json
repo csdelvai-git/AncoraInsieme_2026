@@ -22,13 +22,44 @@
       "sede": "Levico"
     }
   ],
-  "partite": [],
+  "partite": [
+    {
+      "id": "MATCH-MQJYH6JS",
+      "blu": [
+        "Delvai Claudio S.",
+        "Solaroli Sonia"
+      ],
+      "rossi": [
+        "Zuccati Matteo",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1781814660000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    }
+  ],
   "parametri": {
     "Levico": {
       "sogliaPercentuale": 0.25,
       "sogliaAvversario": 0.4,
       "gareMinimeRichieste": 5,
       "gareMassimeConsentite": 999,
+      "pesoSingolo": 75,
+      "pesoCompagno": 25
+    },
+    "Cantù": {
+      "sogliaPercentuale": 0.2,
+      "sogliaAvversario": 0.3,
+      "gareMinimeRichieste": 5,
+      "gareMassimeConsentite": 20,
       "pesoSingolo": 75,
       "pesoCompagno": 25
     }
