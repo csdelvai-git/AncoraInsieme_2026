@@ -1,25 +1,9 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
-    {
-      "nome": "Baraldo Andrea",
-      "sede": "Cantù"
-    },
-    {
-      "nome": "Bassanese Paolo",
-      "sede": "Cantù"
-    },
     {
       "nome": "Delvai Claudio S.",
       "sede": "Levico"
-    },
-    {
-      "nome": "Gemignani Roberto",
-      "sede": "Cantù"
-    },
-    {
-      "nome": "Ratti Roberto",
-      "sede": "Cantù"
     },
     {
       "nome": "Solaroli Sonia",
@@ -34,87 +18,9 @@
       "sede": "Levico"
     }
   ],
-  "partite": [
-    {
-      "id": "MATCH-MQIKNL5L-3",
-      "blu": [
-        "Delvai Claudio S.",
-        "Zuccati Matteo"
-      ],
-      "rossi": [
-        "Tonezzer Giacomo",
-        "Solaroli Sonia"
-      ],
-      "golBlu": 12,
-      "golRossi": 10,
-      "timestampGara": 1767301200000,
-      "invalidati": [
-        false,
-        false,
-        false,
-        false
-      ],
-      "sede": "Levico",
-      "intergirone": false,
-      "importataDaDdT": true
-    },
-    {
-      "id": "MATCH-MQIKNL5L-2",
-      "blu": [
-        "Delvai Claudio S.",
-        "Tonezzer Giacomo"
-      ],
-      "rossi": [
-        "Solaroli Sonia",
-        "Zuccati Matteo"
-      ],
-      "golBlu": 10,
-      "golRossi": 3,
-      "timestampGara": 1767303000000,
-      "invalidati": [
-        false,
-        false,
-        false,
-        false
-      ],
-      "sede": "Levico",
-      "intergirone": false,
-      "importataDaDdT": true
-    },
-    {
-      "id": "MATCH-MQIKNL5L-1",
-      "blu": [
-        "Delvai Claudio S.",
-        "Solaroli Sonia"
-      ],
-      "rossi": [
-        "Tonezzer Giacomo",
-        "Zuccati Matteo"
-      ],
-      "golBlu": 10,
-      "golRossi": 6,
-      "timestampGara": 1767304800000,
-      "invalidati": [
-        false,
-        false,
-        false,
-        false
-      ],
-      "sede": "Levico",
-      "intergirone": false,
-      "importataDaDdT": true
-    }
-  ],
+  "partite": [],
   "parametri": {
     "Levico": {
-      "sogliaPercentuale": 0.2,
-      "sogliaAvversario": 0.3,
-      "gareMinimeRichieste": 5,
-      "gareMassimeConsentite": 20,
-      "pesoSingolo": 75,
-      "pesoCompagno": 25
-    },
-    "Cantù": {
       "sogliaPercentuale": 0.2,
       "sogliaAvversario": 0.3,
       "gareMinimeRichieste": 5,
