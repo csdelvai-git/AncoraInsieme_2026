@@ -6,6 +6,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Rubol Delvai Daniele",
+      "sede": "Levico"
+    },
+    {
       "nome": "Solaroli Sonia",
       "sede": "Levico"
     },
@@ -18,7 +22,31 @@
       "sede": "Levico"
     }
   ],
-  "partite": [],
+  "partite": [
+    {
+      "id": "MATCH-MQJ8B888-1",
+      "blu": [
+        "Solaroli Sonia",
+        "Delvai Claudio S."
+      ],
+      "rossi": [
+        "Tonezzer Giacomo",
+        "Zuccati Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 3,
+      "timestampGara": 1767259080000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    }
+  ],
   "parametri": {
     "Levico": {
       "sogliaPercentuale": 0.2,
