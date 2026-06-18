@@ -2,8 +2,24 @@
   "sedeCorrente": "Cantù",
   "giocatori": [
     {
+      "nome": "Baraldo Andrea",
+      "sede": "Cantù"
+    },
+    {
+      "nome": "Bassanese Paolo",
+      "sede": "Cantù"
+    },
+    {
       "nome": "Delvai Claudio S.",
       "sede": "Levico"
+    },
+    {
+      "nome": "Gemignani Roberto",
+      "sede": "Cantù"
+    },
+    {
+      "nome": "Ratti Roberto",
+      "sede": "Cantù"
     },
     {
       "nome": "Solaroli Sonia",
