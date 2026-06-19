@@ -24,18 +24,18 @@
   ],
   "partite": [
     {
-      "id": "MATCH-MQJYH6JS",
+      "id": "MATCH-MQK064SX-1",
       "blu": [
-        "Delvai Claudio S.",
-        "Solaroli Sonia"
+        "Solaroli Sonia",
+        "Mocci Jacopo"
       ],
       "rossi": [
         "Zuccati Matteo",
         "Tonezzer Giacomo"
       ],
       "golBlu": 10,
-      "golRossi": 0,
-      "timestampGara": 1781814660000,
+      "golRossi": 5,
+      "timestampGara": 1781816040000,
       "invalidati": [
         false,
         false,
@@ -43,7 +43,146 @@
         false
       ],
       "sede": "Levico",
-      "intergirone": false
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MQK064SX-2",
+      "blu": [
+        "Delvai Claudio S.",
+        "Mocci Jacopo"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1781816880000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MQK064SX-3",
+      "blu": [
+        "Mocci Jacopo",
+        "Tonezzer Giacomo"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Zuccati Matteo"
+      ],
+      "golBlu": 1,
+      "golRossi": 10,
+      "timestampGara": 1781817240000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MQK1D2MV-1",
+      "blu": [
+        "Delvai Claudio S.",
+        "Zuccati Matteo"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1781818260000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MQK1D2MV-2",
+      "blu": [
+        "Delvai Claudio S.",
+        "Tonezzer Giacomo"
+      ],
+      "rossi": [
+        "Zuccati Matteo",
+        "Mocci Jacopo"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1781818680000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MQK1D2MV-3",
+      "blu": [
+        "Tonezzer Giacomo",
+        "Zuccati Matteo"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Delvai Claudio S."
+      ],
+      "golBlu": 7,
+      "golRossi": 10,
+      "timestampGara": 1781819340000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MQK1W7T3-1",
+      "blu": [
+        "Solaroli Sonia",
+        "Zuccati Matteo"
+      ],
+      "rossi": [
+        "Tonezzer Giacomo",
+        "Delvai Claudio S."
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1781820300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -63,5 +202,11 @@
       "pesoSingolo": 75,
       "pesoCompagno": 25
     }
+  },
+  "_meta": {
+    "salvato_il": "19/06/2026, 07:09:27",
+    "partite": 7,
+    "giocatori": 5,
+    "versione_app": "3.4"
   }
 }
