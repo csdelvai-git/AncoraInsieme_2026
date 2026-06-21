@@ -66,7 +66,7 @@ svg.campo{width:100%;display:block}
 <header>
   <div>
     <div class="logo-title">Ancora Insieme — Segnala Partita</div>
-    <div class="logo-sub">BLM Group · Torneo Calcetto · <span>v2.6</span></div>
+    <div class="logo-sub">BLM Group · Torneo Calcetto · <span>v2.7</span></div>
   </div>
 </header>
 <main>
@@ -276,7 +276,13 @@ function validaTutto() {
   if (!document.getElementById('segnalatore').value.trim()) { mostraAlert('alert-err','Inserisci il tuo nome.'); return false; }
   const em = document.getElementById('emailSegnalatore').value.trim();
   if (!em || !/^[^@]+@[^@]+\.[^@]+$/.test(em)) { mostraAlert('alert-err','Inserisci un\'email valida.'); return false; }
-  if (!document.getElementById('dataGara').value) { mostraAlert('alert-err','Inserisci la data della gara.'); return false; }
+  const dataVal = document.getElementById('dataGara').value;
+  if (!dataVal) { mostraAlert('alert-err','Inserisci la data della gara.'); return false; }
+  const dataGara = new Date(dataVal);
+  const dataInizio = new Date('2026-06-20');
+  const dataOggi = new Date(); dataOggi.setHours(23,59,59,999);
+  if (dataGara < dataInizio) { mostraAlert('alert-err','La data non può essere antecedente al 20/06/2026 (inizio torneo).'); return false; }
+  if (dataGara > dataOggi) { mostraAlert('alert-err','La data non può essere nel futuro.'); return false; }
   if (!document.getElementById('oraGara').value) { mostraAlert('alert-err','Inserisci l\'ora della gara.'); return false; }
   const vals = ['blu1','blu2','rossi1','rossi2'].map(id => document.getElementById(id).value);
   if (vals.some(v => !v)) { mostraAlert('alert-err','Seleziona tutti e 4 i giocatori.'); return false; }
