@@ -32,12 +32,19 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#a0b000}
 .combo-slot.r select{border:1px solid rgba(216,100,100,.5);background:#5a1a1a;color:#ffaaaa}
 .combo-slot.r select option{background:#3e0d0d;color:#fff}
 .campo-row{display:flex;align-items:stretch;gap:5px}
-.gol-panel{width:54px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;background:rgba(0,0,0,.15);border-radius:7px;padding:7px 4px}
-.gol-lbl{font-size:8px;text-transform:uppercase;letter-spacing:.5px;text-align:center;font-weight:700}
-.gol-lbl.r{color:#d86464}
-.gol-lbl.b{color:#6496d8}
-.gol-inp{width:46px;text-align:center;font-size:22px;font-weight:800;padding:4px 2px;background:rgba(255,255,255,.08);border:0.5px solid rgba(255,255,255,.2);color:#fff;border-radius:5px;-moz-appearance:textfield;font-family:'Barlow Condensed',sans-serif}
+.gol-panel{width:66px;flex-shrink:0;display:flex;flex-direction:column;border-radius:8px;padding:5px;position:relative}
+.gol-panel.r{background:rgba(220,80,80,.28);justify-content:flex-end}
+.gol-panel.b{background:rgba(60,100,210,.22);justify-content:flex-start}
+.gol-box{border-radius:6px;padding:5px 4px;display:flex;flex-direction:column;align-items:center;gap:4px}
+.gol-box.r{border:2px solid #cc3333;background:rgba(255,255,255,.12)}
+.gol-box.b{border:2px solid #3366cc;background:rgba(255,255,255,.12)}
+.gol-lbl{font-size:9px;text-transform:uppercase;letter-spacing:.4px;text-align:center;font-weight:800;line-height:1.2}
+.gol-lbl.r{color:#ff4444}
+.gol-lbl.b{color:#4488ff}
+.gol-inp{width:50px;text-align:center;font-size:26px;font-weight:900;padding:2px;background:transparent;border:none;border-radius:4px;font-family:'Barlow Condensed',sans-serif;-moz-appearance:textfield}
 .gol-inp::-webkit-inner-spin-button{-webkit-appearance:none}
+.gol-inp.r{color:#ff4444}
+.gol-inp.b{color:#4488ff}
 .svg-wrap{flex:1;min-width:0}
 svg.campo{width:100%;display:block}
 .ris-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:7px;font-size:12px;color:rgba(255,255,255,.5)}
@@ -66,7 +73,7 @@ svg.campo{width:100%;display:block}
 <header>
   <div>
     <div class="logo-title">Ancora Insieme — Segnala Partita</div>
-    <div class="logo-sub">BLM Group · Torneo Calcetto · <span>v2.7</span></div>
+    <div class="logo-sub">BLM Group · Torneo Calcetto · <span>v2.8</span></div>
   </div>
 </header>
 <main>
@@ -100,9 +107,11 @@ svg.campo{width:100%;display:block}
 
     <div class="campo-row">
       <!-- GOL ROSSI sx -->
-      <div class="gol-panel">
-        <div class="gol-lbl r">Gol<br>Rossi</div>
-        <input type="number" class="gol-inp" id="golRossi" value="0" min="0" max="30" oninput="aggiorna()">
+      <div class="gol-panel r">
+        <div class="gol-box r">
+          <div class="gol-lbl r">Gol<br>Rossi</div>
+          <input type="number" class="gol-inp r" id="golRossi" value="0" min="0" max="30" oninput="aggiorna()">
+        </div>
       </div>
 
       <!-- CAMPO SVG -->
@@ -169,9 +178,11 @@ svg.campo{width:100%;display:block}
       </div>
 
       <!-- GOL BLU dx -->
-      <div class="gol-panel">
-        <div class="gol-lbl b">Gol<br>Blu</div>
-        <input type="number" class="gol-inp" id="golBlu" value="0" min="0" max="30" oninput="aggiorna()">
+      <div class="gol-panel b">
+        <div class="gol-box b">
+          <div class="gol-lbl b">Gol<br>Blu</div>
+          <input type="number" class="gol-inp b" id="golBlu" value="0" min="0" max="30" oninput="aggiorna()">
+        </div>
       </div>
     </div>
 
@@ -190,6 +201,9 @@ svg.campo{width:100%;display:block}
     </div>
 
   </div>
+
+  <!-- HINT GOL -->
+  <p style="font-size:11px;color:#aaa;text-align:center;margin-bottom:10px;font-style:italic">Ogni squadra segna i propri gol a sinistra, come nel calcetto vero</p>
 
   <!-- NOTE -->
   <div class="note-area">
