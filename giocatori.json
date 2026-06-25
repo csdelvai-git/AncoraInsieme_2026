@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Levico",
+  "sedeCorrente": "Cantù",
   "giocatori": [
     {
       "nome": "Delvai Claudio S.",
@@ -204,7 +204,7 @@
     }
   },
   "_meta": {
-    "salvato_il": "25/06/2026, 08:24:08",
+    "salvato_il": "25/06/2026, 08:38:02",
     "partite": 7,
     "giocatori": 5,
     "versione_app": "4.5"
