@@ -1,25 +1,32 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
+      "nome": "Castelnuovo Silvio",
+      "sede": "Cantù"
+    },
+    {
       "nome": "Delvai Claudio S.",
-      "sede": "Levico"
+      "sede": "Levico",
+      "escludi_controlli": false
     },
     {
       "nome": "Mocci Jacopo",
-      "sede": "Levico"
+      "sede": "Cantù"
     },
     {
       "nome": "Solaroli Sonia",
-      "sede": "Levico"
+      "sede": "Cantù",
+      "escludi_controlli": false
     },
     {
       "nome": "Tonezzer Giacomo",
-      "sede": "Levico"
+      "sede": "Levico",
+      "escludi_controlli": false
     },
     {
       "nome": "Zuccati Matteo",
-      "sede": "Levico"
+      "sede": "Cantù"
     }
   ],
   "partite": [
@@ -204,9 +211,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "25/06/2026, 08:38:02",
+    "salvato_il": "26/06/2026, 11:46:36",
     "partite": 7,
-    "giocatori": 5,
+    "giocatori": 6,
     "versione_app": "4.5"
   }
 }
