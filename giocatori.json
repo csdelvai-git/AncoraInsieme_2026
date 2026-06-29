@@ -2,6 +2,14 @@
   "sedeCorrente": "Levico",
   "giocatori": [
     {
+      "nome": "Bertoldi Stefano",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Casagranda Gabriele",
+      "sede": "Levico"
+    },
+    {
       "nome": "Castelnuovo Silvio",
       "sede": "Cantù"
     },
@@ -12,11 +20,15 @@
     },
     {
       "nome": "Mocci Jacopo",
-      "sede": "Cantù"
+      "sede": "Levico"
+    },
+    {
+      "nome": "Segalla Enrico",
+      "sede": "Levico"
     },
     {
       "nome": "Solaroli Sonia",
-      "sede": "Cantù",
+      "sede": "Levico",
       "escludi_controlli": false
     },
     {
@@ -26,7 +38,7 @@
     },
     {
       "nome": "Zuccati Matteo",
-      "sede": "Cantù"
+      "sede": "Levico"
     }
   ],
   "partite": [
@@ -202,8 +214,8 @@
       "pesoCompagno": 25
     },
     "Cantù": {
-      "sogliaPercentuale": 0.2,
-      "sogliaAvversario": 0.3,
+      "sogliaPercentuale": 0.3,
+      "sogliaAvversario": 0.4,
       "gareMinimeRichieste": 5,
       "gareMassimeConsentite": 20,
       "pesoSingolo": 75,
@@ -211,9 +223,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "26/06/2026, 11:46:36",
+    "salvato_il": "29/06/2026, 11:38:08",
     "partite": 7,
-    "giocatori": 6,
+    "giocatori": 9,
     "versione_app": "4.5"
   }
 }
