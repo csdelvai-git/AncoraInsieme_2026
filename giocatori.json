@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Levico",
+  "sedeCorrente": "Cantù",
   "giocatori": [
     {
       "nome": "Angelon Francesco",
@@ -36,7 +36,7 @@
     },
     {
       "nome": "Solaroli Sonia",
-      "sede": "Levico",
+      "sede": "Cantù",
       "escludi_controlli": false
     },
     {
@@ -231,7 +231,7 @@
     }
   },
   "_meta": {
-    "salvato_il": "30/06/2026, 13:20:22",
+    "salvato_il": "30/06/2026, 15:31:50",
     "partite": 7,
     "giocatori": 11,
     "versione_app": "4.5"
