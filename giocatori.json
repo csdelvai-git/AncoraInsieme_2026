@@ -2,7 +2,7 @@
   "sedeCorrente": "Levico",
   "giocatori": [
     {
-      "nome": "Angelo Francesco",
+      "nome": "Angelon Francesco",
       "sede": "Levico"
     },
     {
@@ -231,7 +231,7 @@
     }
   },
   "_meta": {
-    "salvato_il": "30/06/2026, 12:57:31",
+    "salvato_il": "30/06/2026, 12:58:51",
     "partite": 7,
     "giocatori": 11,
     "versione_app": "4.5"
