@@ -23,6 +23,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Osti Francesco",
+      "sede": "Levico"
+    },
+    {
       "nome": "Segalla Enrico",
       "sede": "Levico"
     },
@@ -223,9 +227,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "29/06/2026, 11:38:08",
+    "salvato_il": "30/06/2026, 09:08:15",
     "partite": 7,
-    "giocatori": 9,
+    "giocatori": 10,
     "versione_app": "4.5"
   }
 }
