@@ -3,7 +3,7 @@
   "giocatori": [
     {
       "nome": "Angelon Francesco",
-      "sede": "Levico"
+      "sede": "Cantù"
     },
     {
       "nome": "Bertoldi Stefano",
@@ -231,7 +231,7 @@
     }
   },
   "_meta": {
-    "salvato_il": "30/06/2026, 12:58:51",
+    "salvato_il": "30/06/2026, 13:20:22",
     "partite": 7,
     "giocatori": 11,
     "versione_app": "4.5"
