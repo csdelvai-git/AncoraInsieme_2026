@@ -2,6 +2,10 @@
   "sedeCorrente": "Levico",
   "giocatori": [
     {
+      "nome": "Angelo Francesco",
+      "sede": "Levico"
+    },
+    {
       "nome": "Bertoldi Stefano",
       "sede": "Levico"
     },
@@ -227,9 +231,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "30/06/2026, 09:08:15",
+    "salvato_il": "30/06/2026, 12:57:31",
     "partite": 7,
-    "giocatori": 10,
+    "giocatori": 11,
     "versione_app": "4.5"
   }
 }
