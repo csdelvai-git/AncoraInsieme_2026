@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -29,6 +29,10 @@
       "nome": "Delvai Claudio S.",
       "sede": "Levico",
       "escludi_controlli": false
+    },
+    {
+      "nome": "Gandolfi Davide",
+      "sede": "Levico"
     },
     {
       "nome": "Mocci Jacopo",
@@ -239,9 +243,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "01/07/2026, 13:46:01",
+    "salvato_il": "03/07/2026, 12:53:31",
     "partite": 7,
-    "giocatori": 13,
+    "giocatori": 14,
     "versione_app": "4.5"
   }
 }
