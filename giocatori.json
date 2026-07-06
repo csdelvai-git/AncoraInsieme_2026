@@ -47,6 +47,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Pacher Matteo",
+      "sede": "Levico"
+    },
+    {
       "nome": "Segalla Enrico",
       "sede": "Levico"
     },
@@ -251,9 +255,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "03/07/2026, 15:23:39",
+    "salvato_il": "06/07/2026, 10:40:11",
     "partite": 7,
-    "giocatori": 16,
+    "giocatori": 17,
     "versione_app": "4.5"
   }
 }
