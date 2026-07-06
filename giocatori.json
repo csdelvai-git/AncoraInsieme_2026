@@ -234,6 +234,75 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MR96B738-1",
+      "blu": [
+        "Pacher Matteo",
+        "Zuccati Matteo"
+      ],
+      "rossi": [
+        "Agostini Cristian",
+        "Delvai Claudio S."
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1783336980000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MR96B738-2",
+      "blu": [
+        "Zuccati Matteo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Pacher Matteo",
+        "Agostini Cristian"
+      ],
+      "golBlu": 4,
+      "golRossi": 10,
+      "timestampGara": 1783337100000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MR96B738-3",
+      "blu": [
+        "Pacher Matteo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Agostini Cristian",
+        "Osti Francesco"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1783337460000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -255,8 +324,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "06/07/2026, 10:40:11",
-    "partite": 7,
+    "salvato_il": "06/07/2026, 14:06:28",
+    "partite": 10,
     "giocatori": 17,
     "versione_app": "4.5"
   }
