@@ -26,6 +26,10 @@
       "sede": "Cantù"
     },
     {
+      "nome": "D'Aquilio Annachiara",
+      "sede": "Levico"
+    },
+    {
       "nome": "Dan Cojocaru",
       "sede": "Cantù"
     },
@@ -332,9 +336,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "06/07/2026, 14:09:38",
+    "salvato_il": "06/07/2026, 14:19:00",
     "partite": 10,
-    "giocatori": 19,
+    "giocatori": 20,
     "versione_app": "4.5"
   }
 }
