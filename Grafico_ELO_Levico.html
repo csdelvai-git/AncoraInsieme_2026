@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grafico ELO — Levico — Ancora Insieme</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #1a1a1a; color: #f0f0f0; font-family: 'Barlow', sans-serif; }
+  .header { background: #111; border-bottom: 3px solid #c8d400; padding: 0; }
+  .header img { width: 100%; max-height: 140px; object-fit: contain; background: #1a2a1a; display: block; }
+  .header-bar { display: flex; justify-content: space-between; align-items: center; padding: 8px 16px; }
+  .header-title { font-family: 'Barlow Condensed', sans-serif; font-size: 16pt; font-weight: 800; color: #c8d400; }
+  .header-sub { font-size: 9pt; color: #888; }
+  .main { padding: 16px; max-width: 900px; margin: 0 auto; }
+  .chart-wrap { background: #f8f8f8; border-radius: 10px; padding: 12px 8px 8px 8px; margin-bottom: 12px; }
+  canvas { display: block; width: 100%; }
+  .legenda { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .leg-item { display: flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; }
+  .leg-dot { width: 12px; height: 4px; border-radius: 2px; display: inline-block; }
+  .trend-up { color: #50c878; }
+  .trend-dn { color: #ff6b6b; }
+  .trend-eq { color: #aaa; }
+  .footer { text-align: center; font-size: 8pt; color: #555; padding: 16px; border-top: 1px solid #333; margin-top: 16px; }
+  @media print { @page { size: A4 landscape; margin: 8mm; } body { background: #fff; color: #111; } .chart-wrap { background: #f0f0f0; } }
+</style>
+</head>
+<body>
+<div class="header">
+  <img src="https://raw.githubusercontent.com/csdelvai-git/AncoraInsieme_2026/main/AncoraInsieme.png" alt="Ancora Insieme">
+  <div class="header-bar">
+    <div class="header-title">Andamento ELO — Levico</div>
+    <div class="header-sub">Aggiornato il: 06/07/2026, 14:21</div>
+  </div>
+</div>
+<div class="main">
+  <div class="chart-wrap">
+    <canvas id="graficoCanvas" height="320"></canvas>
+  </div>
+  <div class="legenda" id="legenda"></div>
+</div>
+<div class="footer">Powered by Claudio S. Delvai, Direttore di Torneo &mdash; ancorainsieme.ddt@gmail.com</div>
+
+<script>
+function hexToRgba(hex, alpha) {
+  const r = parseInt(hex.slice(1,3),16), g = parseInt(hex.slice(3,5),16), b = parseInt(hex.slice(5,7),16);
+  return `rgba(${r},${g},${b},${alpha})`;
+}
+
+const datasets = [{"nome":"Agostini Cristian","elo":1516,"storico":[1500,1516,1534,1516],"color":"#c8d400","trend":-18},{"nome":"Pacher Matteo","elo":1521,"storico":[1500,1484,1503,1521],"color":"#4e9af1","trend":18},{"nome":"Osti Francesco","elo":1482,"storico":[1500,1482],"color":"#f97316","trend":-18},{"nome":"Segalla Enrico","elo":1499,"storico":[1500,1481,1499],"color":"#a855f7","trend":18}];
+
+// Legenda
+const legDiv = document.getElementById('legenda');
+datasets.forEach(d => {
+  const tStr = d.trend > 0 ? `▲${d.trend}` : d.trend < 0 ? `▼${Math.abs(d.trend)}` : '—';
+  const tCls = d.trend > 0 ? 'trend-up' : d.trend < 0 ? 'trend-dn' : 'trend-eq';
+  const el = document.createElement('div');
+  el.className = 'leg-item';
+  el.style.background = hexToRgba(d.color, 0.12);
+  el.style.border = `1px solid ${hexToRgba(d.color, 0.4)}`;
+  el.style.color = d.color;
+  el.innerHTML = `<span class="leg-dot" style="background:${d.color}"></span>${d.nome} <span style="opacity:.8">${d.elo}</span> <span class="${tCls}">${tStr}</span>`;
+  legDiv.appendChild(el);
+});
+
+// Canvas
+const canvas = document.getElementById('graficoCanvas');
+const dpr = window.devicePixelRatio || 1;
+const W = canvas.parentElement.clientWidth - 20;
+const H = 320;
+canvas.style.width = W + 'px';
+canvas.style.height = H + 'px';
+canvas.width = W * dpr;
+canvas.height = H * dpr;
+const ctx = canvas.getContext('2d');
+ctx.scale(dpr, dpr);
+
+const allValues = datasets.flatMap(d => d.storico);
+const globalMin = Math.min(...allValues);
+const globalMax = Math.max(...allValues);
+const maxLen = Math.max(...datasets.map(d => d.storico.length));
+
+const ml = 50, mr = 20, mt = 16, mb = 32;
+const pw = W - ml - mr, ph = H - mt - mb;
+const pad = Math.max(10, Math.round((globalMax - globalMin) * 0.08));
+const yMin = globalMin - pad, yMax = globalMax + pad;
+const yRange = yMax - yMin || 1;
+const nGare = maxLen - 1;
+const cx = i => ml + (i / Math.max(nGare,1)) * pw;
+const cy = v => mt + ph - ((v - yMin) / yRange) * ph;
+
+ctx.clearRect(0, 0, W, H);
+
+// Griglia Y
+const nTicks = 6;
+const rawStep = yRange / nTicks;
+const mag = Math.pow(10, Math.floor(Math.log10(rawStep||1)));
+let step = mag;
+for (const s of [1,2,5,10,20,25,50,100]) { if (mag*s >= rawStep) { step = mag*s; break; } }
+const firstTick = Math.ceil(yMin/step)*step;
+ctx.font = '11px Barlow Condensed, sans-serif';
+ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+for (let v = firstTick; v <= yMax; v += step) {
+  const y = cy(v);
+  ctx.beginPath(); ctx.strokeStyle='rgba(0,0,0,0.1)'; ctx.lineWidth=1;
+  ctx.setLineDash([3,4]); ctx.moveTo(ml,y); ctx.lineTo(ml+pw,y); ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.fillStyle='#888'; ctx.fillText(v, ml-6, y);
+}
+
+// Griglia X
+const xStep = nGare<=10?1:nGare<=20?2:nGare<=50?5:10;
+ctx.textAlign='center'; ctx.textBaseline='top';
+for (let i=0; i<=nGare; i+=xStep) {
+  const x=cx(i);
+  ctx.beginPath(); ctx.strokeStyle='rgba(0,0,0,0.07)'; ctx.lineWidth=1;
+  ctx.setLineDash([3,4]); ctx.moveTo(x,mt); ctx.lineTo(x,mt+ph); ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.fillStyle='#aaa'; ctx.fillText(i, x, mt+ph+6);
+}
+
+// Assi
+ctx.beginPath(); ctx.strokeStyle='#bbb'; ctx.lineWidth=1.5; ctx.setLineDash([]);
+ctx.moveTo(ml,mt); ctx.lineTo(ml,mt+ph); ctx.moveTo(ml,mt+ph); ctx.lineTo(ml+pw,mt+ph); ctx.stroke();
+ctx.font='bold 10px Barlow Condensed,sans-serif'; ctx.fillStyle='#aaa';
+ctx.textAlign='center'; ctx.textBaseline='bottom';
+ctx.fillText('Partite', ml+pw/2, H-2);
+ctx.save(); ctx.translate(13, mt+ph/2); ctx.rotate(-Math.PI/2);
+ctx.textBaseline='middle'; ctx.fillText('ELO',0,0); ctx.restore();
+
+// Linee
+datasets.forEach(ds => {
+  const data = ds.storico, color = ds.color, nL = data.length-1;
+  const cxL = i => ml + (i/Math.max(nGare,1))*pw;
+  ctx.beginPath();
+  data.forEach((v,i)=>{const x=cxL(i),y=cy(v);i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);});
+  ctx.lineTo(cxL(nL),mt+ph); ctx.lineTo(cxL(0),mt+ph); ctx.closePath();
+  ctx.fillStyle=hexToRgba(color,0.07); ctx.fill();
+  ctx.beginPath(); ctx.strokeStyle=color; ctx.lineWidth=2.5; ctx.lineJoin='round';
+  data.forEach((v,i)=>{const x=cxL(i),y=cy(v);i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);});
+  ctx.stroke();
+  data.forEach((v,i)=>{
+    const x=cxL(i),y=cy(v);
+    ctx.beginPath(); ctx.arc(x,y,i===nL?5:2.5,0,Math.PI*2);
+    ctx.fillStyle=i===nL?color:hexToRgba(color,0.5); ctx.fill();
+  });
+  if (datasets.length<=5) {
+    const lx=cxL(nL), ly=cy(data[nL]);
+    ctx.font='bold 11px Barlow Condensed,sans-serif'; ctx.fillStyle=color;
+    ctx.textAlign=lx>ml+pw-40?'right':'left'; ctx.textBaseline='bottom';
+    ctx.fillText(data[nL], lx+(lx>ml+pw-40?-8:8), ly-5);
+  }
+});
+</script>
+</body>
+</html>
