@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Levico",
+  "sedeCorrente": "Cantù",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -41,6 +41,10 @@
     {
       "nome": "Gandolfi Davide",
       "sede": "Levico"
+    },
+    {
+      "nome": "Marchesi Angelo",
+      "sede": "Cantù"
     },
     {
       "nome": "Martijn Van Opbergen",
@@ -320,7 +324,7 @@
   "parametri": {
     "Levico": {
       "sogliaPercentuale": 0.25,
-      "sogliaAvversario": 0.4,
+      "sogliaAvversario": 0.25,
       "gareMinimeRichieste": 5,
       "gareMassimeConsentite": 999,
       "pesoSingolo": 75,
@@ -336,9 +340,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "06/07/2026, 14:50:45",
+    "salvato_il": "07/07/2026, 12:05:17",
     "partite": 10,
-    "giocatori": 20,
+    "giocatori": 21,
     "versione_app": "4.5"
   }
 }
