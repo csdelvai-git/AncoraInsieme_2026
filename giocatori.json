@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -319,6 +319,74 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRAKE0I9-2",
+      "blu": [
+        "Dan Cojocaru",
+        "Marchesi Angelo"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Zuccati Matteo"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1783422780000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRAKE0I9-1",
+      "blu": [
+        "Solaroli Sonia",
+        "Dan Cojocaru"
+      ],
+      "rossi": [
+        "Marchesi Angelo",
+        "Zuccati Matteo"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1783422840000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRAKI9FT",
+      "blu": [
+        "Marchesi Angelo",
+        "Solaroli Sonia"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Zuccati Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1783423740000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true
     }
   ],
   "parametri": {
@@ -340,8 +408,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "07/07/2026, 12:05:17",
-    "partite": 10,
+    "salvato_il": "07/07/2026, 13:41:28",
+    "partite": 13,
     "giocatori": 21,
     "versione_app": "4.5"
   }
