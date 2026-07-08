@@ -460,6 +460,29 @@
       "sede": "Cantù",
       "intergirone": true,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRC14TEM-1",
+      "blu": [
+        "Bertella Lorenzo",
+        "Gandolfi Davide"
+      ],
+      "rossi": [
+        "Trivisonno Andrea",
+        "Pacher Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1783510800000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -481,8 +504,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "08/07/2026, 13:39:47",
-    "partite": 16,
+    "salvato_il": "08/07/2026, 14:04:30",
+    "partite": 17,
     "giocatori": 22,
     "versione_app": "4.5"
   }
