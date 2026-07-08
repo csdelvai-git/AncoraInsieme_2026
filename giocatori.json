@@ -391,6 +391,75 @@
       ],
       "sede": "Cantù",
       "intergirone": true
+    },
+    {
+      "id": "MATCH-MRC07X04-3",
+      "blu": [
+        "Dan Cojocaru",
+        "Solaroli Sonia"
+      ],
+      "rossi": [
+        "Zuccati Matteo",
+        "Marchesi Angelo"
+      ],
+      "golBlu": 3,
+      "golRossi": 10,
+      "timestampGara": 1783507800000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRC07X04-2",
+      "blu": [
+        "Marchesi Angelo",
+        "Solaroli Sonia"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Zuccati Matteo"
+      ],
+      "golBlu": 4,
+      "golRossi": 10,
+      "timestampGara": 1783508400000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRC07X04-1",
+      "blu": [
+        "Solaroli Sonia",
+        "Zuccati Matteo"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Marchesi Angelo"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1783509240000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -412,8 +481,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "08/07/2026, 13:17:05",
-    "partite": 13,
+    "salvato_il": "08/07/2026, 13:39:47",
+    "partite": 16,
     "giocatori": 22,
     "versione_app": "4.5"
   }
