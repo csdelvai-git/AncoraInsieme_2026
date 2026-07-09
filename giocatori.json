@@ -18,12 +18,20 @@
       "sede": "Levico"
     },
     {
+      "nome": "Caironi Davide",
+      "sede": "Cantù"
+    },
+    {
       "nome": "Casagranda Gabriele",
       "sede": "Levico"
     },
     {
       "nome": "Castelnuovo Silvio",
       "sede": "Cantù"
+    },
+    {
+      "nome": "Cattabriga Lucia",
+      "sede": "Levico"
     },
     {
       "nome": "Cattaneo Corrado",
@@ -504,9 +512,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "08/07/2026, 14:04:30",
+    "salvato_il": "09/07/2026, 11:25:35",
     "partite": 17,
-    "giocatori": 22,
+    "giocatori": 24,
     "versione_app": "4.5"
   }
 }
