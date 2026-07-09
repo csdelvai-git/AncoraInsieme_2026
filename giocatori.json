@@ -31,7 +31,7 @@
     },
     {
       "nome": "Cattabriga Lucia",
-      "sede": "Levico"
+      "sede": "Cantù"
     },
     {
       "nome": "Cattaneo Corrado",
@@ -77,6 +77,10 @@
     {
       "nome": "Pacher Matteo",
       "sede": "Levico"
+    },
+    {
+      "nome": "Riva Alessandro",
+      "sede": "Cantù"
     },
     {
       "nome": "Segalla Enrico",
@@ -512,9 +516,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "09/07/2026, 11:25:35",
+    "salvato_il": "09/07/2026, 12:17:51",
     "partite": 17,
-    "giocatori": 24,
+    "giocatori": 25,
     "versione_app": "4.5"
   }
 }
