@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -60,6 +60,10 @@
     },
     {
       "nome": "Martijn Van Opbergen",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Mattivi Brian",
       "sede": "Levico"
     },
     {
@@ -516,9 +520,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "09/07/2026, 12:17:51",
+    "salvato_il": "09/07/2026, 12:26:02",
     "partite": 17,
-    "giocatori": 25,
+    "giocatori": 26,
     "versione_app": "4.5"
   }
 }
