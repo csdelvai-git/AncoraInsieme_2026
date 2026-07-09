@@ -75,6 +75,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Morelli Riccardo",
+      "sede": "Cantù"
+    },
+    {
       "nome": "Osler Matteo",
       "sede": "Levico"
     },
@@ -524,9 +528,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "09/07/2026, 12:50:58",
+    "salvato_il": "09/07/2026, 13:46:10",
     "partite": 17,
-    "giocatori": 27,
+    "giocatori": 28,
     "versione_app": "4.5"
   }
 }
