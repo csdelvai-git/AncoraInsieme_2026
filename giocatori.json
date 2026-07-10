@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Levico",
+  "sedeCorrente": "Cantù",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -645,6 +645,75 @@
       "sede": "Cantù",
       "intergirone": true,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MREVZC28-3",
+      "blu": [
+        "Dan Cojocaru",
+        "Cattaneo Corrado"
+      ],
+      "rossi": [
+        "Morelli Riccardo",
+        "Riva Alessandro"
+      ],
+      "golBlu": 1,
+      "golRossi": 10,
+      "timestampGara": 1783681380000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MREVZC27-2",
+      "blu": [
+        "Cattaneo Corrado",
+        "Benni Akshay"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1783682160000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MREVZC27-1",
+      "blu": [
+        "Agostini Cristian",
+        "Trivisonno Andrea"
+      ],
+      "rossi": [
+        "Bertella Lorenzo",
+        "Zuccati Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1783682880000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -666,8 +735,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "09/07/2026, 14:06:48",
-    "partite": 23,
+    "salvato_il": "10/07/2026, 14:04:35",
+    "partite": 26,
     "giocatori": 28,
     "versione_app": "4.5"
   }
