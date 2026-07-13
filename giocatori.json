@@ -722,6 +722,52 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRJ5GGRM-2",
+      "blu": [
+        "Dan Cojocaru",
+        "Cattaneo Corrado"
+      ],
+      "rossi": [
+        "Galliani Luca",
+        "Riva Alessandro"
+      ],
+      "golBlu": 7,
+      "golRossi": 10,
+      "timestampGara": 1783941180000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRJ5GGRM-1",
+      "blu": [
+        "Dan Cojocaru",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Galliani Luca",
+        "Sidari Giuseppe"
+      ],
+      "golBlu": 4,
+      "golRossi": 10,
+      "timestampGara": 1783941660000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -743,8 +789,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "13/07/2026, 13:16:33",
-    "partite": 26,
+    "salvato_il": "13/07/2026, 13:40:51",
+    "partite": 28,
     "giocatori": 30,
     "versione_app": "4.5"
   }
