@@ -103,6 +103,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Sidari Giuseppe",
+      "sede": "Cantù"
+    },
+    {
       "nome": "Solaroli Sonia",
       "sede": "Cantù",
       "escludi_controlli": false
@@ -739,9 +743,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "13/07/2026, 13:11:04",
+    "salvato_il": "13/07/2026, 13:16:33",
     "partite": 26,
-    "giocatori": 29,
+    "giocatori": 30,
     "versione_app": "4.5"
   }
 }
