@@ -55,6 +55,10 @@
       "escludi_controlli": false
     },
     {
+      "nome": "Galliani Luca",
+      "sede": "Cantù"
+    },
+    {
       "nome": "Gandolfi Davide",
       "sede": "Levico"
     },
@@ -735,9 +739,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "10/07/2026, 14:04:35",
+    "salvato_il": "13/07/2026, 13:11:04",
     "partite": 26,
-    "giocatori": 28,
+    "giocatori": 29,
     "versione_app": "4.5"
   }
 }
