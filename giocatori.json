@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -8,6 +8,10 @@
     {
       "nome": "Angelon Francesco",
       "sede": "Cantù"
+    },
+    {
+      "nome": "Avancini Carlo",
+      "sede": "Levico"
     },
     {
       "nome": "Benni Akshay",
@@ -931,9 +935,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "14/07/2026, 14:06:43",
+    "salvato_il": "14/07/2026, 14:08:40",
     "partite": 34,
-    "giocatori": 31,
+    "giocatori": 32,
     "versione_app": "4.5"
   }
 }
