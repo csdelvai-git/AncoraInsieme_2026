@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -19,6 +19,10 @@
     },
     {
       "nome": "Bertoldi Stefano",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Bisoffi Leonardo",
       "sede": "Levico"
     },
     {
@@ -789,9 +793,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "13/07/2026, 13:40:51",
+    "salvato_il": "14/07/2026, 07:54:20",
     "partite": 28,
-    "giocatori": 30,
+    "giocatori": 31,
     "versione_app": "4.5"
   }
 }
