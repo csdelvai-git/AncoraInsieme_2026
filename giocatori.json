@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -68,6 +68,10 @@
     },
     {
       "nome": "Gandolfi Davide",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Girardelli Giancarlo",
       "sede": "Levico"
     },
     {
@@ -939,9 +943,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "14/07/2026, 21:59:37",
+    "salvato_il": "15/07/2026, 09:54:00",
     "partite": 34,
-    "giocatori": 33,
+    "giocatori": 34,
     "versione_app": "4.5"
   }
 }
