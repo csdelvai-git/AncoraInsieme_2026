@@ -54,6 +54,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Dalsaso Matteo",
+      "sede": "Levico"
+    },
+    {
       "nome": "Dan Cojocaru",
       "sede": "Cantù"
     },
@@ -943,9 +947,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "15/07/2026, 09:54:00",
+    "salvato_il": "15/07/2026, 14:17:15",
     "partite": 34,
-    "giocatori": 34,
+    "giocatori": 35,
     "versione_app": "4.5"
   }
 }
