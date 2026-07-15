@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Levico",
+  "sedeCorrente": "Cantù",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -926,6 +926,167 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRM1XTEX-7",
+      "blu": [
+        "Dan Cojocaru",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Cattaneo Corrado",
+        "Galliani Luca"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1784113140000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRM1XTEW-6",
+      "blu": [
+        "Benni Akshay",
+        "Galliani Luca"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Riva Alessandro"
+      ],
+      "golBlu": 7,
+      "golRossi": 10,
+      "timestampGara": 1784113680000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRM1XTEW-2",
+      "blu": [
+        "Pacher Matteo",
+        "Zuccati Matteo"
+      ],
+      "rossi": [
+        "Gandolfi Davide",
+        "Segalla Enrico"
+      ],
+      "golBlu": 2,
+      "golRossi": 10,
+      "timestampGara": 1784114100000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRM1XTEW-5",
+      "blu": [
+        "Caironi Davide",
+        "Morelli Riccardo"
+      ],
+      "rossi": [
+        "Galliani Luca",
+        "Sidari Giuseppe"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1784114100000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRM1XTEW-1",
+      "blu": [
+        "Pacher Matteo",
+        "Gandolfi Davide"
+      ],
+      "rossi": [
+        "Zuccati Matteo",
+        "Segalla Enrico"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1784114400000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRM1XTEW-4",
+      "blu": [
+        "Dan Cojocaru",
+        "Cattaneo Corrado"
+      ],
+      "rossi": [
+        "Caironi Davide",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 12,
+      "golRossi": 10,
+      "timestampGara": 1784114760000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRM1XTEW-3",
+      "blu": [
+        "Pacher Matteo",
+        "Trivisonno Andrea"
+      ],
+      "rossi": [
+        "Bisoffi Leonardo",
+        "Segalla Enrico"
+      ],
+      "golBlu": 10,
+      "golRossi": 12,
+      "timestampGara": 1784114880000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -947,8 +1108,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "15/07/2026, 14:17:15",
-    "partite": 34,
+    "salvato_il": "15/07/2026, 14:24:46",
+    "partite": 41,
     "giocatori": 35,
     "versione_app": "4.5"
   }
