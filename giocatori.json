@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -1087,6 +1087,190 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRNH9Z0C-8",
+      "blu": [
+        "Angelon Francesco",
+        "Morelli Riccardo"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Grasso Antonio"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1784199420000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRNH9Z0C-7",
+      "blu": [
+        "Caironi Davide",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Angelon Francesco",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1784199840000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRNH9Z0C-6",
+      "blu": [
+        "Caironi Davide",
+        "Dan Cojocaru"
+      ],
+      "rossi": [
+        "Grasso Antonio",
+        "Riva Alessandro"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1784200260000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRNH9Z0C-5",
+      "blu": [
+        "Caironi Davide",
+        "Morelli Riccardo"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Grasso Antonio"
+      ],
+      "golBlu": 9,
+      "golRossi": 11,
+      "timestampGara": 1784200740000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRNH9Z0B-4",
+      "blu": [
+        "Delvai Claudio S.",
+        "Zuccati Matteo"
+      ],
+      "rossi": [
+        "Tonezzer Giacomo",
+        "Agostini Cristian"
+      ],
+      "golBlu": 10,
+      "golRossi": 3,
+      "timestampGara": 1784200860000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRNH9Z0B-1",
+      "blu": [
+        "Zuccati Matteo",
+        "Girardelli Giancarlo"
+      ],
+      "rossi": [
+        "Tonezzer Giacomo",
+        "Trivisonno Andrea"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1784200980000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRNH9Z0B-3",
+      "blu": [
+        "Angelon Francesco",
+        "Cattaneo Corrado"
+      ],
+      "rossi": [
+        "Caironi Davide",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1784201100000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRNH9Z0B-2",
+      "blu": [
+        "Trivisonno Andrea",
+        "Girardelli Giancarlo"
+      ],
+      "rossi": [
+        "Delvai Claudio S.",
+        "Agostini Cristian"
+      ],
+      "golBlu": 7,
+      "golRossi": 10,
+      "timestampGara": 1784201460000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -1108,8 +1292,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "15/07/2026, 14:24:46",
-    "partite": 41,
+    "salvato_il": "16/07/2026, 14:21:24",
+    "partite": 49,
     "giocatori": 35,
     "versione_app": "4.5"
   }
