@@ -10,19 +10,33 @@
 
 <style>
 
+*{
+    box-sizing:border-box;
+}
+
 body{
-    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-    background:#f4f4f4;
-    color:#333;
+
     margin:0;
+    font-family:Segoe UI,Arial,sans-serif;
+    background:#eef3f7;
+    color:#333;
+
 }
 
 header{
 
-    background:#4F87A8;
+    background:linear-gradient(135deg,#0f3d5e,#4f87a8);
     color:white;
-    padding:45px 20px;
     text-align:center;
+    padding:55px 20px 45px;
+
+}
+
+header img{
+
+    width:180px;
+    max-width:70%;
+    margin-bottom:20px;
 
 }
 
@@ -30,92 +44,119 @@ header h1{
 
     margin:0;
     font-size:3em;
+    font-weight:700;
+
+}
+
+header h2{
+
+    margin-top:10px;
+    font-weight:300;
+    letter-spacing:2px;
 
 }
 
 header p{
 
-    margin-top:10px;
-    font-size:1.2em;
-    opacity:.9;
+    max-width:700px;
+    margin:25px auto 0;
+    line-height:1.7em;
+    font-size:1.05em;
+    opacity:.95;
 
 }
 
 main{
 
-    max-width:900px;
+    max-width:1100px;
     margin:auto;
-    padding:40px 20px;
+    padding:50px 25px;
 
 }
 
-.intro{
+.edizioni{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+
+}
+
+.card{
 
     background:white;
-    border-radius:10px;
-    padding:25px;
-    margin-bottom:35px;
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    transition:.25s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
 
 }
 
 .numero{
 
-    background:white;
-    border-left:8px solid #4F87A8;
-    border-radius:8px;
-    padding:22px;
-    margin-bottom:25px;
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    background:#4f87a8;
+    color:white;
+    padding:16px;
+    text-align:center;
+    font-size:1.4em;
+    font-weight:bold;
 
 }
 
-.numero h2{
+.contenuto{
 
-    margin-top:0;
-    color:#4F87A8;
+    padding:28px;
 
 }
 
 .data{
 
-    color:#777;
+    color:#888;
     margin-bottom:15px;
 
 }
 
 .titolo{
 
-    font-size:1.15em;
+    font-size:1.25em;
     font-weight:bold;
-    margin-bottom:20px;
+    line-height:1.4em;
+    min-height:75px;
 
 }
 
-a.pdf{
+.bottone{
 
     display:inline-block;
-    background:#4F87A8;
+    margin-top:25px;
+    background:#0f3d5e;
     color:white;
     text-decoration:none;
-    padding:10px 18px;
-    border-radius:6px;
+    padding:12px 22px;
+    border-radius:8px;
     transition:.2s;
 
 }
 
-a.pdf:hover{
+.bottone:hover{
 
-    background:#356983;
+    background:#4f87a8;
 
 }
 
 footer{
 
+    margin-top:60px;
+    padding:35px;
     text-align:center;
-    color:#777;
-    padding:40px;
-    font-size:.9em;
+    color:#666;
+    font-size:.95em;
 
 }
 
@@ -127,39 +168,38 @@ footer{
 
 <header>
 
+<img src="Logo_03.png">
+
 <h1>📰 Notizie da Bordo Campo</h1>
 
-<p>L'Edicola</p>
+<h2>L'EDICOLA</h2>
+
+<p>
+
+Ogni settimana raccontiamo il torneo benefico
+<b>Ancora Insieme</b>.
+
+Non solo classifiche e risultati, ma anche le persone,
+le curiosità, le battute e lo spirito che rendono speciale
+questa iniziativa.
+
+</p>
 
 </header>
 
 <main>
 
-<div class="intro">
+<div class="edizioni">
 
-<p>
-
-<strong>Notizie da Bordo Campo</strong> è il periodico del torneo benefico
-<strong>"Ancora Insieme"</strong>.
-
-Ogni edizione racconta l'evoluzione del torneo, i protagonisti,
-le curiosità nate davanti al biliardino e l'andamento della raccolta fondi
-a favore delle famiglie dei colleghi che vogliamo ricordare.
-
-</p>
-
-<p>
-
-Buona lettura!
-
-</p>
-
-</div>
-
+<div class="card">
 
 <div class="numero">
 
-<h2>Edizione n. 2</h2>
+Edizione n. 2
+
+</div>
+
+<div class="contenuto">
 
 <div class="data">
 
@@ -169,22 +209,31 @@ Buona lettura!
 
 <div class="titolo">
 
-Più biliardini, più occasioni... adesso il torneo cammina da solo
+Più biliardini, più occasioni...
+adesso il torneo cammina da solo.
 
 </div>
 
-<a class="pdf" href="Notizie_da_Bordo_Campo_002.pdf">
+<a class="bottone"
+href="Notizie_da_Bordo_Campo_002.pdf">
 
-📄 Apri il PDF
+📄 Leggi il PDF
 
 </a>
 
 </div>
 
+</div>
+
+<div class="card">
 
 <div class="numero">
 
-<h2>Edizione n. 1</h2>
+Edizione n. 1
+
+</div>
+
+<div class="contenuto">
 
 <div class="data">
 
@@ -194,25 +243,31 @@ Più biliardini, più occasioni... adesso il torneo cammina da solo
 
 <div class="titolo">
 
-Da un biliardino in salotto a un torneo che unisce due sedi
+Da un biliardino in salotto
+a un torneo che unisce due sedi.
 
 </div>
 
-<a class="pdf" href="Notizie_da_Bordo_Campo_001.pdf">
+<a class="bottone"
+href="Notizie_da_Bordo_Campo_001.pdf">
 
-📄 Apri il PDF
+📄 Leggi il PDF
 
 </a>
 
 </div>
 
+</div>
+
+</div>
 
 </main>
 
 <footer>
 
-Ancora Insieme 2026<br>
-Archivio ufficiale di <strong>Notizie da Bordo Campo</strong>
+<b>Ancora Insieme 2026</b><br>
+
+Archivio ufficiale di <i>Notizie da Bordo Campo</i>
 
 </footer>
 
