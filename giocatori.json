@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Levico",
+  "sedeCorrente": "Cantù",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -1286,13 +1286,13 @@
       "sogliaPercentuale": 0.3,
       "sogliaAvversario": 0.4,
       "gareMinimeRichieste": 5,
-      "gareMassimeConsentite": 20,
+      "gareMassimeConsentite": 999,
       "pesoSingolo": 75,
       "pesoCompagno": 25
     }
   },
   "_meta": {
-    "salvato_il": "16/07/2026, 14:21:24",
+    "salvato_il": "16/07/2026, 14:26:54",
     "partite": 49,
     "giocatori": 35,
     "versione_app": "4.5"
