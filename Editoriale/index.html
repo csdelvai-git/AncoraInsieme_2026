@@ -17,7 +17,7 @@
 body{
 
     margin:0;
-    font-family:Segoe UI,Arial,sans-serif;
+    font-family:"Segoe UI",Arial,sans-serif;
     background:#eef3f7;
     color:#333;
 
@@ -25,121 +25,127 @@ body{
 
 header{
 
-    background:linear-gradient(135deg,#0f3d5e,#4f87a8);
+    background:linear-gradient(135deg,#0d3c5d,#4f87a8);
     color:white;
     text-align:center;
-    padding:55px 20px 45px;
+    padding:60px 20px 55px;
 
 }
 
 header img{
 
-    width:180px;
-    max-width:70%;
-    margin-bottom:20px;
+    width:420px;
+    max-width:90%;
+    margin-bottom:30px;
+    filter:drop-shadow(0 5px 18px rgba(0,0,0,.35));
 
 }
 
 header h1{
 
     margin:0;
-    font-size:3em;
-    font-weight:700;
+    font-size:3.6em;
+    font-weight:800;
+    letter-spacing:-1px;
 
 }
 
 header h2{
 
-    margin-top:10px;
+    margin:18px 0 0;
     font-weight:300;
-    letter-spacing:2px;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    opacity:.9;
 
 }
 
 header p{
 
-    max-width:700px;
-    margin:25px auto 0;
-    line-height:1.7em;
-    font-size:1.05em;
-    opacity:.95;
+    max-width:760px;
+    margin:35px auto 0;
+    line-height:1.8em;
+    font-size:1.15em;
 
 }
 
 main{
 
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
-    padding:50px 25px;
+    padding:60px 25px;
 
 }
 
 .edizioni{
 
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+    gap:35px;
 
 }
 
 .card{
 
     background:white;
-    border-radius:16px;
+    border-radius:18px;
     overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    box-shadow:0 12px 30px rgba(0,0,0,.10);
     transition:.25s;
 
 }
 
 .card:hover{
 
-    transform:translateY(-6px);
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
 
 }
 
 .numero{
 
-    background:#4f87a8;
+    background:#5b90b1;
     color:white;
-    padding:16px;
     text-align:center;
-    font-size:1.4em;
+    padding:18px;
+    font-size:1.8em;
     font-weight:bold;
 
 }
 
 .contenuto{
 
-    padding:28px;
+    padding:30px;
 
 }
 
 .data{
 
     color:#888;
-    margin-bottom:15px;
+    font-size:.95em;
+    margin-bottom:18px;
 
 }
 
 .titolo{
 
-    font-size:1.25em;
-    font-weight:bold;
-    line-height:1.4em;
-    min-height:75px;
+    font-size:1.45em;
+    line-height:1.45em;
+    font-weight:700;
+    min-height:95px;
 
 }
 
 .bottone{
 
     display:inline-block;
-    margin-top:25px;
-    background:#0f3d5e;
+    margin-top:30px;
+    padding:12px 24px;
+    background:#123f61;
     color:white;
     text-decoration:none;
-    padding:12px 22px;
     border-radius:8px;
+    font-weight:600;
     transition:.2s;
 
 }
@@ -152,11 +158,16 @@ main{
 
 footer{
 
-    margin-top:60px;
-    padding:35px;
     text-align:center;
     color:#666;
+    padding:50px 20px;
     font-size:.95em;
+
+}
+
+footer b{
+
+    color:#123f61;
 
 }
 
@@ -168,20 +179,20 @@ footer{
 
 <header>
 
-<img src="Logo_03.png">
+<img src="Logo_03.png" alt="Logo Ancora Insieme">
 
-<h1>📰 Notizie da Bordo Campo</h1>
+<h1>Notizie da Bordo Campo</h1>
 
-<h2>L'EDICOLA</h2>
+<h2>L'Edicola</h2>
 
 <p>
 
-Ogni settimana raccontiamo il torneo benefico
-<b>Ancora Insieme</b>.
+Dal <strong>2026</strong> raccontiamo, una settimana alla volta,
+la storia del torneo benefico <strong>Ancora Insieme</strong>.
 
-Non solo classifiche e risultati, ma anche le persone,
-le curiosità, le battute e lo spirito che rendono speciale
-questa iniziativa.
+Non soltanto risultati e classifiche,
+ma anche persone, curiosità, fotografie,
+battute e piccoli momenti che rendono speciale questa iniziativa.
 
 </p>
 
@@ -210,7 +221,7 @@ Edizione n. 2
 <div class="titolo">
 
 Più biliardini, più occasioni...
-adesso il torneo cammina da solo.
+Adesso il torneo cammina da solo.
 
 </div>
 
@@ -267,7 +278,7 @@ href="Notizie_da_Bordo_Campo_001.pdf">
 
 <b>Ancora Insieme 2026</b><br>
 
-Archivio ufficiale di <i>Notizie da Bordo Campo</i>
+Archivio ufficiale del periodico <i>Notizie da Bordo Campo</i>
 
 </footer>
 
