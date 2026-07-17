@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -1271,6 +1271,236 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MROW69YM-10",
+      "blu": [
+        "Dan Cojocaru",
+        "Caironi Davide"
+      ],
+      "rossi": [
+        "Morelli Riccardo",
+        "Galliani Luca"
+      ],
+      "golBlu": 10,
+      "golRossi": 12,
+      "timestampGara": 1784286300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MROW69YM-9",
+      "blu": [
+        "Dan Cojocaru",
+        "Galliani Luca"
+      ],
+      "rossi": [
+        "Caironi Davide",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 3,
+      "golRossi": 10,
+      "timestampGara": 1784286600000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MROW69YM-6",
+      "blu": [
+        "Dan Cojocaru",
+        "Morelli Riccardo"
+      ],
+      "rossi": [
+        "Caironi Davide",
+        "Galliani Luca"
+      ],
+      "golBlu": 3,
+      "golRossi": 10,
+      "timestampGara": 1784286900000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MROW69YM-5",
+      "blu": [
+        "Benni Akshay",
+        "Galliani Luca"
+      ],
+      "rossi": [
+        "Cattaneo Corrado",
+        "Sidari Giuseppe"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1784287200000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MROW69YL-1",
+      "blu": [
+        "Zuccati Matteo",
+        "Tonezzer Giacomo"
+      ],
+      "rossi": [
+        "Segalla Enrico",
+        "Dalsaso Matteo"
+      ],
+      "golBlu": 9,
+      "golRossi": 11,
+      "timestampGara": 1784287260000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MROW69YM-2",
+      "blu": [
+        "Pacher Matteo",
+        "Trivisonno Andrea"
+      ],
+      "rossi": [
+        "Martijn Van Opbergen",
+        "Agostini Cristian"
+      ],
+      "golBlu": 3,
+      "golRossi": 10,
+      "timestampGara": 1784287320000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MROW69YM-4",
+      "blu": [
+        "Pacher Matteo",
+        "D'Aquilio Annachiara"
+      ],
+      "rossi": [
+        "Martijn Van Opbergen",
+        "Agostini Cristian"
+      ],
+      "golBlu": 7,
+      "golRossi": 10,
+      "timestampGara": 1784287380000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MROW69YM-3",
+      "blu": [
+        "Sidari Giuseppe",
+        "Caironi Davide"
+      ],
+      "rossi": [
+        "Riva Alessandro",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1784287680000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MROW69YM-8",
+      "blu": [
+        "Zuccati Matteo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Dalsaso Matteo",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1784287740000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MROW69YM-7",
+      "blu": [
+        "Zuccati Matteo",
+        "Dalsaso Matteo"
+      ],
+      "rossi": [
+        "Tonezzer Giacomo",
+        "Segalla Enrico"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1784288160000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -1292,8 +1522,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "16/07/2026, 14:26:54",
-    "partite": 49,
+    "salvato_il": "17/07/2026, 14:19:57",
+    "partite": 59,
     "giocatori": 35,
     "versione_app": "4.5"
   }
