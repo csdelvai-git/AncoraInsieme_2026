@@ -1501,6 +1501,213 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRT5XXQD-2",
+      "blu": [
+        "Dan Cojocaru",
+        "Angelon Francesco"
+      ],
+      "rossi": [
+        "Caironi Davide",
+        "Marchesi Angelo"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1784544900000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRT5XXQD-3",
+      "blu": [
+        "Angelon Francesco",
+        "Caironi Davide"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Marchesi Angelo"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1784545500000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRT5XXQE-4",
+      "blu": [
+        "Dan Cojocaru",
+        "Caironi Davide"
+      ],
+      "rossi": [
+        "Angelon Francesco",
+        "Marchesi Angelo"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1784546100000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRT5XXQE-9",
+      "blu": [
+        "Zuccati Matteo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Osti Francesco",
+        "Dalsaso Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1784546340000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRT5XXQE-8",
+      "blu": [
+        "D'Aquilio Annachiara",
+        "Osti Francesco"
+      ],
+      "rossi": [
+        "Segalla Enrico",
+        "Dalsaso Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1784546640000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRT5XXQE-5",
+      "blu": [
+        "Marchesi Angelo",
+        "Sidari Giuseppe"
+      ],
+      "rossi": [
+        "Angelon Francesco",
+        "Caironi Davide"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1784546700000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRT5XXQE-7",
+      "blu": [
+        "Angelon Francesco",
+        "Marchesi Angelo"
+      ],
+      "rossi": [
+        "Sidari Giuseppe",
+        "Dan Cojocaru"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1784547120000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRT5XXQE-6",
+      "blu": [
+        "Segalla Enrico",
+        "D'Aquilio Annachiara"
+      ],
+      "rossi": [
+        "Zuccati Matteo",
+        "Osti Francesco"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1784547180000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRT5XXQD-1",
+      "blu": [
+        "Zuccati Matteo",
+        "Tonezzer Giacomo"
+      ],
+      "rossi": [
+        "D'Aquilio Annachiara",
+        "Segalla Enrico"
+      ],
+      "golBlu": 2,
+      "golRossi": 10,
+      "timestampGara": 1784547780000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -1522,8 +1729,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "17/07/2026, 14:19:57",
-    "partite": 59,
+    "salvato_il": "20/07/2026, 13:53:13",
+    "partite": 68,
     "giocatori": 35,
     "versione_app": "4.5"
   }
