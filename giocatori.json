@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -1825,29 +1825,6 @@
       "importataDaDdT": true
     },
     {
-      "id": "MATCH-MRULLCP8-1",
-      "blu": [
-        "Agostini Cristian",
-        "Segalla Enrico"
-      ],
-      "rossi": [
-        "Trivisonno Andrea",
-        "Girardelli Giancarlo"
-      ],
-      "golBlu": 8,
-      "golRossi": 10,
-      "timestampGara": 1784634480000,
-      "invalidati": [
-        false,
-        false,
-        false,
-        false
-      ],
-      "sede": "Levico",
-      "intergirone": false,
-      "importataDaDdT": true
-    },
-    {
       "id": "MATCH-MRULLCP8-2",
       "blu": [
         "Dalsaso Matteo",
@@ -1869,11 +1846,34 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRULLCP8-1",
+      "blu": [
+        "Agostini Cristian",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Trivisonno Andrea",
+        "Girardelli Giancarlo"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1784634900000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
     "Levico": {
-      "sogliaPercentuale": 0.24,
+      "sogliaPercentuale": 0.25,
       "sogliaAvversario": 0.25,
       "gareMinimeRichieste": 5,
       "gareMassimeConsentite": 999,
@@ -1885,7 +1885,7 @@
       "pesoCompagnoDebole": 20
     },
     "Cantù": {
-      "sogliaPercentuale": 0.24,
+      "sogliaPercentuale": 0.25,
       "sogliaAvversario": 0.25,
       "gareMinimeRichieste": 5,
       "gareMassimeConsentite": 999,
@@ -1898,7 +1898,7 @@
     }
   },
   "_meta": {
-    "salvato_il": "21/07/2026, 14:09:17",
+    "salvato_il": "21/07/2026, 14:33:44",
     "partite": 75,
     "giocatori": 35,
     "versione_app": "4.5"
