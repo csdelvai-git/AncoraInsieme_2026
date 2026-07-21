@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Levico",
+  "sedeCorrente": "Cantù",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -1708,6 +1708,98 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRUL1LNV-4",
+      "blu": [
+        "Dan Cojocaru",
+        "Caironi Davide"
+      ],
+      "rossi": [
+        "Angelon Francesco",
+        "Grasso Antonio"
+      ],
+      "golBlu": 10,
+      "golRossi": 12,
+      "timestampGara": 1784631540000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRUL1LNV-1",
+      "blu": [
+        "Grasso Antonio",
+        "Sidari Giuseppe"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Caironi Davide"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1784632200000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRUL1LNV-2",
+      "blu": [
+        "Dan Cojocaru",
+        "Caironi Davide"
+      ],
+      "rossi": [
+        "Benni Akshay",
+        "Riva Alessandro"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1784632800000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRUL1LNV-3",
+      "blu": [
+        "Sidari Giuseppe",
+        "Dan Cojocaru"
+      ],
+      "rossi": [
+        "Caironi Davide",
+        "Grasso Antonio"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1784633580000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -1717,20 +1809,28 @@
       "gareMinimeRichieste": 5,
       "gareMassimeConsentite": 999,
       "pesoSingolo": 75,
-      "pesoCompagno": 25
+      "pesoCompagno": 25,
+      "pesoSingoloForte": 50,
+      "pesoCompagnoForte": 50,
+      "pesoSingoloDebole": 80,
+      "pesoCompagnoDebole": 20
     },
     "Cantù": {
-      "sogliaPercentuale": 0.3,
-      "sogliaAvversario": 0.4,
+      "sogliaPercentuale": 0.25,
+      "sogliaAvversario": 0.25,
       "gareMinimeRichieste": 5,
       "gareMassimeConsentite": 999,
       "pesoSingolo": 75,
-      "pesoCompagno": 25
+      "pesoCompagno": 25,
+      "pesoSingoloForte": 50,
+      "pesoCompagnoForte": 50,
+      "pesoSingoloDebole": 80,
+      "pesoCompagnoDebole": 20
     }
   },
   "_meta": {
-    "salvato_il": "20/07/2026, 13:53:13",
-    "partite": 68,
+    "salvato_il": "21/07/2026, 13:43:44",
+    "partite": 72,
     "giocatori": 35,
     "versione_app": "4.5"
   }
