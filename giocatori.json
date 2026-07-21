@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -1800,6 +1800,75 @@
       "sede": "Cantù",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRULLCP8-3",
+      "blu": [
+        "Dalsaso Matteo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Agostini Cristian",
+        "Girardelli Giancarlo"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1784634360000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRULLCP8-1",
+      "blu": [
+        "Agostini Cristian",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Trivisonno Andrea",
+        "Girardelli Giancarlo"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1784634480000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRULLCP8-2",
+      "blu": [
+        "Dalsaso Matteo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Agostini Cristian",
+        "Girardelli Giancarlo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1784634480000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -1829,8 +1898,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "21/07/2026, 13:43:44",
-    "partite": 72,
+    "salvato_il": "21/07/2026, 13:57:21",
+    "partite": 75,
     "giocatori": 35,
     "versione_app": "4.5"
   }
