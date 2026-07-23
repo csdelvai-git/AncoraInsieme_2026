@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Levico",
+  "sedeCorrente": "Cantù",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -2402,6 +2402,167 @@
       "sede": "Levico",
       "intergirone": true,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXVZYBS-7",
+      "blu": [
+        "Bisoffi Leonardo",
+        "Mocci Jacopo"
+      ],
+      "rossi": [
+        "Zuccati Matteo",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1784828100000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXVZYBS-6",
+      "blu": [
+        "Solaroli Sonia",
+        "Delvai Claudio S."
+      ],
+      "rossi": [
+        "Bisoffi Leonardo",
+        "Gandolfi Davide"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1784829420000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXVZYBS-5",
+      "blu": [
+        "Gandolfi Davide",
+        "Solaroli Sonia"
+      ],
+      "rossi": [
+        "Bisoffi Leonardo",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1784829480000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXVZYBR-4",
+      "blu": [
+        "Zuccati Matteo",
+        "Bisoffi Leonardo"
+      ],
+      "rossi": [
+        "Mocci Jacopo",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 10,
+      "golRossi": 3,
+      "timestampGara": 1784831460000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXVZYBR-3",
+      "blu": [
+        "Delvai Claudio S.",
+        "Tonezzer Giacomo"
+      ],
+      "rossi": [
+        "Mocci Jacopo",
+        "Zuccati Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1784832360000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXVZYBR-2",
+      "blu": [
+        "Bisoffi Leonardo",
+        "Mocci Jacopo"
+      ],
+      "rossi": [
+        "Zuccati Matteo",
+        "Solaroli Sonia"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1784832960000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXVZYBR-1",
+      "blu": [
+        "Delvai Claudio S.",
+        "Zuccati Matteo"
+      ],
+      "rossi": [
+        "Mocci Jacopo",
+        "Solaroli Sonia"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1784833620000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -2432,8 +2593,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "23/07/2026, 19:47:59",
-    "partite": 98,
+    "salvato_il": "23/07/2026, 21:15:31",
+    "partite": 105,
     "giocatori": 36,
     "versione_app": "4.5"
   }
