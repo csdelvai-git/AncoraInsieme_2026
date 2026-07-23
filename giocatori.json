@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -2034,6 +2034,190 @@
       "sede": "Cantù",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXHCZH6-6",
+      "blu": [
+        "Cattaneo Corrado",
+        "Grasso Antonio"
+      ],
+      "rossi": [
+        "Galliani Luca",
+        "Dan Cojocaru"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1784804400000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXHCZH6-4",
+      "blu": [
+        "Angelon Francesco",
+        "Morelli Riccardo"
+      ],
+      "rossi": [
+        "Galliani Luca",
+        "Dan Cojocaru"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1784805000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXHCZH6-2",
+      "blu": [
+        "Morelli Riccardo",
+        "Angelon Francesco"
+      ],
+      "rossi": [
+        "Grasso Antonio",
+        "Cattaneo Corrado"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1784805300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXHCZH7-7",
+      "blu": [
+        "Solaroli Sonia",
+        "Tonezzer Giacomo"
+      ],
+      "rossi": [
+        "Zuccati Matteo",
+        "Mocci Jacopo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1784805540000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXHCZH7-8",
+      "blu": [
+        "Martijn Van Opbergen",
+        "Solaroli Sonia"
+      ],
+      "rossi": [
+        "Zuccati Matteo",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1784806080000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXHCZH6-5",
+      "blu": [
+        "Dan Cojocaru",
+        "Grasso Antonio"
+      ],
+      "rossi": [
+        "Morelli Riccardo",
+        "Galliani Luca"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1784806560000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXHCZH6-3",
+      "blu": [
+        "Solaroli Sonia",
+        "Zuccati Matteo"
+      ],
+      "rossi": [
+        "Tonezzer Giacomo",
+        "Martijn Van Opbergen"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1784806680000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXHCZH6-1",
+      "blu": [
+        "Dan Cojocaru",
+        "Angelon Francesco"
+      ],
+      "rossi": [
+        "Grasso Antonio",
+        "Galliani Luca"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1784806800000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -2064,8 +2248,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "22/07/2026, 14:06:35",
-    "partite": 82,
+    "salvato_il": "23/07/2026, 14:22:04",
+    "partite": 90,
     "giocatori": 36,
     "versione_app": "4.5"
   }
