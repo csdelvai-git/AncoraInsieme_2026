@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ancora Insieme — Sorteggio Partite</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f4f4f4;font-family:'Barlow',sans-serif;color:#2d2d2d;min-height:100vh}
+header{background:#1e1e1e;border-bottom:3px solid #c8d400;padding:14px 20px;display:flex;align-items:center;gap:12px}
+.logo-title{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;color:#fff;letter-spacing:.5px}
+.logo-sub{font-size:11px;color:#aaa;margin-top:2px}
+.logo-sub span{color:#c8d400;font-weight:700}
+nav{background:#2a2a2a;padding:8px 20px;display:flex;gap:16px;font-size:12px}
+nav a{color:#aaa;text-decoration:none}
+nav a:hover{color:#c8d400}
+main{max-width:780px;margin:24px auto;padding:0 16px 60px}
+
+/* STEP */
+.step{background:#fff;border-radius:10px;border:1.5px solid #e0e0e0;padding:18px;margin-bottom:16px}
+.step-header{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.5px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.step-num{background:#c8d400;color:#1e1e1e;font-size:12px;font-weight:800;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+
+/* GIOCATORI GRID */
+.giocatori-grid{display:flex;flex-wrap:wrap;gap:7px}
+.g-chip{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:20px;border:1.5px solid #ddd;background:#f9f9f9;font-size:13px;cursor:pointer;transition:all .15s;user-select:none}
+.g-chip:hover{border-color:#c8d400}
+.g-chip.sel{background:#1e1e1e;color:#c8d400;border-color:#1e1e1e;font-weight:600}
+.g-chip.fuori{background:#fff3e0;border-color:#ff9800;color:#e65100}
+.contatore{font-size:12px;color:#888;margin-top:10px}
+.contatore b{color:#1e1e1e}
+
+/* CONTROLLI */
+.ctrl-row{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end}
+.ctrl-block{display:flex;flex-direction:column;gap:4px}
+.ctrl-label{font-size:10px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.5px}
+select.ctrl,input.ctrl{padding:8px 10px;border:1.5px solid #e0e0e0;border-radius:6px;font-size:13px;font-family:inherit;background:#fff;color:#2d2d2d}
+select.ctrl:focus,input.ctrl:focus{outline:none;border-color:#c8d400}
+input.ctrl[type=number]{width:70px}
+
+/* BTN */
+.btn-sorteggia{background:#c8d400;color:#1e1e1e;border:none;border-radius:7px;padding:10px 28px;font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:800;letter-spacing:.5px;cursor:pointer;transition:opacity .15s}
+.btn-sorteggia:hover{opacity:.85}
+.btn-sorteggia:disabled{opacity:.4;cursor:default}
+
+/* TAVOLI */
+.tavoli-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;margin-bottom:16px}
+.tavolo-card{border-radius:10px;border:2px solid #ddd;background:#fff;overflow:hidden;cursor:pointer;transition:transform .12s,box-shadow .12s}
+.tavolo-card:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.1)}
+.tavolo-card.selezionato{border-color:#c8d400;box-shadow:0 0 0 3px rgba(200,212,0,.3)}
+.tavolo-card.giocata{opacity:.45;cursor:default;pointer-events:none}
+.tavolo-header{background:#1e1e1e;color:#c8d400;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;padding:6px 12px;display:flex;justify-content:space-between;align-items:center}
+.tavolo-body{padding:12px}
+.squadra-row{display:flex;align-items:center;gap:8px;padding:6px 0}
+.squadra-row + .squadra-row{border-top:1px dashed #eee}
+.sq-colore{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.sq-blu{background:#3366cc}
+.sq-rosso{background:#cc3333}
+.sq-nomi{font-size:14px;font-weight:600}
+.sq-badge{font-size:10px;color:#888;margin-left:auto}
+.vs-sep{text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:11px;color:#bbb;font-weight:700;letter-spacing:1px;padding:2px 0}
+.punteggio-novita{font-size:10px;color:#888}
+.punteggio-novita .new{color:#2e7d32;font-weight:700}
+.punteggio-novita .rep{color:#e65100}
+
+/* FUORI */
+.fuori-box{background:#fff3e0;border:1.5px solid #ffcc80;border-radius:8px;padding:10px 14px;font-size:13px;margin-bottom:16px}
+.fuori-box b{color:#e65100}
+
+/* SESSIONE LOG */
+.log-box{background:#fafafa;border:1.5px solid #e0e0e0;border-radius:8px;padding:12px;font-size:12px;color:#555;max-height:160px;overflow-y:auto}
+.log-riga{padding:3px 0;border-bottom:1px solid #f0f0f0;display:flex;gap:8px;align-items:baseline}
+.log-n{color:#bbb;width:20px;flex-shrink:0;font-variant-numeric:tabular-nums}
+.log-teams{flex:1}
+.log-blu{color:#3366cc;font-weight:600}
+.log-rosso{color:#cc3333;font-weight:600}
+
+/* BTN secondari */
+.btn-sec{background:#fff;border:1.5px solid #ddd;border-radius:6px;padding:7px 14px;font-size:12px;font-family:inherit;cursor:pointer;color:#555}
+.btn-sec:hover{border-color:#c8d400;color:#1e1e1e}
+.btn-segnala{background:#1e1e1e;color:#c8d400;border:none;border-radius:6px;padding:8px 18px;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;cursor:pointer;width:100%;margin-top:10px;letter-spacing:.3px}
+.btn-segnala:hover{opacity:.85}
+
+/* ALERT */
+.alert{background:#fff3cd;border:1px solid #ffc107;border-radius:6px;padding:10px 14px;font-size:13px;color:#856404;margin-bottom:12px}
+
+/* LOADING */
+.loading{text-align:center;padding:30px;color:#888;font-size:14px}
+
+/* chip sede */
+.chip-sede{font-size:9px;padding:1px 5px;border-radius:3px;font-weight:700;margin-left:4px}
+.chip-l{background:#e8f5e9;color:#2e7d32}
+.chip-c{background:#e3f2fd;color:#1565c0}
+
+/* sezione punteggio */
+.score-panel{display:none;background:#f0f4ff;border:1.5px solid #c8d400;border-radius:8px;padding:14px;margin-top:12px}
+.score-panel.vis{display:block}
+.score-title{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#1e1e1e;margin-bottom:10px}
+.score-teams{font-size:13px;color:#555;margin-bottom:10px;line-height:1.6}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <div class="logo-title">⚽ Ancora Insieme 2026</div>
+    <div class="logo-sub">Sorteggio Partite · <span>BLM Group</span></div>
+  </div>
+</header>
+<nav>
+  <a href="../../index.html">🏠 Home</a>
+  <a href="../../AncoraInsieme_Form.html">📋 Segnala Risultato</a>
+</nav>
+<main>
+  <div id="loadingBox" class="loading">⏳ Caricamento dati torneo…</div>
+  <div id="appContent" style="display:none">
+
+    <!-- STEP 1: Giocatori presenti -->
+    <div class="step">
+      <div class="step-header"><span class="step-num">1</span> Chi è presente?</div>
+      <div id="giocatoriGrid" class="giocatori-grid"></div>
+      <div class="contatore" id="contatoreGiocatori">Nessun giocatore selezionato</div>
+    </div>
+
+    <!-- STEP 2: Configurazione -->
+    <div class="step">
+      <div class="step-header"><span class="step-num">2</span> Configurazione serata</div>
+      <div class="ctrl-row">
+        <div class="ctrl-block">
+          <span class="ctrl-label">Calcetti disponibili</span>
+          <input type="number" id="nCalcetti" class="ctrl" value="1" min="1" max="10">
+        </div>
+        <div class="ctrl-block">
+          <span class="ctrl-label">Chi aspetta (se in avanzo)</span>
+          <select id="criterioPausa" class="ctrl">
+            <option value="random">🎲 Random</option>
+            <option value="elo_max">📈 ELO più alto aspetta</option>
+            <option value="gare_max">🏃 Più partite aspetta</option>
+            <option value="limiti_ok">✅ Limiti a posto aspetta</option>
+          </select>
+        </div>
+        <div class="ctrl-block" style="justify-content:flex-end">
+          <button class="btn-sorteggia" id="btnSorteggia" onclick="sorteggia()" disabled>
+            ⚽ Sorteggia
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RISULTATO SORTEGGIO -->
+    <div id="risultatoSorteggio" style="display:none">
+      <div id="fuoriBox" class="fuori-box" style="display:none"></div>
+      <div id="alertBox" class="alert" style="display:none"></div>
+      <div id="tavoliGrid" class="tavoli-grid"></div>
+
+      <!-- Segnala partita selezionata -->
+      <div id="scorePanel" class="score-panel">
+        <div class="score-title">📋 Segnala risultato</div>
+        <div class="score-teams" id="scoreTeams"></div>
+        <button class="btn-segnala" id="btnSegnala" onclick="apriForm()">Apri form pre-compilato →</button>
+      </div>
+
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">
+        <button class="btn-sec" onclick="sorteggia()">🔀 Nuovo sorteggio</button>
+        <button class="btn-sec" onclick="resetSerata()">🗑️ Azzera serata</button>
+      </div>
+    </div>
+
+    <!-- LOG SERATA -->
+    <div class="step" id="logStep" style="display:none">
+      <div class="step-header"><span class="step-num">📋</span> Partite di questa serata</div>
+      <div id="logBox" class="log-box"></div>
+    </div>
+
+  </div>
+</main>
+
+<script>
+// ── CONFIG ──────────────────────────────────────────────────────────────────
+const JSON_URL = '../../AncoraInsieme_2026.json';
+const FORM_URL = '../../AncoraInsieme_Form.html';
+
+// ── STATE ────────────────────────────────────────────────────────────────────
+let datiTorneo = null;
+let tuttiGiocatori = [];     // {nome, sede, elo, gare, compagni:{}, avversari:{}, pesi, soglie}
+let selezionati = new Set(); // nomi presenti
+let storicoSerata = [];      // [{blu:[a,b], rossi:[c,d]}] — coppie/avversari già fatti stasera
+let tavoliCorrente = [];     // [{blu:[a,b], rossi:[c,d]}]
+let tavolo_sel = null;       // indice tavolo selezionato
+
+// ── INIT ─────────────────────────────────────────────────────────────────────
+window.addEventListener('load', async () => {
+  await caricaDati();
+});
+
+async function caricaDati() {
+  try {
+    const r = await fetch(JSON_URL);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    datiTorneo = await r.json();
+  } catch(e) {
+    document.getElementById('loadingBox').innerHTML =
+      '⚠️ Impossibile caricare i dati torneo.<br><small>' + e.message + '</small>';
+    return;
+  }
+  costruisciGiocatori();
+  document.getElementById('loadingBox').style.display = 'none';
+  document.getElementById('appContent').style.display = 'block';
+  renderGiocatori();
+}
+
+function costruisciGiocatori() {
+  const sedi = datiTorneo.sedi || {};
+  tuttiGiocatori = [];
+
+  for (const [sede, dSede] of Object.entries(sedi)) {
+    const pesi = dSede.parametri?.pesiElo || {forte:75,debole:75};
+    const soglie = dSede.parametri?.soglie || {compagno:20,avversario:30};
+    const giocatori = dSede.giocatori || {};
+    const partite = dSede.partite || [];
+
+    // calcola compagni/avversari da storico
+    const compagniMap = {};
+    const avversariMap = {};
+    for (const [nome] of Object.entries(giocatori)) {
+      compagniMap[nome] = {};
+      avversariMap[nome] = {};
+    }
+    for (const p of partite) {
+      const [b1,b2,r1,r2] = [p.blu1,p.blu2,p.rossi1,p.rossi2];
+      _incr(compagniMap, b1, b2); _incr(compagniMap, b2, b1);
+      _incr(compagniMap, r1, r2); _incr(compagniMap, r2, r1);
+      _incr(avversariMap, b1, r1); _incr(avversariMap, b1, r2);
+      _incr(avversariMap, b2, r1); _incr(avversariMap, b2, r2);
+      _incr(avversariMap, r1, b1); _incr(avversariMap, r1, b2);
+      _incr(avversariMap, r2, b1); _incr(avversariMap, r2, b2);
+    }
+
+    for (const [nome, dG] of Object.entries(giocatori)) {
+      if ((dG.gare || 0) === 0) continue; // skip sostenitori
+      tuttiGiocatori.push({
+        nome, sede,
+        elo: dG.elo || 1000,
+        gare: dG.gare || 0,
+        compagni: compagniMap[nome] || {},
+        avversari: avversariMap[nome] || {},
+        pesi, soglie
+      });
+    }
+  }
+  tuttiGiocatori.sort((a,b) => a.nome.localeCompare(b.nome, 'it'));
+}
+
+function _incr(map, a, b) {
+  if (!map[a]) map[a] = {};
+  map[a][b] = (map[a][b] || 0) + 1;
+}
+
+// ── RENDER GIOCATORI ─────────────────────────────────────────────────────────
+function renderGiocatori() {
+  const grid = document.getElementById('giocatoriGrid');
+  grid.innerHTML = tuttiGiocatori.map(g => {
+    const sel = selezionati.has(g.nome);
+    const sClass = g.sede === 'Levico' ? 'chip-l' : 'chip-c';
+    const sLabel = g.sede === 'Levico' ? 'L' : 'C';
+    return `<div class="g-chip${sel?' sel':''}" onclick="toggleGiocatore('${g.nome.replace(/'/g,"\\'")}')">
+      ${g.nome}<span class="chip-sede ${sClass}">${sLabel}</span>
+    </div>`;
+  }).join('');
+  aggiornaContatore();
+}
+
+function toggleGiocatore(nome) {
+  if (selezionati.has(nome)) selezionati.delete(nome);
+  else selezionati.add(nome);
+  renderGiocatori();
+  document.getElementById('btnSorteggia').disabled = selezionati.size < 4;
+}
+
+function aggiornaContatore() {
+  const n = selezionati.size;
+  const k = parseInt(document.getElementById('nCalcetti').value) || 1;
+  const giocano = Math.min(n, k * 4);
+  const fuori = n - giocano;
+  let txt = `<b>${n}</b> presenti`;
+  if (n >= 4) txt += ` → <b>${Math.floor(giocano/4)}</b> partite, <b>${fuori + (giocano % 4)}</b> in pausa`;
+  document.getElementById('contatoreGiocatori').innerHTML = txt;
+  document.getElementById('btnSorteggia').disabled = n < 4;
+}
+
+document.getElementById('nCalcetti').addEventListener('input', aggiornaContatore);
+
+// ── SORTEGGIO ────────────────────────────────────────────────────────────────
+function sorteggia() {
+  const k = parseInt(document.getElementById('nCalcetti').value) || 1;
+  const criterio = document.getElementById('criterioPausa').value;
+  const presenti = tuttiGiocatori.filter(g => selezionati.has(g.nome));
+
+  if (presenti.length < 4) {
+    mostraAlert('Servono almeno 4 giocatori.'); return;
+  }
+
+  // quanti giocano vs quanti aspettano
+  const nGiocano = Math.min(presenti.length, k * 4);
+  const nPartite = Math.floor(nGiocano / 4);
+  const nFuori = presenti.length - nPartite * 4;
+
+  // sceglie chi aspetta secondo criterio
+  const ordinati = [...presenti];
+  switch(criterio) {
+    case 'elo_max':
+      ordinati.sort((a,b) => b.elo - a.elo); break;
+    case 'gare_max':
+      ordinati.sort((a,b) => b.gare - a.gare); break;
+    case 'limiti_ok':
+      ordinati.sort((a,b) => _punteggioUrgenza(a) - _punteggioUrgenza(b)); break;
+    default: // random
+      for(let i=ordinati.length-1;i>0;i--){
+        const j=Math.floor(Math.random()*(i+1));
+        [ordinati[i],ordinati[j]]=[ordinati[j],ordinati[i]];
+      }
+  }
+
+  const fuori = ordinati.slice(0, nFuori);
+  const pool = ordinati.slice(nFuori);
+
+  // ottimizza le coppie per massimizzare novità
+  const tavoli = _ottimizzaCoppie(pool, nPartite);
+  tavoliCorrente = tavoli;
+  tavolo_sel = null;
+
+  renderRisultato(tavoli, fuori);
+}
+
+function _punteggioUrgenza(g) {
+  // più alta = più urgente (quindi va in campo, non fuori)
+  let score = 0;
+  const totGare = g.gare;
+  if (totGare === 0) return 0;
+  const sogComp = (g.soglie.compagno / 100) * totGare;
+  const sogAvv = (g.soglie.avversario / 100) * totGare;
+  for (const [, n] of Object.entries(g.compagni)) if (n > sogComp) score++;
+  for (const [, n] of Object.entries(g.avversari)) if (n > sogAvv) score++;
+  return score;
+}
+
+function _ottimizzaCoppie(pool, nPartite) {
+  // Per ogni combinazione possibile di squadre, calcola un punteggio "novità"
+  // e sceglie la soluzione migliore con un approccio greedy + shuffle
+  // Punteggio: +10 se coppia mai fatta, -1 per ogni volta ripetuta (storico + serata)
+
+  const TENTATIVI = 200;
+  let bestScore = -Infinity;
+  let bestTavoli = null;
+
+  for (let t = 0; t < TENTATIVI; t++) {
+    const shuffled = [...pool];
+    for(let i=shuffled.length-1;i>0;i--){
+      const j=Math.floor(Math.random()*(i+1));
+      [shuffled[i],shuffled[j]]=[shuffled[j],shuffled[i]];
+    }
+
+    const tavoli = [];
+    let score = 0;
+    for (let p = 0; p < nPartite; p++) {
+      const blu = [shuffled[p*4].nome, shuffled[p*4+1].nome];
+      const rossi = [shuffled[p*4+2].nome, shuffled[p*4+3].nome];
+      tavoli.push({blu, rossi});
+      score += _scorePartita(blu, rossi);
+    }
+
+    if (score > bestScore) { bestScore = score; bestTavoli = tavoli; }
+  }
+  return bestTavoli;
+}
+
+function _scorePartita(blu, rossi) {
+  let score = 0;
+  // compagni
+  score += _novita(blu[0], blu[1], 'compagni');
+  score += _novita(rossi[0], rossi[1], 'compagni');
+  // avversari (tutte le combinazioni)
+  for (const b of blu) for (const r of rossi) score += _novita(b, r, 'avversari');
+  return score;
+}
+
+function _novita(nomeA, nomeB, tipo) {
+  const gA = tuttiGiocatori.find(g => g.nome === nomeA);
+  if (!gA) return 5;
+  const storico = (gA[tipo][nomeB] || 0);
+  // conta anche accoppiamenti già fatti in questa serata
+  let serata = 0;
+  for (const match of storicoSerata) {
+    if (tipo === 'compagni') {
+      if ((match.blu.includes(nomeA) && match.blu.includes(nomeB)) ||
+          (match.rossi.includes(nomeA) && match.rossi.includes(nomeB))) serata++;
+    } else {
+      const aInBlu = match.blu.includes(nomeA), aInRossi = match.rossi.includes(nomeA);
+      const bInBlu = match.blu.includes(nomeB), bInRossi = match.rossi.includes(nomeB);
+      if ((aInBlu && bInRossi) || (aInRossi && bInBlu)) serata++;
+    }
+  }
+  const totale = storico + serata;
+  if (totale === 0) return 10; // mai fatta → massima priorità
+  return -totale;              // penalità per ripetizioni
+}
+
+// ── RENDER RISULTATO ─────────────────────────────────────────────────────────
+function renderRisultato(tavoli, fuori) {
+  document.getElementById('risultatoSorteggio').style.display = 'block';
+  document.getElementById('alertBox').style.display = 'none';
+
+  // fuori
+  const fuoriBox = document.getElementById('fuoriBox');
+  if (fuori.length > 0) {
+    fuoriBox.style.display = 'block';
+    fuoriBox.innerHTML = `⏸ <b>In pausa:</b> ${fuori.map(g => g.nome).join(', ')}`;
+  } else {
+    fuoriBox.style.display = 'none';
+  }
+
+  // tavoli
+  const grid = document.getElementById('tavoliGrid');
+  grid.innerHTML = tavoli.map((t, i) => {
+    const scoreComp = _novita(t.blu[0],t.blu[1],'compagni') + _novita(t.rossi[0],t.rossi[1],'compagni');
+    const scoreAvv = _novita(t.blu[0],t.rossi[0],'avversari') + _novita(t.blu[0],t.rossi[1],'avversari')
+                   + _novita(t.blu[1],t.rossi[0],'avversari') + _novita(t.blu[1],t.rossi[1],'avversari');
+    const nuovoComp = scoreComp >= 20 ? '<span class="new">⭐ coppie nuove</span>' : '<span class="rep">coppie già fatte</span>';
+    const nuovoAvv = scoreAvv >= 40 ? '<span class="new">⭐ incroci nuovi</span>' : '<span class="rep">incroci già fatti</span>';
+    return `<div class="tavolo-card" id="tavolo_${i}" onclick="selezionaTavolo(${i})">
+      <div class="tavolo-header"><span>Tavolo ${i+1}</span><span style="font-size:10px;color:#aaa">#${i+1}</span></div>
+      <div class="tavolo-body">
+        <div class="squadra-row"><span class="sq-colore sq-blu"></span><span class="sq-nomi">${t.blu[0]} · ${t.blu[1]}</span><span class="sq-badge">🔵</span></div>
+        <div class="vs-sep">VS</div>
+        <div class="squadra-row"><span class="sq-colore sq-rosso"></span><span class="sq-nomi">${t.rossi[0]} · ${t.rossi[1]}</span><span class="sq-badge">🔴</span></div>
+        <div class="punteggio-novita" style="margin-top:8px;font-size:10px">${nuovoComp} · ${nuovoAvv}</div>
+      </div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('scorePanel').classList.remove('vis');
+}
+
+function selezionaTavolo(i) {
+  // deseleziona tutti
+  tavoliCorrente.forEach((_,j) => {
+    const el = document.getElementById('tavolo_'+j);
+    if(el) el.classList.remove('selezionato');
+  });
+  const el = document.getElementById('tavolo_'+i);
+  if (!el || el.classList.contains('giocata')) return;
+  el.classList.add('selezionato');
+  tavolo_sel = i;
+
+  const t = tavoliCorrente[i];
+  document.getElementById('scoreTeams').innerHTML =
+    `🔵 <b>${t.blu[0]}</b> &amp; <b>${t.blu[1]}</b><br>vs<br>🔴 <b>${t.rossi[0]}</b> &amp; <b>${t.rossi[1]}</b>`;
+  document.getElementById('scorePanel').classList.add('vis');
+}
+
+function apriForm() {
+  if (tavolo_sel === null) return;
+  const t = tavoliCorrente[tavolo_sel];
+  const params = new URLSearchParams({
+    b1: t.blu[0], b2: t.blu[1],
+    r1: t.rossi[0], r2: t.rossi[1]
+  });
+  // segna come giocata nella serata
+  storicoSerata.push({blu:[...t.blu], rossi:[...t.rossi]});
+  const el = document.getElementById('tavolo_'+tavolo_sel);
+  if(el){ el.classList.add('giocata'); el.classList.remove('selezionato'); }
+  document.getElementById('scorePanel').classList.remove('vis');
+  tavolo_sel = null;
+  aggiornaLog();
+  // apri form
+  window.open(FORM_URL + '?' + params.toString(), '_blank');
+}
+
+function aggiornaLog() {
+  if (storicoSerata.length === 0) {
+    document.getElementById('logStep').style.display = 'none';
+    return;
+  }
+  document.getElementById('logStep').style.display = 'block';
+  document.getElementById('logBox').innerHTML = storicoSerata.map((m,i) =>
+    `<div class="log-riga"><span class="log-n">${i+1}.</span>
+     <span class="log-teams"><span class="log-blu">${m.blu[0]} &amp; ${m.blu[1]}</span>
+     <span style="color:#bbb"> vs </span>
+     <span class="log-rosso">${m.rossi[0]} &amp; ${m.rossi[1]}</span></span></div>`
+  ).join('');
+}
+
+function resetSerata() {
+  if (storicoSerata.length > 0 && !confirm('Azzerare la memoria delle partite di stasera?')) return;
+  storicoSerata = [];
+  tavoliCorrente = [];
+  tavolo_sel = null;
+  document.getElementById('risultatoSorteggio').style.display = 'none';
+  document.getElementById('logStep').style.display = 'none';
+}
+
+function mostraAlert(msg) {
+  const el = document.getElementById('alertBox');
+  el.textContent = msg;
+  el.style.display = 'block';
+  document.getElementById('risultatoSorteggio').style.display = 'block';
+}
+</script>
+</body>
+</html>

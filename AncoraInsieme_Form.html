@@ -248,6 +248,18 @@ async function caricaGiocatori() {
     partiteEsistenti = dati.partite || [];
   }
   popolaCombo();
+  precompilaUrl();
+}
+
+function precompilaUrl() {
+  const p = new URLSearchParams(window.location.search);
+  const mappa = { b1: 'blu1', b2: 'blu2', r1: 'rossi1', r2: 'rossi2' };
+  let trovato = false;
+  for (const [param, id] of Object.entries(mappa)) {
+    const val = p.get(param);
+    if (val) { document.getElementById(id).value = val; trovato = true; }
+  }
+  if (trovato) aggiorna();
 }
 
 function popolaCombo() {
