@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ancora Insieme — Sorteggio Partite v1.1</title>
+<title>Ancora Insieme — Sorteggio Partite v1.2</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -104,7 +104,7 @@ input.ctrl[type=number]{width:70px}
 <header>
   <div>
     <div class="logo-title">⚽ Ancora Insieme 2026</div>
-    <div class="logo-sub">Sorteggio Partite <span style="color:#888;font-weight:400">v1.1</span> · <span>BLM Group</span></div>
+    <div class="logo-sub">Sorteggio Partite <span style="color:#888;font-weight:400">v1.2</span> · <span>BLM Group</span></div>
   </div>
 </header>
 <nav>
@@ -177,7 +177,7 @@ input.ctrl[type=number]{width:70px}
 
 <script>
 // ── CONFIG ──────────────────────────────────────────────────────────────────
-const JSON_URL = './AncoraInsieme_2026.json';
+const JSON_URL = './giocatori.json';
 const FORM_URL = './AncoraInsieme_Form.html';
 
 // ── STATE ────────────────────────────────────────────────────────────────────
@@ -210,50 +210,71 @@ async function caricaDati() {
 }
 
 function costruisciGiocatori() {
-  const sedi = datiTorneo.sedi || {};
+  // Struttura JSON reale: { giocatori:[{nome,sede}], partite:[{blu:[],rossi:[],golBlu,golRossi,sede,...}], parametri:{} }
+  const anagrafica = datiTorneo.giocatori || [];
+  const partite = datiTorneo.partite || [];
+  const parametri = datiTorneo.parametri || {};
   tuttiGiocatori = [];
 
-  for (const [sede, dSede] of Object.entries(sedi)) {
-    const pesi = dSede.parametri?.pesiElo || {forte:75,debole:75};
-    const soglie = dSede.parametri?.soglie || {compagno:20,avversario:30};
-    const giocatori = dSede.giocatori || {};
-    const partite = dSede.partite || [];
+  // Mappa nome→sede
+  const sedeDi = {};
+  for (const g of anagrafica) sedeDi[g.nome] = g.sede;
 
-    // calcola compagni/avversari da storico
-    const compagniMap = {};
-    const avversariMap = {};
-    for (const [nome] of Object.entries(giocatori)) {
-      compagniMap[nome] = {};
-      avversariMap[nome] = {};
-    }
-    for (const p of partite) {
-      const [b1,b2,r1,r2] = [p.blu1,p.blu2,p.rossi1,p.rossi2];
-      _incr(compagniMap, b1, b2); _incr(compagniMap, b2, b1);
-      _incr(compagniMap, r1, r2); _incr(compagniMap, r2, r1);
-      _incr(avversariMap, b1, r1); _incr(avversariMap, b1, r2);
-      _incr(avversariMap, b2, r1); _incr(avversariMap, b2, r2);
-      _incr(avversariMap, r1, b1); _incr(avversariMap, r1, b2);
-      _incr(avversariMap, r2, b1); _incr(avversariMap, r2, b2);
-    }
+  // Calcola compagni/avversari/gare/vittorie/ELO dal motore semplificato
+  const ELO_BASE = 1000, K = 30;
+  const eg = {};
+  for (const g of anagrafica) {
+    eg[g.nome] = { nome: g.nome, sede: g.sede, elo: ELO_BASE, gare: 0, vittorie: 0,
+                   compagni: {}, avversari: {} };
+  }
 
-    for (const [nome, dG] of Object.entries(giocatori)) {
-      if ((dG.gare || 0) === 0) continue; // skip sostenitori
-      tuttiGiocatori.push({
-        nome, sede,
-        elo: dG.elo || 1000,
-        gare: dG.gare || 0,
-        compagni: compagniMap[nome] || {},
-        avversari: avversariMap[nome] || {},
-        pesi, soglie
-      });
+  const partiteOrd = [...partite].sort((a,b) => (a.timestampGara||0)-(b.timestampGara||0));
+  for (const p of partiteOrd) {
+    if (!p.blu || !p.rossi) continue;
+    const [b1,b2,r1,r2] = [...p.blu, ...p.rossi];
+    for (const nome of [b1,b2,r1,r2]) {
+      if (!eg[nome]) eg[nome] = { nome, sede: sedeDi[nome]||'', elo: ELO_BASE, gare: 0, vittorie: 0, compagni: {}, avversari: {} };
     }
+    // Compagni
+    _incr(eg[b1].compagni, b2); _incr(eg[b2].compagni, b1);
+    _incr(eg[r1].compagni, r2); _incr(eg[r2].compagni, r1);
+    // Avversari
+    for (const b of [b1,b2]) for (const r of [r1,r2]) {
+      _incr(eg[b].avversari, r); _incr(eg[r].avversari, b);
+    }
+    // ELO semplificato (senza pesi asimmetrici, solo per criterio pausa)
+    const mB = (eg[b1].elo + eg[b2].elo) / 2;
+    const mR = (eg[r1].elo + eg[r2].elo) / 2;
+    const vBlu = p.golBlu > p.golRossi ? 1 : 0;
+    const dg = Math.abs(p.golBlu - p.golRossi);
+    const kEff = K * (1 + 0.5 * (dg / (p.golBlu + p.golRossi)));
+    const inv = p.invalidati || [false,false,false,false];
+    const delta = (act, ea, eb, v) => Math.round(kEff * (v - 1/(1+Math.pow(10,(eb-ea)/400))));
+    if (!inv[0]) { eg[b1].elo += delta(0,eg[b1].elo,mR,vBlu);   eg[b1].gare++; if(vBlu) eg[b1].vittorie++; }
+    if (!inv[1]) { eg[b2].elo += delta(1,eg[b2].elo,mR,vBlu);   eg[b2].gare++; if(vBlu) eg[b2].vittorie++; }
+    if (!inv[2]) { eg[r1].elo += delta(2,eg[r1].elo,mB,1-vBlu); eg[r1].gare++; if(!vBlu) eg[r1].vittorie++; }
+    if (!inv[3]) { eg[r2].elo += delta(3,eg[r2].elo,mB,1-vBlu); eg[r2].gare++; if(!vBlu) eg[r2].vittorie++; }
+  }
+
+  // Soglie dai parametri per sede
+  for (const g of Object.values(eg)) {
+    if (g.gare === 0) continue; // skip sostenitori
+    const parSede = parametri[g.sede] || {};
+    tuttiGiocatori.push({
+      nome: g.nome, sede: g.sede,
+      elo: g.elo, gare: g.gare,
+      compagni: g.compagni, avversari: g.avversari,
+      soglie: {
+        compagno:   (parSede.sogliaPercentuale || 0.20) * 100,
+        avversario: (parSede.sogliaAvversario  || 0.30) * 100
+      }
+    });
   }
   tuttiGiocatori.sort((a,b) => a.nome.localeCompare(b.nome, 'it'));
 }
 
-function _incr(map, a, b) {
-  if (!map[a]) map[a] = {};
-  map[a][b] = (map[a][b] || 0) + 1;
+function _incr(obj, key) {
+  obj[key] = (obj[key] || 0) + 1;
 }
 
 // ── RENDER GIOCATORI ─────────────────────────────────────────────────────────
