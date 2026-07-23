@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -2563,6 +2563,121 @@
       "sede": "Levico",
       "intergirone": true,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXZTION-5",
+      "blu": [
+        "Delvai Claudio S.",
+        "Mocci Jacopo"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Osler Matteo"
+      ],
+      "golBlu": 9,
+      "golRossi": 11,
+      "timestampGara": 1784835060000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXZTIOM-4",
+      "blu": [
+        "Osler Matteo",
+        "Delvai Claudio S."
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1784836140000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXZTIOM-3",
+      "blu": [
+        "Delvai Claudio S.",
+        "Gandolfi Davide"
+      ],
+      "rossi": [
+        "Osler Matteo",
+        "Solaroli Sonia"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1784838840000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXZTIOM-2",
+      "blu": [
+        "Gandolfi Davide",
+        "Osler Matteo"
+      ],
+      "rossi": [
+        "Delvai Claudio S.",
+        "Solaroli Sonia"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1784838900000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MRXZTIOM-1",
+      "blu": [
+        "Gandolfi Davide",
+        "Solaroli Sonia"
+      ],
+      "rossi": [
+        "Delvai Claudio S.",
+        "Osler Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1784839380000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -2593,8 +2708,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "23/07/2026, 21:15:31",
-    "partite": 105,
+    "salvato_il": "23/07/2026, 23:00:01",
+    "partite": 110,
     "giocatori": 36,
     "versione_app": "4.5"
   }
