@@ -95,6 +95,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Maestranzi Cinzia",
+      "sede": "Levico"
+    },
+    {
       "nome": "Marchesi Angelo",
       "sede": "Cantù"
     },
@@ -2716,9 +2720,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "24/07/2026, 10:20:13",
+    "salvato_il": "25/07/2026, 11:01:17",
     "partite": 110,
-    "giocatori": 38,
+    "giocatori": 39,
     "versione_app": "4.5"
   }
 }
