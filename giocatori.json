@@ -119,6 +119,10 @@
       "sede": "Cantù"
     },
     {
+      "nome": "Moser Alessandro",
+      "sede": "Levico"
+    },
+    {
       "nome": "Osler Matteo",
       "sede": "Levico"
     },
@@ -2881,9 +2885,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "25/07/2026, 13:03:33",
+    "salvato_il": "25/07/2026, 17:46:20",
     "partite": 117,
-    "giocatori": 39,
+    "giocatori": 40,
     "versione_app": "4.5"
   }
 }
