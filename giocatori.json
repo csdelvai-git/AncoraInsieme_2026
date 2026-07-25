@@ -1519,6 +1519,29 @@
       "importataDaDdT": true
     },
     {
+      "id": "MATCH-MS09A5SD-2",
+      "blu": [
+        "Bertella Lorenzo",
+        "Mocci Jacopo"
+      ],
+      "rossi": [
+        "Trivisonno Andrea",
+        "Pacher Matteo"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1784288160000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
       "id": "MATCH-MRT5XXQD-2",
       "blu": [
         "Dan Cojocaru",
@@ -2690,6 +2713,144 @@
       "sede": "Levico",
       "intergirone": true,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS09A5SD-7",
+      "blu": [
+        "Segalla Enrico",
+        "Tonezzer Giacomo"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1784891880000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS09A5SD-6",
+      "blu": [
+        "Tonezzer Giacomo",
+        "Mocci Jacopo"
+      ],
+      "rossi": [
+        "Martijn Van Opbergen",
+        "Segalla Enrico"
+      ],
+      "golBlu": 3,
+      "golRossi": 10,
+      "timestampGara": 1784892300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS09A5SD-5",
+      "blu": [
+        "Segalla Enrico",
+        "Solaroli Sonia"
+      ],
+      "rossi": [
+        "Zuccatti Matteo",
+        "Martijn Van Opbergen"
+      ],
+      "golBlu": 10,
+      "golRossi": 1,
+      "timestampGara": 1784892420000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS09A5SD-4",
+      "blu": [
+        "Caironi Davide",
+        "Sidari Giuseppe"
+      ],
+      "rossi": [
+        "Riva Alessandro",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1784892780000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS09A5SD-3",
+      "blu": [
+        "Zuccatti Matteo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Tonezzer Giacomo",
+        "Martijn Van Opbergen"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1784892900000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS09A5SC-1",
+      "blu": [
+        "Zuccatti Matteo",
+        "Tonezzer Giacomo"
+      ],
+      "rossi": [
+        "Martijn Van Opbergen",
+        "Segalla Enrico"
+      ],
+      "golBlu": 2,
+      "golRossi": 10,
+      "timestampGara": 1784893200000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -2720,8 +2881,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "25/07/2026, 11:01:17",
-    "partite": 110,
+    "salvato_il": "25/07/2026, 13:03:33",
+    "partite": 117,
     "giocatori": 39,
     "versione_app": "4.5"
   }
