@@ -3089,6 +3089,29 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS228ZVZ-1",
+      "blu": [
+        "Delvai Claudio S.",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Moser Alessandro",
+        "Todesco Alessandro"
+      ],
+      "golBlu": 10,
+      "golRossi": 3,
+      "timestampGara": 1785009300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -3119,8 +3142,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "26/07/2026, 19:06:21",
-    "partite": 127,
+    "salvato_il": "26/07/2026, 19:18:06",
+    "partite": 128,
     "giocatori": 41,
     "versione_app": "4.5"
   }
