@@ -152,6 +152,10 @@
       "escludi_controlli": false
     },
     {
+      "nome": "Todesco Alessandro",
+      "sede": "Levico"
+    },
+    {
       "nome": "Tonezzer Giacomo",
       "sede": "Levico",
       "escludi_controlli": false
@@ -3115,9 +3119,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "26/07/2026, 19:05:57",
+    "salvato_il": "26/07/2026, 19:06:21",
     "partite": 127,
-    "giocatori": 40,
+    "giocatori": 41,
     "versione_app": "4.5"
   }
 }
