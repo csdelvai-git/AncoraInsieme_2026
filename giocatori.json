@@ -3114,6 +3114,29 @@
       "importataDaDdT": true
     },
     {
+      "id": "MATCH-MS28WKPL-1",
+      "blu": [
+        "Todesco Alessandro",
+        "Casagranda Marco"
+      ],
+      "rossi": [
+        "Dalsaso Matteo",
+        "Segalla Enrico"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1785009600000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
       "id": "MATCH-MS22WUTJ-3",
       "blu": [
         "Osler Matteo",
@@ -3211,8 +3234,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "26/07/2026, 19:37:42",
-    "partite": 131,
+    "salvato_il": "26/07/2026, 22:25:12",
+    "partite": 132,
     "giocatori": 41,
     "versione_app": "4.5"
   }
