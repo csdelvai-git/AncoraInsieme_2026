@@ -3112,6 +3112,75 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS22WUTJ-3",
+      "blu": [
+        "Osler Matteo",
+        "Solaroli Sonia"
+      ],
+      "rossi": [
+        "Moser Alessandro",
+        "Todesco Alessandro"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1785012720000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS22WUTI-2",
+      "blu": [
+        "Todesco Alessandro",
+        "Moser Alessandro"
+      ],
+      "rossi": [
+        "Segalla Enrico",
+        "Solaroli Sonia"
+      ],
+      "golBlu": 7,
+      "golRossi": 10,
+      "timestampGara": 1785017040000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS22WUTI-1",
+      "blu": [
+        "Segalla Enrico",
+        "Todesco Alessandro"
+      ],
+      "rossi": [
+        "Moser Alessandro",
+        "Solaroli Sonia"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1785017520000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -3142,8 +3211,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "26/07/2026, 19:18:06",
-    "partite": 128,
+    "salvato_il": "26/07/2026, 19:37:42",
+    "partite": 131,
     "giocatori": 41,
     "versione_app": "4.5"
   }
