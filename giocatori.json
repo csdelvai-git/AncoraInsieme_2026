@@ -111,6 +111,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Mazzonetto Alessandro",
+      "sede": "Cantù"
+    },
+    {
       "nome": "Mocci Jacopo",
       "sede": "Levico"
     },
@@ -3326,9 +3330,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "27/07/2026, 14:15:42",
+    "salvato_il": "27/07/2026, 14:19:51",
     "partite": 136,
-    "giocatori": 41,
+    "giocatori": 42,
     "versione_app": "4.5"
   }
 }
