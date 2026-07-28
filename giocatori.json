@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -3306,6 +3306,28 @@
       "importataDaDdT": true
     },
     {
+      "id": "MATCH-MS4M8GFD",
+      "blu": [
+        "Dalsaso Matteo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Biondo Alfio",
+        "Osti Francesco"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1785151800000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false
+    },
+    {
       "id": "MATCH-MS36W7JC-1",
       "blu": [
         "Sidari Giuseppe",
@@ -3318,6 +3340,29 @@
       "golBlu": 11,
       "golRossi": 9,
       "timestampGara": 1785151980000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS4VQB6Y-1",
+      "blu": [
+        "Benni Akshay",
+        "Sidari Giuseppe"
+      ],
+      "rossi": [
+        "Marchesi Angelo",
+        "Galliani Luca"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1785236400000,
       "invalidati": [
         false,
         false,
@@ -3426,8 +3471,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "28/07/2026, 13:49:35",
-    "partite": 140,
+    "salvato_il": "28/07/2026, 18:42:05",
+    "partite": 142,
     "giocatori": 43,
     "versione_app": "4.5"
   }
