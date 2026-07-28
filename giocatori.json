@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Levico",
+  "sedeCorrente": "Cantù",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -3283,6 +3283,29 @@
       "importataDaDdT": true
     },
     {
+      "id": "MATCH-MS4LF1XY-4",
+      "blu": [
+        "Biondo Alfio",
+        "Osti Francesco"
+      ],
+      "rossi": [
+        "Girardelli Giancarlo",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1785151800000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
       "id": "MATCH-MS36W7JC-1",
       "blu": [
         "Sidari Giuseppe",
@@ -3295,6 +3318,75 @@
       "golBlu": 11,
       "golRossi": 9,
       "timestampGara": 1785151980000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS4LF1XY-3",
+      "blu": [
+        "Marchesi Angelo",
+        "Sidari Giuseppe"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Riva Alessandro"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1785237000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS4LF1XX-2",
+      "blu": [
+        "Caironi Davide",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Cattaneo Corrado",
+        "Dan Cojocaru"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1785237480000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS4LF1XX-1",
+      "blu": [
+        "Caironi Davide",
+        "Sidari Giuseppe"
+      ],
+      "rossi": [
+        "Galliani Luca",
+        "Marchesi Angelo"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1785238020000,
       "invalidati": [
         false,
         false,
@@ -3334,8 +3426,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "27/07/2026, 16:37:20",
-    "partite": 136,
+    "salvato_il": "28/07/2026, 13:49:35",
+    "partite": 140,
     "giocatori": 43,
     "versione_app": "4.5"
   }
