@@ -143,6 +143,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Petri Enrico",
+      "sede": "Levico"
+    },
+    {
       "nome": "Riva Alessandro",
       "sede": "Cantù"
     },
@@ -3471,9 +3475,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "28/07/2026, 18:42:05",
+    "salvato_il": "29/07/2026, 11:16:22",
     "partite": 142,
-    "giocatori": 43,
+    "giocatori": 44,
     "versione_app": "4.5"
   }
 }
