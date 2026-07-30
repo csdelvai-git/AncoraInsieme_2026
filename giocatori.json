@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Levico",
+  "sedeCorrente": "Cantù",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -3721,6 +3721,98 @@
       "sede": "Cantù",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS7GRHZI-4",
+      "blu": [
+        "Kuricki Gabriele",
+        "Biondo Alfio"
+      ],
+      "rossi": [
+        "D'Aquilio Annachiara",
+        "Castelli Stefano"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1785408780000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS7GRHZI-3",
+      "blu": [
+        "Castelli Stefano",
+        "Biondo Alfio"
+      ],
+      "rossi": [
+        "D'Aquilio Annachiara",
+        "Kuricki Gabriele"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1785408900000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS7GRHZH-1",
+      "blu": [
+        "Caironi Davide",
+        "Dan Cojocaru"
+      ],
+      "rossi": [
+        "Cattaneo Corrado",
+        "Mazzonetto Alessandro"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1785409500000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS7GRHZI-2",
+      "blu": [
+        "Caironi Davide",
+        "Cattaneo Corrado"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Mazzonetto Alessandro"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1785409920000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -3751,8 +3843,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "30/07/2026, 09:05:06",
-    "partite": 154,
+    "salvato_il": "30/07/2026, 14:02:36",
+    "partite": 158,
     "giocatori": 44,
     "versione_app": "4.5"
   }
