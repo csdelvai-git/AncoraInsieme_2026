@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -60,6 +60,10 @@
     {
       "nome": "Cattaneo Corrado",
       "sede": "Cantù"
+    },
+    {
+      "nome": "Conci Andrea",
+      "sede": "Levico"
     },
     {
       "nome": "D'Aquilio Annachiara",
@@ -3843,9 +3847,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "30/07/2026, 14:02:36",
+    "salvato_il": "30/07/2026, 15:37:55",
     "partite": 158,
-    "giocatori": 44,
+    "giocatori": 45,
     "versione_app": "4.5"
   }
 }
