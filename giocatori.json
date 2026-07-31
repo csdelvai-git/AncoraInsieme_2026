@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Levico",
+  "sedeCorrente": "Cantù",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -63,6 +63,10 @@
     },
     {
       "nome": "Conci Andrea",
+      "sede": "Levico"
+    },
+    {
+      "nome": "D'Agostini Fabio",
       "sede": "Levico"
     },
     {
@@ -3817,6 +3821,213 @@
       "sede": "Cantù",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS8WNE75-5",
+      "blu": [
+        "Benni Akshay",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Cattaneo Corrado"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1785496020000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS8WNE75-6",
+      "blu": [
+        "Caironi Davide",
+        "Cattaneo Corrado"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Riva Alessandro"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1785496320000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS8WNE75-7",
+      "blu": [
+        "Caironi Davide",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Cattaneo Corrado"
+      ],
+      "golBlu": 10,
+      "golRossi": 2,
+      "timestampGara": 1785496740000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS8WNE75-9",
+      "blu": [
+        "Petri Enrico",
+        "Girardelli Giancarlo"
+      ],
+      "rossi": [
+        "Tonezzer Giacomo",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 2,
+      "timestampGara": 1785497040000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS8WNE75-8",
+      "blu": [
+        "Dan Cojocaru",
+        "Caironi Davide"
+      ],
+      "rossi": [
+        "Cattaneo Corrado",
+        "Riva Alessandro"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1785497340000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS8WNE74-3",
+      "blu": [
+        "Zuccatti Matteo",
+        "Petri Enrico"
+      ],
+      "rossi": [
+        "Tonezzer Giacomo",
+        "Girardelli Giancarlo"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1785497520000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS8WNE74-4",
+      "blu": [
+        "Petri Enrico",
+        "Tonezzer Giacomo"
+      ],
+      "rossi": [
+        "Zuccatti Matteo",
+        "Girardelli Giancarlo"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1785497520000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS8WNE74-2",
+      "blu": [
+        "Moser Alessandro",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Dalsaso Matteo",
+        "Casagranda Marco"
+      ],
+      "golBlu": 10,
+      "golRossi": 2,
+      "timestampGara": 1785498060000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MS8WNE74-1",
+      "blu": [
+        "Casagranda Marco",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Moser Alessandro",
+        "Dalsaso Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 2,
+      "timestampGara": 1785498120000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -3847,9 +4058,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "30/07/2026, 15:37:55",
-    "partite": 158,
-    "giocatori": 45,
+    "salvato_il": "31/07/2026, 14:15:22",
+    "partite": 167,
+    "giocatori": 46,
     "versione_app": "4.5"
   }
 }
