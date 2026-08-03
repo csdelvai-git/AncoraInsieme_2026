@@ -4028,6 +4028,75 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSD7H3HQ-3",
+      "blu": [
+        "Mazzonetto Alessandro",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Galliani Luca"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1785755220000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSD7H3HP-2",
+      "blu": [
+        "Dan Cojocaru",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Galliani Luca",
+        "Mazzonetto Alessandro"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1785755520000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSD7H3HP-1",
+      "blu": [
+        "Dan Cojocaru",
+        "Cattaneo Corrado"
+      ],
+      "rossi": [
+        "Galliani Luca",
+        "Mazzonetto Alessandro"
+      ],
+      "golBlu": 10,
+      "golRossi": 12,
+      "timestampGara": 1785756060000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -4058,8 +4127,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "31/07/2026, 14:15:22",
-    "partite": 167,
+    "salvato_il": "03/08/2026, 14:29:15",
+    "partite": 170,
     "giocatori": 46,
     "versione_app": "4.5"
   }
