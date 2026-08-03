@@ -354,6 +354,9 @@ async function invia() {
   localStorage.setItem('ai_segnalatore', document.getElementById('segnalatore').value.trim());
   localStorage.setItem('ai_email', document.getElementById('emailSegnalatore').value.trim());
 
+  // Genera Request ID univoco
+  const requestId = 'REQ-' + Date.now().toString(36).toUpperCase() + '-' + Math.random().toString(36).slice(2,5).toUpperCase();
+
   const campi = {
     segnalatore: document.getElementById('segnalatore').value.trim(),
     emailSegnalatore: document.getElementById('emailSegnalatore').value.trim(),
@@ -366,6 +369,7 @@ async function invia() {
     rossi1: document.getElementById('rossi1').value,
     rossi2: document.getElementById('rossi2').value,
     note: document.getElementById('note').value.trim(),
+    requestId,
   };
 
   try {
@@ -382,12 +386,18 @@ async function invia() {
     const sp = document.getElementById('successPanel');
     sp.style.display = 'block';
     const dg = campi.dataGara.split('-').reverse().join('/');
+    const mailtoHref = 'mailto:ancorainsieme.ddt@gmail.com?subject=Problema%20segnalazione%20' + requestId;
     document.getElementById('successMsg').innerHTML =
       `📅 ${dg} alle ${campi.oraGara}<br><br>` +
       `🔵 ${campi.blu1} + ${campi.blu2}<br>` +
       `<strong style="font-size:1.3em">${campi.golBlu} – ${campi.golRossi}</strong><br>` +
       `🔴 ${campi.rossi1} + ${campi.rossi2}<br><br>` +
-      `Il Direttore di Torneo la validerà a breve.`;
+      `<div style="background:rgba(0,0,0,0.08);border-radius:6px;padding:10px 14px;margin:10px 0;text-align:center">` +
+      `<div style="font-size:9px;color:#888;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px">Codice segnalazione</div>` +
+      `<div style="font-family:monospace;font-size:16px;font-weight:700;letter-spacing:1px;color:#1e1e1e">${requestId}</div>` +
+      `</div>` +
+      `<span style="font-size:11px;color:#888">Riceverai una email di conferma.<br>` +
+      `Problemi? <a href="${mailtoHref}" style="color:#a0b000">Scrivi al DdT</a> citando il codice.</span>`;
 
   } catch (error) {
     btn.disabled = false;
