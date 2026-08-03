@@ -47,7 +47,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#a0b000}
 .gol-inp.b{color:#4488ff}
 .svg-wrap{flex:1;min-width:0}
 svg.campo{width:100%;display:block}
-.ris-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:7px;font-size:12px;color:rgba(255,255,255,.5)}
+.ris-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:7px;font-size:12px;color:#555}
 .ris-val{font-size:18px;font-weight:800;font-family:'Barlow Condensed',sans-serif}
 .ris-val.r{color:#d86464}
 .ris-val.b{color:#6496d8}
@@ -82,7 +82,10 @@ svg.campo{width:100%;display:block}
   <div class="big">⚽</div>
   <h2>Segnalazione Inviata</h2>
   <p id="successMsg">La segnalazione è stata inviata al Direttore di Torneo.</p>
-  <button class="btn-altra" onclick="resetForm()">Segnala un'altra partita</button>
+  <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:4px">
+    <button class="btn-altra" onclick="copiaRiepilogo()" id="btnCopia">📋 Copia riepilogo</button>
+    <button class="btn-altra" onclick="resetForm()">Segnala un'altra partita</button>
+  </div>
 </div>
 
 <div id="formPanel">
@@ -248,6 +251,7 @@ async function caricaGiocatori() {
     partiteEsistenti = dati.partite || [];
   }
   popolaCombo();
+  bindSyncListeners();
   precompilaUrl();
 }
 
@@ -263,11 +267,29 @@ function precompilaUrl() {
 }
 
 function popolaCombo() {
-  ['blu1','blu2','rossi1','rossi2'].forEach(id => {
+  sincronizzaSelect();
+}
+
+function sincronizzaSelect() {
+  const ids = ['blu1','blu2','rossi1','rossi2'];
+  ids.forEach(id => {
     const s = document.getElementById(id);
     const c = s.value;
-    s.innerHTML = '<option value="">— seleziona —</option>' + giocatori.map(g => `<option value="${g}">${g}</option>`).join('');
-    if (c) s.value = c;
+    const altriScelti = new Set(ids.filter(x => x !== id).map(x => document.getElementById(x).value).filter(Boolean));
+    s.innerHTML = '<option value="">— seleziona —</option>'
+      + giocatori.map(g => altriScelti.has(g) ? '' : `<option value="${g}">${g}</option>`).join('');
+    if (c && !altriScelti.has(c)) s.value = c;
+  });
+}
+
+// Aggiunge listener una sola volta dopo il primo caricamento giocatori
+function bindSyncListeners() {
+  ['blu1','blu2','rossi1','rossi2'].forEach(id => {
+    const s = document.getElementById(id);
+    if (s && !s._syncBound) {
+      s.addEventListener('change', sincronizzaSelect);
+      s._syncBound = true;
+    }
   });
 }
 
@@ -374,6 +396,26 @@ async function invia() {
   }
 }
 
+function copiaRiepilogo() {
+  const txt = document.getElementById('successMsg').innerText;
+  navigator.clipboard.writeText(txt).then(() => {
+    const btn = document.getElementById('btnCopia');
+    btn.textContent = '✅ Copiato!';
+    setTimeout(() => btn.textContent = '📋 Copia riepilogo', 2000);
+  }).catch(() => {
+    // fallback per browser senza clipboard API
+    const ta = document.createElement('textarea');
+    ta.value = document.getElementById('successMsg').innerText;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    const btn = document.getElementById('btnCopia');
+    btn.textContent = '✅ Copiato!';
+    setTimeout(() => btn.textContent = '📋 Copia riepilogo', 2000);
+  });
+}
+
 function resetForm() {
   document.getElementById('successPanel').style.display = 'none';
   document.getElementById('formPanel').style.display = 'block';
@@ -384,6 +426,8 @@ function resetForm() {
   ['blu1','blu2','rossi1','rossi2','note'].forEach(id => document.getElementById(id).value = '');
   document.getElementById('golBlu').value = '0';
   document.getElementById('golRossi').value = '0';
+  sincronizzaSelect();
+  aggiorna();
   document.getElementById('liveMsg').innerHTML = '';
   document.getElementById('liveR').textContent = '0';
   document.getElementById('liveB').textContent = '0';
