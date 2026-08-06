@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -182,6 +182,10 @@
     },
     {
       "nome": "Trivisonno Andrea",
+      "sede": "Levico"
+    },
+    {
+      "nome": "Vanin Mattia",
       "sede": "Levico"
     },
     {
@@ -4334,9 +4338,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "05/08/2026, 14:58:53",
+    "salvato_il": "06/08/2026, 09:26:20",
     "partite": 179,
-    "giocatori": 46,
+    "giocatori": 47,
     "versione_app": "4.5"
   }
 }
