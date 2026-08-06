@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ancora Insieme — Proposte Partite v2.1</title>
+<title>Ancora Insieme — Proposte Partite v2.2</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -67,6 +67,8 @@ input.ctrl[type=number]{width:70px}
 .warn-yellow{background:#fffde7;color:#f57f17}
 .warn-green{background:#e8f5e9;color:#2e7d32}
 .btn-gioca{width:100%;background:#1e1e1e;color:#c8d400;border:none;border-radius:6px;padding:13px;font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:800;cursor:pointer;letter-spacing:.5px;margin-top:12px}
+.card-pausa{font-size:10px;color:#aaa;margin-top:8px;padding:4px 6px;border-top:1px solid #f0f0f0}
+.card-pausa b{color:#e65100;font-weight:600}
 .btn-gioca:hover{opacity:.85}
 
 .fuori-inline{font-size:11px;color:#999;margin-bottom:8px;padding:4px 0}
@@ -89,7 +91,7 @@ input.ctrl[type=number]{width:70px}
 <header>
   <div>
     <div class="logo-title">⚽ Ancora Insieme 2026</div>
-    <div class="logo-sub">Proposte Partite <span style="color:#888;font-weight:400">v2.1</span> · <span>BLM Group</span></div>
+    <div class="logo-sub">Proposte Partite <span style="color:#888;font-weight:400">v2.2</span> · <span>BLM Group</span></div>
   </div>
 </header>
 <nav>
@@ -138,7 +140,6 @@ input.ctrl[type=number]{width:70px}
 
     <!-- RISULTATO -->
     <div id="risultato" style="display:none">
-      <div id="fuoriBox" class="fuori-inline" style="display:none"></div>
       <div id="alertBox" class="alert" style="display:none"></div>
       <div id="listaProposte"></div>
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
@@ -519,22 +520,14 @@ function _urgenza(g) {
 function renderRisultato(fuori) {
   document.getElementById('risultato').style.display = 'block';
 
-  const fuoriBox = document.getElementById('fuoriBox');
-  if (fuori.length > 0) {
-    fuoriBox.style.display = 'block';
-    const nomiStr = fuori.length < 5
-      ? '⏸ In pausa: <b>' + fuori.map(g=>g.nome).join(', ') + '</b>'
-      : '⏸ <b>' + fuori.length + ' giocatori</b> in pausa';
-    fuoriBox.innerHTML = nomiStr;
-  } else {
-    fuoriBox.style.display = 'none';
-  }
+  // chi aspetta ora è contestuale a ogni card
 
   const lista = document.getElementById('listaProposte');
   const maxScore = proposteCorrente.length > 0 ? proposteCorrente[0].score : 0;
   const minScore = proposteCorrente.length > 0 ? proposteCorrente[proposteCorrente.length-1].score : 0;
   const range    = maxScore - minScore || 1;
 
+  const nomiPresenti = [...selezionati];
   lista.innerHTML = proposteCorrente.map((p, i) => {
     const warnings = calcolaWarnings(p.blu, p.rossi);
     const relScore = (p.score - minScore) / range;
@@ -554,6 +547,15 @@ function renderRisultato(fuori) {
       + '<div class="squadra squadra-rosso"><span class="g1">🔴 ' + p.rossi[0] + '</span><span class="g2">' + p.rossi[1] + '</span></div>'
       + '</div>'
       + (warnHtml ? '<div class="proposta-warnings">' + warnHtml + '</div>' : '')
+      + (() => {
+          const inCampo = new Set([...p.blu, ...p.rossi]);
+          const inPausa = nomiPresenti.filter(n => !inCampo.has(n));
+          if (inPausa.length === 0) return '';
+          const txt = inPausa.length < 5
+            ? '⏸ In pausa: <b>' + inPausa.join(', ') + '</b>'
+            : '⏸ <b>' + inPausa.length + ' giocatori</b> in pausa';
+          return '<div class="card-pausa">' + txt + '</div>';
+        })()
       + '<button class="btn-gioca" onclick="giocaPartita(' + i + ')">✅ Gioca questa → Segnala risultato</button>'
       + '</div>';
   }).join('');
