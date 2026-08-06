@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ancora Insieme — Proposte Partite v2.2</title>
+<title>Ancora Insieme — Proposte Partite v2.5</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -91,7 +91,7 @@ input.ctrl[type=number]{width:70px}
 <header>
   <div>
     <div class="logo-title">⚽ Ancora Insieme 2026</div>
-    <div class="logo-sub">Proposte Partite <span style="color:#888;font-weight:400">v2.2</span> · <span>BLM Group</span></div>
+    <div class="logo-sub">Proposte Partite <span style="color:#888;font-weight:400">v2.5</span> · <span>BLM Group</span></div>
   </div>
 </header>
 <nav>
@@ -214,6 +214,7 @@ async function caricaDati() {
   document.getElementById('loadingBox').style.display = 'none';
   document.getElementById('appContent').style.display = 'block';
   renderGiocatori();
+  ripristinaCache();
 }
 
 function costruisciGiocatori() {
@@ -528,7 +529,21 @@ function renderRisultato(fuori) {
   const range    = maxScore - minScore || 1;
 
   const nomiPresenti = [...selezionati];
-  lista.innerHTML = proposteCorrente.map((p, i) => {
+  // Partite già giocate in cima (ordine cronologico inverso), poi le nuove proposte
+  const giocateHtml = storicoSerata.slice().reverse().map((m, i) => {
+    const idx = storicoSerata.length - 1 - i;
+    return '<div class="proposta-card giocata" style="opacity:.45;border-color:#c8d400;border-style:dashed">'
+      + '<div class="proposta-header">'
+      + '<span class="proposta-num" style="color:#c8d400">✅ Giocata #' + (idx+1) + '</span>'
+      + '</div>'
+      + '<div class="proposta-squadre">'
+      + '<div class="squadra squadra-blu"><span class="g1">🔵 ' + m.blu[0] + '</span><span class="g2">' + m.blu[1] + '</span></div>'
+      + '<div class="vs-badge">VS</div>'
+      + '<div class="squadra squadra-rosso"><span class="g1">🔴 ' + m.rossi[0] + '</span><span class="g2">' + m.rossi[1] + '</span></div>'
+      + '</div></div>';
+  }).join('');
+
+  const nuoveHtml = proposteCorrente.map((p, i) => {
     const warnings = calcolaWarnings(p.blu, p.rossi);
     const relScore = (p.score - minScore) / range;
     const scoreCls = relScore > 0.66 ? 'score-top' : relScore > 0.33 ? 'score-mid' : 'score-low';
@@ -559,6 +574,9 @@ function renderRisultato(fuori) {
       + '<button class="btn-gioca" onclick="giocaPartita(' + i + ')">✅ Gioca questa → Segnala risultato</button>'
       + '</div>';
   }).join('');
+
+  lista.innerHTML = giocateHtml + nuoveHtml;
+  return; // già assegnato sopra
 }
 
 function giocaPartita(i) {
@@ -584,6 +602,9 @@ function giocaPartita(i) {
   aggiornaLog();
   renderGiocatori(); // aggiorna fiamma 🔥
 
+  // Ricalcola lista proposte con stato aggiornato
+  ricalcolaLista();
+
   // Apri form pre-compilato
   const params = new URLSearchParams({
     b1:p.blu[0], b2:p.blu[1], r1:p.rossi[0], r2:p.rossi[1]
@@ -591,7 +612,39 @@ function giocaPartita(i) {
   window.open(FORM_URL + '?' + params.toString(), '_blank');
 }
 
+function ricalcolaLista() {
+  // Rigenera le proposte con lo stato aggiornato (storico serata + consecutive)
+  const presenti = tuttiGiocatori.filter(g => selezionati.has(g.nome));
+  const nP = parseInt(document.getElementById('nProposte').value) || 10;
+  const k  = parseInt(document.getElementById('nCalcetti').value) || 1;
+  const criterio = document.getElementById('criterioPausa').value;
+
+  const nomi = presenti.map(g => g.nome);
+  const combo4 = [];
+  for (let a=0; a<nomi.length-3; a++)
+    for (let b=a+1; b<nomi.length-2; b++)
+      for (let c=b+1; c<nomi.length-1; c++)
+        for (let d=c+1; d<nomi.length; d++)
+          combo4.push([nomi[a],nomi[b],nomi[c],nomi[d]]);
+
+  const proposte = [];
+  for (const [a,b,c,d] of combo4) {
+    for (const div of [{blu:[a,b],rossi:[c,d]},{blu:[a,c],rossi:[b,d]},{blu:[a,d],rossi:[b,c]}]) {
+      proposte.push({blu:div.blu, rossi:div.rossi, score:calcolaScore(div.blu,div.rossi)});
+    }
+  }
+  proposte.sort((a,b) => b.score - a.score);
+  proposteCorrente = proposte.slice(0, nP);
+
+  const fuori = calcolaFuori(presenti, k, criterio);
+  renderRisultato(fuori);
+}
+
 function aggiornaLog() {
+  // Salva in localStorage
+  const cache = { data: new Date().toDateString(), storicoSerata, filaCons };
+  try { localStorage.setItem('ai_sorteggio_cache', JSON.stringify(cache)); } catch(e) {}
+
   if (storicoSerata.length === 0) {
     document.getElementById('logStep').style.display = 'none'; return;
   }
@@ -604,13 +657,66 @@ function aggiornaLog() {
   ).join('');
 }
 
+function ripristinaCache() {
+  try {
+    const raw = localStorage.getItem('ai_sorteggio_cache');
+    if (!raw) return false;
+    const cache = JSON.parse(raw);
+    const oggi = new Date().toDateString();
+    if (cache.data !== oggi) {
+      const el = document.getElementById('alertBox');
+      el.innerHTML = '⚠️ Trovata una sessione di <b>' + cache.data + '</b>. Premi "Azzera serata" per cancellarla.';
+      el.style.display = 'block';
+      document.getElementById('risultato').style.display = 'block';
+      return false;
+    }
+    return caricaCacheOggi();
+  } catch(e) { return false; }
+}
+
+function caricaCacheOggi() {
+  try {
+    const raw = localStorage.getItem('ai_sorteggio_cache');
+    if (!raw) return;
+    const cache = JSON.parse(raw);
+    caricaCache(cache.data);
+    document.getElementById('alertBox').style.display = 'none';
+  } catch(e) {}
+}
+
+function caricaCache(data) {
+  try {
+    const raw = localStorage.getItem('ai_sorteggio_cache');
+    if (!raw) return false;
+    const cache = JSON.parse(raw);
+    if (cache.data !== data) return false;
+    storicoSerata = cache.storicoSerata || [];
+    filaCons      = cache.filaCons      || {};
+    if (storicoSerata.length > 0) {
+      const el = document.getElementById('alertBox');
+      el.innerHTML = '🔄 Sessione di oggi ripristinata: <b>' + storicoSerata.length + ' partite</b> in memoria.';
+      el.style.display = 'block';
+      document.getElementById('risultato').style.display = 'block';
+      aggiornaLog();
+    }
+    return true;
+  } catch(e) { return false; }
+}
+
+function cancellaCache() {
+  try { localStorage.removeItem('ai_sorteggio_cache'); } catch(e) {}
+  document.getElementById('alertBox').style.display = 'none';
+}
+
 function resetSerata() {
   if (storicoSerata.length > 0 && !confirm('Azzerare la memoria delle partite di stasera?')) return;
   storicoSerata = [];
   filaCons = {};
   proposteCorrente = [];
+  try { localStorage.removeItem('ai_sorteggio_cache'); } catch(e) {}
   document.getElementById('risultato').style.display = 'none';
   document.getElementById('logStep').style.display = 'none';
+  document.getElementById('alertBox').style.display = 'none';
   renderGiocatori();
 }
 
