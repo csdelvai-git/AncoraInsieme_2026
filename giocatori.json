@@ -111,6 +111,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Leonardelli Stefano",
+      "sede": "Levico"
+    },
+    {
       "nome": "Maestranzi Cinzia",
       "sede": "Levico"
     },
@@ -4503,9 +4507,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "06/08/2026, 13:55:58",
+    "salvato_il": "06/08/2026, 16:20:09",
     "partite": 186,
-    "giocatori": 48,
+    "giocatori": 49,
     "versione_app": "4.5"
   }
 }
