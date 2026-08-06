@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ancora Insieme — Proposte Partite v2.5</title>
+<title>Ancora Insieme — Proposte Partite v2.6</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -91,7 +91,7 @@ input.ctrl[type=number]{width:70px}
 <header>
   <div>
     <div class="logo-title">⚽ Ancora Insieme 2026</div>
-    <div class="logo-sub">Proposte Partite <span style="color:#888;font-weight:400">v2.5</span> · <span>BLM Group</span></div>
+    <div class="logo-sub">Proposte Partite <span style="color:#888;font-weight:400">v2.6</span> · <span>BLM Group</span></div>
   </div>
 </header>
 <nav>
@@ -122,13 +122,21 @@ input.ctrl[type=number]{width:70px}
           <input type="number" id="nProposte" class="ctrl" value="10" min="3" max="30">
         </div>
         <div class="ctrl-block">
-          <span class="ctrl-label">Chi aspetta (se in avanzo)</span>
-          <select id="criterioPausa" class="ctrl">
-            <option value="random">⚖️ Ottimizza limiti</option>
-            <option value="elo_max">📈 ELO più alto aspetta</option>
-            <option value="gare_max">🏃 Più partite aspetta</option>
-            <option value="limiti_ok">✅ Limiti a posto aspetta</option>
-          </select>
+          <span class="ctrl-label">Abbassa priorità a…</span>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-top:2px">
+            <label style="display:flex;align-items:center;gap:7px;font-size:12px;cursor:pointer">
+              <input type="checkbox" id="penElo" style="accent-color:#c8d400;width:14px;height:14px">
+              📈 ELO alto
+            </label>
+            <label style="display:flex;align-items:center;gap:7px;font-size:12px;cursor:pointer">
+              <input type="checkbox" id="penGare" style="accent-color:#c8d400;width:14px;height:14px">
+              🏃 Tante partite
+            </label>
+            <label style="display:flex;align-items:center;gap:7px;font-size:12px;cursor:pointer">
+              <input type="checkbox" id="penLimiti" style="accent-color:#c8d400;width:14px;height:14px">
+              ✅ Limiti a posto
+            </label>
+          </div>
         </div>
         <div class="ctrl-block" style="justify-content:flex-end">
           <button class="btn-genera" id="btnGenera" onclick="generaProposte()" disabled>
@@ -163,6 +171,8 @@ const JSON_URL  = './giocatori.json';
 const FORM_URL  = './AncoraInsieme_Form.html';
 
 // ── PESI FUNZIONE DI COSTO ────────────────────────────────────────────────────
+const PESO_CB = 30; // peso base penalità checkbox (proporzionale)
+
 const W = {
   // Penalità compagni
   COMP_ENTRAMBI_SOPRA:  -80,  // A e B entrambi già sopra soglia per questa coppia
@@ -403,7 +413,42 @@ function calcolaScore(blu, rossi) {
   // Consecutive
   for (const n of [b1,b2,r1,r2]) score += _penalitaConsecutive(n);
 
+  // Penalità checkbox (proporzionali ai presenti)
+  const presenti = tuttiGiocatori.filter(g => selezionati.has(g.nome));
+  score += _penalitaCheckbox([b1,b2,r1,r2], presenti);
+
   return score;
+}
+
+function _penalitaCheckbox(nomi, presenti) {
+  // Calcola penalità proporzionali in base alle checkbox attive
+  const penElo   = document.getElementById('penElo')?.checked;
+  const penGare  = document.getElementById('penGare')?.checked;
+  const penLim   = document.getElementById('penLimiti')?.checked;
+  if (!penElo && !penGare && !penLim) return 0;
+
+  const eloMedio  = presenti.reduce((s,g) => s+g.elo,  0) / presenti.length;
+  const gareMedie = presenti.reduce((s,g) => s+g.gare, 0) / presenti.length;
+
+  let tot = 0;
+  for (const nome of nomi) {
+    const g = gDi(nome); if (!g) continue;
+    if (penElo && eloMedio > 0) {
+      const delta = (g.elo - eloMedio) / eloMedio;
+      if (delta > 0) tot -= delta * PESO_CB;
+    }
+    if (penGare && gareMedie > 0) {
+      const delta = (g.gare - gareMedie) / gareMedie;
+      if (delta > 0) tot -= delta * PESO_CB;
+    }
+    if (penLim) {
+      const urg = _urgenza(g);
+      const maxUrg = Math.max(1, ...presenti.map(_urgenza));
+      const normOk = 1 - (urg / maxUrg); // 1 = nessuna urgenza, 0 = massima urgenza
+      tot -= normOk * PESO_CB;
+    }
+  }
+  return tot;
 }
 
 function calcolaWarnings(blu, rossi) {
@@ -488,7 +533,7 @@ function generaProposte() {
 
   // Chi aspetta
   const k = parseInt(document.getElementById('nCalcetti').value) || 1;
-  const criterio = document.getElementById('criterioPausa').value;
+  const criterio = 'random';
   const fuori = calcolaFuori(presenti, k, criterio);
 
   renderRisultato(fuori);
@@ -617,7 +662,7 @@ function ricalcolaLista() {
   const presenti = tuttiGiocatori.filter(g => selezionati.has(g.nome));
   const nP = parseInt(document.getElementById('nProposte').value) || 10;
   const k  = parseInt(document.getElementById('nCalcetti').value) || 1;
-  const criterio = document.getElementById('criterioPausa').value;
+  const criterio = 'random';
 
   const nomi = presenti.map(g => g.nome);
   const combo4 = [];
