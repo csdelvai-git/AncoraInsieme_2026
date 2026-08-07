@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ancora Insieme — Proposte Partite v2.6</title>
+<title>Ancora Insieme — Proposte Partite v2.7</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -91,7 +91,7 @@ input.ctrl[type=number]{width:70px}
 <header>
   <div>
     <div class="logo-title">⚽ Ancora Insieme 2026</div>
-    <div class="logo-sub">Proposte Partite <span style="color:#888;font-weight:400">v2.6</span> · <span>BLM Group</span></div>
+    <div class="logo-sub">Proposte Partite <span style="color:#888;font-weight:400">v2.7</span> · <span>BLM Group</span></div>
   </div>
 </header>
 <nav>
@@ -504,32 +504,40 @@ function generaProposte() {
 
   if (presenti.length < 4) { mostraAlert('Servono almeno 4 giocatori.'); return; }
 
-  // Genera tutte le combinazioni di 4 giocatori tra i presenti
+  // Genera tutte le combinazioni e applica greedy con diversificazione
   const nomi = presenti.map(g => g.nome);
-  const combo4 = [];
+  const tutteLeCombo = [];
   for (let a=0; a<nomi.length-3; a++)
     for (let b=a+1; b<nomi.length-2; b++)
       for (let c=b+1; c<nomi.length-1; c++)
         for (let d=c+1; d<nomi.length; d++)
-          combo4.push([nomi[a],nomi[b],nomi[c],nomi[d]]);
+          for (const div of [{blu:[nomi[a],nomi[b]],rossi:[nomi[c],nomi[d]]},
+                             {blu:[nomi[a],nomi[c]],rossi:[nomi[b],nomi[d]]},
+                             {blu:[nomi[a],nomi[d]],rossi:[nomi[b],nomi[c]]}])
+            tutteLeCombo.push({blu:div.blu, rossi:div.rossi, score:calcolaScore(div.blu,div.rossi)});
 
-  // Per ogni combinazione di 4, genera i 3 modi di dividerli in coppie
-  const proposte = [];
-  for (const [a,b,c,d] of combo4) {
-    const divisioni = [
-      {blu:[a,b], rossi:[c,d]},
-      {blu:[a,c], rossi:[b,d]},
-      {blu:[a,d], rossi:[b,c]},
-    ];
-    for (const div of divisioni) {
-      const score = calcolaScore(div.blu, div.rossi);
-      proposte.push({blu:div.blu, rossi:div.rossi, score});
+  // Greedy: ad ogni passo sceglie la migliore penalizzando chi è già in lista
+  const PESO_DIV = 25;
+  const contLista = {};
+  proposteCorrente = [];
+  const usate = new Set();
+
+  for (let i = 0; i < nP; i++) {
+    let bestScore = -Infinity, bestIdx = -1;
+    for (let j = 0; j < tutteLeCombo.length; j++) {
+      const c = tutteLeCombo[j];
+      const key = [...c.blu,...c.rossi].sort().join('|') + c.blu.join('+');
+      if (usate.has(key)) continue;
+      let scoreAdj = c.score;
+      for (const n of [...c.blu,...c.rossi]) scoreAdj -= (contLista[n]||0) * PESO_DIV;
+      if (scoreAdj > bestScore) { bestScore = scoreAdj; bestIdx = j; }
     }
+    if (bestIdx === -1) break;
+    const s = tutteLeCombo[bestIdx];
+    proposteCorrente.push(s);
+    usate.add([...s.blu,...s.rossi].sort().join('|') + s.blu.join('+'));
+    for (const n of [...s.blu,...s.rossi]) contLista[n] = (contLista[n]||0) + 1;
   }
-
-  // Ordina per score decrescente e prendi le top N
-  proposte.sort((a,b) => b.score - a.score);
-  proposteCorrente = proposte.slice(0, nP);
 
   // Chi aspetta
   const k = parseInt(document.getElementById('nCalcetti').value) || 1;
@@ -665,21 +673,39 @@ function ricalcolaLista() {
   const criterio = 'random';
 
   const nomi = presenti.map(g => g.nome);
-  const combo4 = [];
+  const tutteLeCombo2 = [];
   for (let a=0; a<nomi.length-3; a++)
     for (let b=a+1; b<nomi.length-2; b++)
       for (let c=b+1; c<nomi.length-1; c++)
         for (let d=c+1; d<nomi.length; d++)
-          combo4.push([nomi[a],nomi[b],nomi[c],nomi[d]]);
+          for (const div of [{blu:[nomi[a],nomi[b]],rossi:[nomi[c],nomi[d]]},
+                             {blu:[nomi[a],nomi[c]],rossi:[nomi[b],nomi[d]]},
+                             {blu:[nomi[a],nomi[d]],rossi:[nomi[b],nomi[c]]}])
+            tutteLeCombo2.push({blu:div.blu, rossi:div.rossi, score:calcolaScore(div.blu,div.rossi)});
 
-  const proposte = [];
-  for (const [a,b,c,d] of combo4) {
-    for (const div of [{blu:[a,b],rossi:[c,d]},{blu:[a,c],rossi:[b,d]},{blu:[a,d],rossi:[b,c]}]) {
-      proposte.push({blu:div.blu, rossi:div.rossi, score:calcolaScore(div.blu,div.rossi)});
+  const PESO_DIV2 = 25;
+  const conteggioInLista2 = {};
+  proposteCorrente = [];
+  const usate2 = new Set();
+
+  for (let i = 0; i < nP; i++) {
+    let bestScore = -Infinity, bestIdx = -1;
+    for (let j = 0; j < tutteLeCombo2.length; j++) {
+      const c = tutteLeCombo2[j];
+      const chiave = [...c.blu,...c.rossi].sort().join('|') + c.blu.join('+');
+      if (usate2.has(chiave)) continue;
+      let scoreAdj = c.score;
+      for (const n of [...c.blu,...c.rossi]) scoreAdj -= (conteggioInLista2[n]||0) * PESO_DIV2;
+      if (scoreAdj > bestScore) { bestScore = scoreAdj; bestIdx = j; }
     }
+    if (bestIdx === -1) break;
+    const scelta = tutteLeCombo2[bestIdx];
+    proposteCorrente.push(scelta);
+    const chiave = [...scelta.blu,...scelta.rossi].sort().join('|') + scelta.blu.join('+');
+    usate2.add(chiave);
+    for (const n of [...scelta.blu,...scelta.rossi])
+      conteggioInLista2[n] = (conteggioInLista2[n]||0) + 1;
   }
-  proposte.sort((a,b) => b.score - a.score);
-  proposteCorrente = proposte.slice(0, nP);
 
   const fuori = calcolaFuori(presenti, k, criterio);
   renderRisultato(fuori);
