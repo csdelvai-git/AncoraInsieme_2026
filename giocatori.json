@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -5033,6 +5033,75 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSJGFR53-3",
+      "blu": [
+        "Bisoffi Leonardo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Zuccatti Matteo",
+        "Solaroli Sonia"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1786135140000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSJGFR53-2",
+      "blu": [
+        "Solaroli Sonia",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Delvai Claudio S.",
+        "Bisoffi Leonardo"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1786136700000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSJGFR53-1",
+      "blu": [
+        "Bisoffi Leonardo",
+        "Solaroli Sonia"
+      ],
+      "rossi": [
+        "Segalla Enrico",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1786137300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -5063,8 +5132,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "07/08/2026, 22:27:57",
-    "partite": 210,
+    "salvato_il": "07/08/2026, 23:27:20",
+    "partite": 213,
     "giocatori": 50,
     "versione_app": "4.5"
   }
