@@ -4734,6 +4734,52 @@
       "sede": "Levico",
       "intergirone": true,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSIVTOTN-1",
+      "blu": [
+        "Delvai Claudio S.",
+        "De donato Simone"
+      ],
+      "rossi": [
+        "Girardelli Giancarlo",
+        "Leonardelli Stefano"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1786101420000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSIVTOTN-2",
+      "blu": [
+        "De donato Simone",
+        "Maestranzi Cinzia"
+      ],
+      "rossi": [
+        "Girardelli Giancarlo",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1786101600000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -4764,8 +4810,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "07/08/2026, 13:49:08",
-    "partite": 197,
+    "salvato_il": "07/08/2026, 13:49:35",
+    "partite": 199,
     "giocatori": 50,
     "versione_app": "4.5"
   }
