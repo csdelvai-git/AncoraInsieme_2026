@@ -4477,6 +4477,259 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSI39OE0-11",
+      "blu": [
+        "De donato Simone",
+        "Osti Francesco"
+      ],
+      "rossi": [
+        "Bisoffi Leonardo",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 12,
+      "golRossi": 10,
+      "timestampGara": 1786031940000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSI39OE0-10",
+      "blu": [
+        "Zuccatti Matteo",
+        "Tonezzer Giacomo"
+      ],
+      "rossi": [
+        "De donato Simone",
+        "Mocci Jacopo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1786032960000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSI39OE0-9",
+      "blu": [
+        "Osti Francesco",
+        "De donato Simone"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1786034520000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSI39OE0-8",
+      "blu": [
+        "Delvai Claudio S.",
+        "Osti Francesco"
+      ],
+      "rossi": [
+        "Tonezzer Giacomo",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 3,
+      "timestampGara": 1786035780000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSI39ODZ-7",
+      "blu": [
+        "Delvai Claudio S.",
+        "Osler Matteo"
+      ],
+      "rossi": [
+        "Tonezzer Giacomo",
+        "Solaroli Sonia"
+      ],
+      "golBlu": 10,
+      "golRossi": 2,
+      "timestampGara": 1786036380000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSI39ODZ-6",
+      "blu": [
+        "Solaroli Sonia",
+        "Bisoffi Leonardo"
+      ],
+      "rossi": [
+        "De donato Simone",
+        "Osti Francesco"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1786037220000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSI39ODZ-5",
+      "blu": [
+        "Zuccatti Matteo",
+        "De donato Simone"
+      ],
+      "rossi": [
+        "Osler Matteo",
+        "Osti Francesco"
+      ],
+      "golBlu": 7,
+      "golRossi": 10,
+      "timestampGara": 1786038180000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSI39ODZ-4",
+      "blu": [
+        "Tonezzer Giacomo",
+        "Osti Francesco"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Delvai Claudio S."
+      ],
+      "golBlu": 1,
+      "golRossi": 10,
+      "timestampGara": 1786048080000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSI39ODZ-3",
+      "blu": [
+        "De donato Simone",
+        "Delvai Claudio S."
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Osti Francesco"
+      ],
+      "golBlu": 14,
+      "golRossi": 12,
+      "timestampGara": 1786048260000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSI39ODZ-2",
+      "blu": [
+        "Tonezzer Giacomo",
+        "De donato Simone"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Delvai Claudio S."
+      ],
+      "golBlu": 9,
+      "golRossi": 11,
+      "timestampGara": 1786049940000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSI39ODY-1",
+      "blu": [
+        "De donato Simone",
+        "Solaroli Sonia"
+      ],
+      "rossi": [
+        "Delvai Claudio S.",
+        "Osti Francesco"
+      ],
+      "golBlu": 4,
+      "golRossi": 10,
+      "timestampGara": 1786050060000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -4507,8 +4760,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "06/08/2026, 16:20:09",
-    "partite": 186,
+    "salvato_il": "07/08/2026, 09:28:52",
+    "partite": 197,
     "giocatori": 49,
     "versione_app": "4.5"
   }
