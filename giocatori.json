@@ -4872,6 +4872,167 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSJC0QJI-1",
+      "blu": [
+        "Bisoffi Leonardo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "De donato Simone",
+        "Delvai Claudio S."
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1786130220000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSJDJB6C-4",
+      "blu": [
+        "Bisoffi Leonardo",
+        "Zuccatti Matteo"
+      ],
+      "rossi": [
+        "De donato Simone",
+        "Segalla Enrico"
+      ],
+      "golBlu": 5,
+      "golRossi": 10,
+      "timestampGara": 1786130820000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSJDJB6C-3",
+      "blu": [
+        "Delvai Claudio S.",
+        "Solaroli Sonia"
+      ],
+      "rossi": [
+        "Segalla Enrico",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1786131360000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSJDJB6C-1",
+      "blu": [
+        "Bisoffi Leonardo",
+        "De donato Simone"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 2,
+      "timestampGara": 1786131780000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSJDJB6C-2",
+      "blu": [
+        "Bisoffi Leonardo",
+        "De donato Simone"
+      ],
+      "rossi": [
+        "Delvai Claudio S.",
+        "Segalla Enrico"
+      ],
+      "golBlu": 7,
+      "golRossi": 10,
+      "timestampGara": 1786132860000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSJE776E-2",
+      "blu": [
+        "De donato Simone",
+        "Zuccatti Matteo"
+      ],
+      "rossi": [
+        "Segalla Enrico",
+        "Solaroli Sonia"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1786133400000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSJE776E-1",
+      "blu": [
+        "Bisoffi Leonardo",
+        "Delvai Claudio S."
+      ],
+      "rossi": [
+        "Segalla Enrico",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1786134000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -4902,8 +5063,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "07/08/2026, 14:03:21",
-    "partite": 203,
+    "salvato_il": "07/08/2026, 22:27:57",
+    "partite": 210,
     "giocatori": 50,
     "versione_app": "4.5"
   }
