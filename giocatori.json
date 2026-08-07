@@ -34,6 +34,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Bruzzese Francesco",
+      "sede": "Levico"
+    },
+    {
       "nome": "Caironi Davide",
       "sede": "Cantù"
     },
@@ -4760,9 +4764,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "07/08/2026, 09:28:52",
+    "salvato_il": "07/08/2026, 13:49:08",
     "partite": 197,
-    "giocatori": 49,
+    "giocatori": 50,
     "versione_app": "4.5"
   }
 }
