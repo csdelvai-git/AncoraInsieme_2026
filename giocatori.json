@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Levico",
+  "sedeCorrente": "Cantù",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -4736,6 +4736,75 @@
       "importataDaDdT": true
     },
     {
+      "id": "MATCH-MSIWB1HZ-4",
+      "blu": [
+        "Benni Akshay",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Caironi Davide",
+        "Cattaneo Corrado"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1786100760000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSIWB1HZ-3",
+      "blu": [
+        "Caironi Davide",
+        "Benni Akshay"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Galliani Luca"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1786101000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSIWB1HY-1",
+      "blu": [
+        "Galliani Luca",
+        "Caironi Davide"
+      ],
+      "rossi": [
+        "Riva Alessandro",
+        "Benni Akshay"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1786101300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
       "id": "MATCH-MSIVTOTN-1",
       "blu": [
         "Delvai Claudio S.",
@@ -4755,6 +4824,29 @@
         false
       ],
       "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSIWB1HY-2",
+      "blu": [
+        "Caironi Davide",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Cattaneo Corrado",
+        "Dan Cojocaru"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1786101420000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
       "intergirone": false,
       "importataDaDdT": true
     },
@@ -4810,8 +4902,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "07/08/2026, 13:51:40",
-    "partite": 199,
+    "salvato_il": "07/08/2026, 14:03:21",
+    "partite": 203,
     "giocatori": 50,
     "versione_app": "4.5"
   }
