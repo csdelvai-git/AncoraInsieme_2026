@@ -5102,6 +5102,98 @@
       "sede": "Levico",
       "intergirone": true,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSYREUNC-2",
+      "blu": [
+        "Agostini Cristian",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Gandolfi Davide",
+        "Pacher Matteo"
+      ],
+      "golBlu": 5,
+      "golRossi": 10,
+      "timestampGara": 1787051760000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MSYREUNC-1",
+      "blu": [
+        "Dalsaso Matteo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Pacher Matteo",
+        "Gandolfi Davide"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1787052360000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MT065WZA-2",
+      "blu": [
+        "Gandolfi Davide",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Agostini Cristian",
+        "Pacher Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 3,
+      "timestampGara": 1787138880000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MT065WZA-1",
+      "blu": [
+        "Pacher Matteo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Agostini Cristian",
+        "Gandolfi Davide"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1787139000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -5132,8 +5224,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "07/08/2026, 23:27:20",
-    "partite": 213,
+    "salvato_il": "19/08/2026, 16:13:17",
+    "partite": 217,
     "giocatori": 50,
     "versione_app": "4.5"
   }
