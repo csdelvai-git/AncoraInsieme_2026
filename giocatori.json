@@ -95,6 +95,10 @@
       "escludi_controlli": false
     },
     {
+      "nome": "Felicetti Carlo",
+      "sede": "Levico"
+    },
+    {
       "nome": "Galliani Luca",
       "sede": "Cantù"
     },
@@ -4854,7 +4858,7 @@
       "id": "MATCH-MSIVTOTN-2",
       "blu": [
         "De donato Simone",
-        "Maestranzi Cinzia"
+        "Leonardelli Stefano"
       ],
       "rossi": [
         "Girardelli Giancarlo",
@@ -5224,9 +5228,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "19/08/2026, 16:13:17",
+    "salvato_il": "24/08/2026, 11:57:40",
     "partite": 217,
-    "giocatori": 50,
+    "giocatori": 51,
     "versione_app": "4.5"
   }
 }
