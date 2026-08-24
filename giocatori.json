@@ -5198,6 +5198,236 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MT7EIEGF-9",
+      "blu": [
+        "Caironi Davide",
+        "Dan Cojocaru"
+      ],
+      "rossi": [
+        "Marchesi Angelo",
+        "Galliani Luca"
+      ],
+      "golBlu": 10,
+      "golRossi": 3,
+      "timestampGara": 1787569200000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MT7EIEGF-8",
+      "blu": [
+        "Caironi Davide",
+        "Marchesi Angelo"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Galliani Luca"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1787569800000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MT7EIEGE-7",
+      "blu": [
+        "Dan Cojocaru",
+        "Marchesi Angelo"
+      ],
+      "rossi": [
+        "Caironi Davide",
+        "Galliani Luca"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1787570400000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MT7EIEGE-5",
+      "blu": [
+        "Kuricki Gabriele",
+        "Todesco Alessandro"
+      ],
+      "rossi": [
+        "D'Aquilio Annachiara",
+        "Castelli Stefano"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1787570460000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MT7EIEGF-10",
+      "blu": [
+        "Benni Akshay",
+        "Marchesi Angelo"
+      ],
+      "rossi": [
+        "Mazzonetto Alessandro",
+        "Riva Alessandro"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1787570820000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MT7EIEGE-4",
+      "blu": [
+        "Biondo Alfio",
+        "Todesco Alessandro"
+      ],
+      "rossi": [
+        "D'Aquilio Annachiara",
+        "Castelli Stefano"
+      ],
+      "golBlu": 3,
+      "golRossi": 10,
+      "timestampGara": 1787571000000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MT7EIEGE-3",
+      "blu": [
+        "Segalla Enrico",
+        "D'Agostini Fabio"
+      ],
+      "rossi": [
+        "Tonezzer Giacomo",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 2,
+      "timestampGara": 1787571660000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MT7EIEGE-2",
+      "blu": [
+        "Segalla Enrico",
+        "Zuccatti Matteo"
+      ],
+      "rossi": [
+        "D'Agostini Fabio",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1787571720000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MT7EIEGD-1",
+      "blu": [
+        "Segalla Enrico",
+        "Tonezzer Giacomo"
+      ],
+      "rossi": [
+        "D'Agostini Fabio",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1787571900000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MT7EIEGE-6",
+      "blu": [
+        "Mazzonetto Alessandro",
+        "Marchesi Angelo"
+      ],
+      "rossi": [
+        "Riva Alessandro",
+        "Benni Akshay"
+      ],
+      "golBlu": 5,
+      "golRossi": 10,
+      "timestampGara": 1787582760000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -5228,8 +5458,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "24/08/2026, 11:57:40",
-    "partite": 217,
+    "salvato_il": "24/08/2026, 17:40:19",
+    "partite": 227,
     "giocatori": 51,
     "versione_app": "4.5"
   }
