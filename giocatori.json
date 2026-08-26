@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -5892,6 +5892,52 @@
       "sede": "Cantù",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MTAHGVPB-2",
+      "blu": [
+        "Zuccatti Matteo",
+        "Agostini Cristian"
+      ],
+      "rossi": [
+        "Gandolfi Davide",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1787755860000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MTAHGVPA-1",
+      "blu": [
+        "Zuccatti Matteo",
+        "Gandolfi Davide"
+      ],
+      "rossi": [
+        "Agostini Cristian",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1787755920000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -5922,8 +5968,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "26/08/2026, 15:06:52",
-    "partite": 247,
+    "salvato_il": "26/08/2026, 22:45:14",
+    "partite": 249,
     "giocatori": 52,
     "versione_app": "4.5"
   }
