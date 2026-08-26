@@ -171,6 +171,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Rispoli Edoardo",
+      "sede": "Levico"
+    },
+    {
       "nome": "Riva Alessandro",
       "sede": "Cantù"
     },
@@ -5711,9 +5715,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "25/08/2026, 14:08:29",
+    "salvato_il": "26/08/2026, 09:46:41",
     "partite": 238,
-    "giocatori": 51,
+    "giocatori": 52,
     "versione_app": "4.5"
   }
 }
