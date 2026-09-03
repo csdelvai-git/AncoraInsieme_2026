@@ -18,6 +18,10 @@
       "sede": "Cantù"
     },
     {
+      "nome": "Berloffa Nadia",
+      "sede": "Levico"
+    },
+    {
       "nome": "Bertella Lorenzo",
       "sede": "Levico"
     },
@@ -7042,6 +7046,190 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MTLGX7Y8-8",
+      "blu": [
+        "Caironi Davide",
+        "Mazzonetto Alessandro"
+      ],
+      "rossi": [
+        "Marchesi Angelo",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1788433200000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MTLGX7Y7-7",
+      "blu": [
+        "Benni Akshay",
+        "Caironi Davide"
+      ],
+      "rossi": [
+        "Mazzonetto Alessandro",
+        "Marchesi Angelo"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1788433620000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MTLGX7Y7-6",
+      "blu": [
+        "Benni Akshay",
+        "Marchesi Angelo"
+      ],
+      "rossi": [
+        "Mazzonetto Alessandro",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1788433980000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MTLGX7Y6-5",
+      "blu": [
+        "Castelli Stefano",
+        "Conci Andrea"
+      ],
+      "rossi": [
+        "D'Aquilio Annachiara",
+        "Leonardelli Stefano"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1788434400000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MTLGX7Y4-3",
+      "blu": [
+        "Zuccatti Matteo",
+        "Biondo Alfio"
+      ],
+      "rossi": [
+        "Girardelli Giancarlo",
+        "D'Agostini Fabio"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1788434580000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MTLGX7Y5-4",
+      "blu": [
+        "Benni Akshay",
+        "Mazzonetto Alessandro"
+      ],
+      "rossi": [
+        "Marchesi Angelo",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1788434580000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MTLGX7Y4-2",
+      "blu": [
+        "Girardelli Giancarlo",
+        "D'Aquilio Annachiara"
+      ],
+      "rossi": [
+        "Kuricki Gabriele",
+        "Castelli Stefano"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1788435540000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MTLGX7Y3-1",
+      "blu": [
+        "Girardelli Giancarlo",
+        "Kuricki Gabriele"
+      ],
+      "rossi": [
+        "D'Aquilio Annachiara",
+        "Castelli Stefano"
+      ],
+      "golBlu": 3,
+      "golRossi": 10,
+      "timestampGara": 1788435600000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -7072,9 +7260,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "02/09/2026, 14:11:35",
-    "partite": 297,
-    "giocatori": 52,
+    "salvato_il": "03/09/2026, 13:56:01",
+    "partite": 305,
+    "giocatori": 53,
     "versione_app": "4.5"
   }
 }
