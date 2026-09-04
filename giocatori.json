@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -7186,6 +7186,29 @@
       "importataDaDdT": true
     },
     {
+      "id": "MATCH-MTN0ZL89-4",
+      "blu": [
+        "Bertella Lorenzo",
+        "Gandolfi Davide"
+      ],
+      "rossi": [
+        "Girardelli Giancarlo",
+        "D'Agostini Fabio"
+      ],
+      "golBlu": 10,
+      "golRossi": 2,
+      "timestampGara": 1788435300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
       "id": "MATCH-MTLGX7Y4-2",
       "blu": [
         "Girardelli Giancarlo",
@@ -7230,6 +7253,75 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MTN0ZL88-3",
+      "blu": [
+        "Rispoli Edoardo",
+        "Leonardelli Stefano"
+      ],
+      "rossi": [
+        "Castelli Stefano",
+        "Felicetti Carlo"
+      ],
+      "golBlu": 0,
+      "golRossi": 10,
+      "timestampGara": 1788520980000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MTN0ZL88-2",
+      "blu": [
+        "Felicetti Carlo",
+        "Rispoli Edoardo"
+      ],
+      "rossi": [
+        "Leonardelli Stefano",
+        "Castelli Stefano"
+      ],
+      "golBlu": 4,
+      "golRossi": 10,
+      "timestampGara": 1788521400000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MTN0ZL87-1",
+      "blu": [
+        "Biondo Alfio",
+        "Leonardelli Stefano"
+      ],
+      "rossi": [
+        "Castelli Stefano",
+        "Kuricki Gabriele"
+      ],
+      "golBlu": 12,
+      "golRossi": 10,
+      "timestampGara": 1788521880000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -7260,8 +7352,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "03/09/2026, 13:56:01",
-    "partite": 305,
+    "salvato_il": "04/09/2026, 16:04:58",
+    "partite": 309,
     "giocatori": 53,
     "versione_app": "4.5"
   }
