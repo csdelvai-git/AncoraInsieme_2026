@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -8312,6 +8312,167 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MU17C58B-7",
+      "blu": [
+        "Segalla Enrico",
+        "Dalsaso Matteo"
+      ],
+      "rossi": [
+        "Castelli Stefano",
+        "Conci Andrea"
+      ],
+      "golBlu": 10,
+      "golRossi": 3,
+      "timestampGara": 1789386360000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MU17C58A-5",
+      "blu": [
+        "Segalla Enrico",
+        "Castelli Stefano"
+      ],
+      "rossi": [
+        "Dalsaso Matteo",
+        "Conci Andrea"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1789386420000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MU17C58B-6",
+      "blu": [
+        "Segalla Enrico",
+        "Conci Andrea"
+      ],
+      "rossi": [
+        "Castelli Stefano",
+        "Dalsaso Matteo"
+      ],
+      "golBlu": 4,
+      "golRossi": 10,
+      "timestampGara": 1789386420000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MU17C589-3",
+      "blu": [
+        "Sidari Giuseppe",
+        "Mazzonetto Alessandro"
+      ],
+      "rossi": [
+        "Morelli Riccardo",
+        "Angelon Francesco"
+      ],
+      "golBlu": 10,
+      "golRossi": 3,
+      "timestampGara": 1789386480000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MU17C58A-4",
+      "blu": [
+        "Segalla Enrico",
+        "Dalsaso Matteo"
+      ],
+      "rossi": [
+        "Castelli Stefano",
+        "Conci Andrea"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1789386480000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MU17C588-2",
+      "blu": [
+        "Angelon Francesco",
+        "Mazzonetto Alessandro"
+      ],
+      "rossi": [
+        "Morelli Riccardo",
+        "Sidari Giuseppe"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1789386660000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MU17C587-1",
+      "blu": [
+        "Angelon Francesco",
+        "Cattaneo Corrado"
+      ],
+      "rossi": [
+        "Morelli Riccardo",
+        "Sidari Giuseppe"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1789386720000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -8342,8 +8503,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "11/09/2026, 19:09:33",
-    "partite": 352,
+    "salvato_il": "14/09/2026, 14:11:38",
+    "partite": 359,
     "giocatori": 53,
     "versione_app": "4.5"
   }
