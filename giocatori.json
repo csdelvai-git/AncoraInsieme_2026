@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -145,6 +145,10 @@
     {
       "nome": "Mazzonetto Alessandro",
       "sede": "Cantù"
+    },
+    {
+      "nome": "Micheletti Alvise",
+      "sede": "Levico"
     },
     {
       "nome": "Mocci Jacopo",
@@ -8825,9 +8829,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "15/09/2026, 14:04:47",
+    "salvato_il": "16/09/2026, 12:24:55",
     "partite": 373,
-    "giocatori": 53,
+    "giocatori": 54,
     "versione_app": "4.5"
   }
 }
