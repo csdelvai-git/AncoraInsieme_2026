@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Levico",
+  "sedeCorrente": "Cantù",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -9288,6 +9288,29 @@
       "importataDaDdT": true
     },
     {
+      "id": "MATCH-MU5KZVLL-1",
+      "blu": [
+        "Tonezzer Giacomo",
+        "Petri Enrico"
+      ],
+      "rossi": [
+        "Gandolfi Davide",
+        "D'Aquilio Annachiara"
+      ],
+      "golBlu": 12,
+      "golRossi": 10,
+      "timestampGara": 1789644600000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
       "id": "MATCH-MU5JUMWF-4",
       "blu": [
         "Bisoffi Leonardo",
@@ -9307,6 +9330,29 @@
         false
       ],
       "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MU5KZVLM-2",
+      "blu": [
+        "Mazzonetto Alessandro",
+        "Grasso Antonio"
+      ],
+      "rossi": [
+        "Riva Alessandro",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1789645200000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
       "intergirone": false,
       "importataDaDdT": true
     },
@@ -9408,8 +9454,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "17/09/2026, 15:12:55",
-    "partite": 398,
+    "salvato_il": "17/09/2026, 15:45:10",
+    "partite": 400,
     "giocatori": 55,
     "versione_app": "4.5"
   }
