@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -9199,7 +9199,7 @@
       "id": "MATCH-MU5JUMWI-9",
       "blu": [
         "D'Aquilio Annachiara",
-        "Gandolfi Davide"
+        "Leonardelli Stefano"
       ],
       "rossi": [
         "Conci Andrea",
@@ -9244,7 +9244,7 @@
     {
       "id": "MATCH-MU5JUMWG-6",
       "blu": [
-        "Gandolfi Davide",
+        "Leonardelli Stefano",
         "Petri Enrico"
       ],
       "rossi": [
@@ -9294,7 +9294,7 @@
         "Petri Enrico"
       ],
       "rossi": [
-        "Gandolfi Davide",
+        "Leonardelli Stefano",
         "D'Aquilio Annachiara"
       ],
       "golBlu": 12,
@@ -9454,7 +9454,7 @@
     }
   },
   "_meta": {
-    "salvato_il": "17/09/2026, 15:45:10",
+    "salvato_il": "17/09/2026, 16:25:19",
     "partite": 400,
     "giocatori": 55,
     "versione_app": "4.5"
