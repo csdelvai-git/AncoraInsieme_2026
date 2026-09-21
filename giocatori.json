@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -9683,6 +9683,29 @@
       "importataDaDdT": true
     },
     {
+      "id": "MATCH-MUBAQH8Y-10",
+      "blu": [
+        "Segalla Enrico",
+        "Dalsaso Matteo"
+      ],
+      "rossi": [
+        "Castelli Stefano",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 2,
+      "timestampGara": 1789990200000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
       "id": "MATCH-MUBAQH90-11",
       "blu": [
         "Caironi Davide",
@@ -9717,7 +9740,7 @@
       ],
       "golBlu": 3,
       "golRossi": 10,
-      "timestampGara": 1789990260000,
+      "timestampGara": 1789990380000,
       "invalidati": [
         false,
         false,
@@ -9748,29 +9771,6 @@
         false
       ],
       "sede": "Cantù",
-      "intergirone": false,
-      "importataDaDdT": true
-    },
-    {
-      "id": "MATCH-MUBAQH8Y-10",
-      "blu": [
-        "Segalla Enrico",
-        "Dalsaso Matteo"
-      ],
-      "rossi": [
-        "Castelli Stefano",
-        "D'Aquilio Annachiara"
-      ],
-      "golBlu": 10,
-      "golRossi": 2,
-      "timestampGara": 1789990380000,
-      "invalidati": [
-        false,
-        false,
-        false,
-        false
-      ],
-      "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
     },
@@ -9987,7 +9987,7 @@
     }
   },
   "_meta": {
-    "salvato_il": "21/09/2026, 15:45:05",
+    "salvato_il": "21/09/2026, 16:45:49",
     "partite": 423,
     "giocatori": 56,
     "versione_app": "4.5"
