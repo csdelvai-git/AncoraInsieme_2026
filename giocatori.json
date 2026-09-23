@@ -10371,6 +10371,213 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUEMLEG4-9",
+      "blu": [
+        "Zuccatti Matteo",
+        "Solaroli Sonia"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Mocci Jacopo"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1790188500000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUEMLEG3-8",
+      "blu": [
+        "Zuccatti Matteo",
+        "Mocci Jacopo"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Dan Cojocaru"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1790189040000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUEMLEFP-7",
+      "blu": [
+        "Dan Cojocaru",
+        "Zuccatti Matteo"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Mocci Jacopo"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1790189460000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUEMLEFL-6",
+      "blu": [
+        "Dan Cojocaru",
+        "Zuccatti Matteo"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Mocci Jacopo"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1790189880000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUEMLEFJ-5",
+      "blu": [
+        "Dan Cojocaru",
+        "Solaroli Sonia"
+      ],
+      "rossi": [
+        "Zuccatti Matteo",
+        "Mocci Jacopo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1790190720000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUEMLEFI-4",
+      "blu": [
+        "Angelon Francesco",
+        "Zuccatti Matteo"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Solaroli Sonia"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1790191860000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUEMLEFI-3",
+      "blu": [
+        "Angelon Francesco",
+        "Dan Cojocaru"
+      ],
+      "rossi": [
+        "Zuccatti Matteo",
+        "Solaroli Sonia"
+      ],
+      "golBlu": 9,
+      "golRossi": 11,
+      "timestampGara": 1790192640000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUEMLEFH-2",
+      "blu": [
+        "Zuccatti Matteo",
+        "Dan Cojocaru"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Angelon Francesco"
+      ],
+      "golBlu": 4,
+      "golRossi": 10,
+      "timestampGara": 1790193120000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUEMLEFG-1",
+      "blu": [
+        "Angelon Francesco",
+        "Dan Cojocaru"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1790195340000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -10401,8 +10608,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "23/09/2026, 15:31:11",
-    "partite": 441,
+    "salvato_il": "23/09/2026, 23:39:49",
+    "partite": 450,
     "giocatori": 56,
     "versione_app": "4.5"
   }
