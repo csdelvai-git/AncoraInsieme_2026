@@ -10373,6 +10373,75 @@
       "importataDaDdT": true
     },
     {
+      "id": "MATCH-MUFGZGL7-10",
+      "blu": [
+        "Caironi Davide",
+        "Mazzonetto Alessandro"
+      ],
+      "rossi": [
+        "Zuccatti Matteo",
+        "Mocci Jacopo"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1790177100000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUFGZGL6-9",
+      "blu": [
+        "Mazzonetto Alessandro",
+        "Caironi Davide"
+      ],
+      "rossi": [
+        "Zuccatti Matteo",
+        "Mocci Jacopo"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1790177280000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUFGZGL6-8",
+      "blu": [
+        "Caironi Davide",
+        "Mocci Jacopo"
+      ],
+      "rossi": [
+        "Mazzonetto Alessandro",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1790177340000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
       "id": "MATCH-MUEMLEG4-9",
       "blu": [
         "Zuccatti Matteo",
@@ -10578,6 +10647,167 @@
       "sede": "Cantù",
       "intergirone": true,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUFGZGL6-7",
+      "blu": [
+        "Mazzonetto Alessandro",
+        "Marchesi Angelo"
+      ],
+      "rossi": [
+        "Benni Akshay",
+        "Caironi Davide"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1790247660000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUFGZGL4-3",
+      "blu": [
+        "Solaroli Sonia",
+        "Broggi Simone"
+      ],
+      "rossi": [
+        "Zuccatti Matteo",
+        "Angelon Francesco"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1790248200000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUFGZGL5-6",
+      "blu": [
+        "Benni Akshay",
+        "Mazzonetto Alessandro"
+      ],
+      "rossi": [
+        "Caironi Davide",
+        "Marchesi Angelo"
+      ],
+      "golBlu": 7,
+      "golRossi": 10,
+      "timestampGara": 1790248320000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUFGZGL3-2",
+      "blu": [
+        "Solaroli Sonia",
+        "Angelon Francesco"
+      ],
+      "rossi": [
+        "Broggi Simone",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1790248680000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUFGZGL5-5",
+      "blu": [
+        "Benni Akshay",
+        "Marchesi Angelo"
+      ],
+      "rossi": [
+        "Mazzonetto Alessandro",
+        "Riva Alessandro"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1790248800000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUFGZGL4-4",
+      "blu": [
+        "Caironi Davide",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Mazzonetto Alessandro",
+        "Marchesi Angelo"
+      ],
+      "golBlu": 10,
+      "golRossi": 3,
+      "timestampGara": 1790249340000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUFGZGL3-1",
+      "blu": [
+        "Solaroli Sonia",
+        "Zuccatti Matteo"
+      ],
+      "rossi": [
+        "Angelon Francesco",
+        "Broggi Simone"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1790249580000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -10608,8 +10838,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "23/09/2026, 23:39:49",
-    "partite": 450,
+    "salvato_il": "24/09/2026, 13:50:27",
+    "partite": 460,
     "giocatori": 56,
     "versione_app": "4.5"
   }
