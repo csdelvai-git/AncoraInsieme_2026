@@ -115,6 +115,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Gardin Gabriella",
+      "sede": "Cantù"
+    },
+    {
       "nome": "Girardelli Giancarlo",
       "sede": "Levico"
     },
@@ -10838,9 +10842,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "24/09/2026, 13:50:27",
+    "salvato_il": "25/09/2026, 12:24:06",
     "partite": 460,
-    "giocatori": 56,
+    "giocatori": 57,
     "versione_app": "4.5"
   }
 }
