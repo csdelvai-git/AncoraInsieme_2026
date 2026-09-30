@@ -42,6 +42,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Brigadue Matteo",
+      "sede": "Levico"
+    },
+    {
       "nome": "Broggi Simone",
       "sede": "Cantù"
     },
@@ -11605,9 +11609,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "29/09/2026, 14:37:02",
+    "salvato_il": "30/09/2026, 09:47:48",
     "partite": 493,
-    "giocatori": 58,
+    "giocatori": 59,
     "versione_app": "4.5"
   }
 }
