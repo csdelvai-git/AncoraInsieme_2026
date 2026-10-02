@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -11949,29 +11949,6 @@
       "importataDaDdT": true
     },
     {
-      "id": "MATCH-MUR2DEZ2-6",
-      "blu": [
-        "D'Aquilio Annachiara",
-        "Zuccatti Matteo"
-      ],
-      "rossi": [
-        "Castelli Stefano",
-        "Felicetti Carlo"
-      ],
-      "golBlu": 9,
-      "golRossi": 11,
-      "timestampGara": 1790941620000,
-      "invalidati": [
-        false,
-        false,
-        false,
-        false
-      ],
-      "sede": "Levico",
-      "intergirone": false,
-      "importataDaDdT": true
-    },
-    {
       "id": "MATCH-MUR2DEZ4-7",
       "blu": [
         "Dalsaso Matteo",
@@ -12138,8 +12115,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "02/10/2026, 16:34:24",
-    "partite": 516,
+    "salvato_il": "02/10/2026, 16:50:19",
+    "partite": 515,
     "giocatori": 59,
     "versione_app": "4.5"
   }
