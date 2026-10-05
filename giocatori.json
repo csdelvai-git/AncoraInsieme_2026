@@ -135,6 +135,10 @@
       "sede": "Cantù"
     },
     {
+      "nome": "Hueller Roberto",
+      "sede": "Levico"
+    },
+    {
       "nome": "Kuricki Gabriele",
       "sede": "Levico"
     },
@@ -12115,9 +12119,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "02/10/2026, 16:50:19",
+    "salvato_il": "05/10/2026, 10:34:28",
     "partite": 515,
-    "giocatori": 59,
+    "giocatori": 60,
     "versione_app": "4.5"
   }
 }
