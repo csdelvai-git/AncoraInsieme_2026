@@ -12641,6 +12641,144 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUY4QAMP-5",
+      "blu": [
+        "Felicetti Carlo",
+        "D'Aquilio Annachiara"
+      ],
+      "rossi": [
+        "Castelli Stefano",
+        "Todesco Alessandro"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1791372060000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUY4QAMP-6",
+      "blu": [
+        "Castelli Stefano",
+        "Tonezzer Giacomo"
+      ],
+      "rossi": [
+        "Leonardelli Stefano",
+        "Osti Francesco"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1791372600000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUY4QAMO-4",
+      "blu": [
+        "Castelli Stefano",
+        "Leonardelli Stefano"
+      ],
+      "rossi": [
+        "Osti Francesco",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1791372840000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUY4QAMN-3",
+      "blu": [
+        "Caironi Davide",
+        "Sidari Giuseppe"
+      ],
+      "rossi": [
+        "Riva Alessandro",
+        "Mazzonetto Alessandro"
+      ],
+      "golBlu": 12,
+      "golRossi": 10,
+      "timestampGara": 1791372900000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUY4QAMM-2",
+      "blu": [
+        "Caironi Davide",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Sidari Giuseppe",
+        "Mazzonetto Alessandro"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1791373020000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MUY4QAMK-1",
+      "blu": [
+        "Tonezzer Giacomo",
+        "Leonardelli Stefano"
+      ],
+      "rossi": [
+        "Castelli Stefano",
+        "Osti Francesco"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1791373260000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -12681,8 +12819,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "06/10/2026, 14:09:05",
-    "partite": 539,
+    "salvato_il": "07/10/2026, 15:15:25",
+    "partite": 545,
     "giocatori": 60,
     "versione_app": "4.5"
   }
