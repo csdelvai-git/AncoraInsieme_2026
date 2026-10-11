@@ -13124,6 +13124,259 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV4918OC-11",
+      "blu": [
+        "Riva Alessandro",
+        "Galliani Luca"
+      ],
+      "rossi": [
+        "Sidari Giuseppe",
+        "Caironi Davide"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1791545520000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV4918OC-9",
+      "blu": [
+        "Galliani Luca",
+        "Caironi Davide"
+      ],
+      "rossi": [
+        "Riva Alessandro",
+        "Sidari Giuseppe"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1791545580000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV4918OC-10",
+      "blu": [
+        "Galliani Luca",
+        "Sidari Giuseppe"
+      ],
+      "rossi": [
+        "Caironi Davide",
+        "Riva Alessandro"
+      ],
+      "golBlu": 3,
+      "golRossi": 10,
+      "timestampGara": 1791545580000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV4918OB-8",
+      "blu": [
+        "Brigadue Matteo",
+        "Conci Andrea"
+      ],
+      "rossi": [
+        "Leonardelli Stefano",
+        "Osti Francesco"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1791545880000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV4918OB-6",
+      "blu": [
+        "Conci Andrea",
+        "Leonardelli Stefano"
+      ],
+      "rossi": [
+        "Brigadue Matteo",
+        "Osti Francesco"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1791545940000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV4918OB-7",
+      "blu": [
+        "Brigadue Matteo",
+        "Leonardelli Stefano"
+      ],
+      "rossi": [
+        "Conci Andrea",
+        "Osti Francesco"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1791545940000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV4918OA-5",
+      "blu": [
+        "Segalla Enrico",
+        "D'Aquilio Annachiara"
+      ],
+      "rossi": [
+        "Todesco Alessandro",
+        "Felicetti Carlo"
+      ],
+      "golBlu": 7,
+      "golRossi": 10,
+      "timestampGara": 1791546240000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV4918O9-2",
+      "blu": [
+        "Todesco Alessandro",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "D'Aquilio Annachiara",
+        "Felicetti Carlo"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1791546300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV4918O9-3",
+      "blu": [
+        "Bisoffi Leonardo",
+        "Gandolfi Davide"
+      ],
+      "rossi": [
+        "Vanin Mattia",
+        "Bertella Lorenzo"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1791546300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV4918OA-4",
+      "blu": [
+        "Segalla Enrico",
+        "Felicetti Carlo"
+      ],
+      "rossi": [
+        "Todesco Alessandro",
+        "D'Aquilio Annachiara"
+      ],
+      "golBlu": 10,
+      "golRossi": 3,
+      "timestampGara": 1791546300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV4918O8-1",
+      "blu": [
+        "Todesco Alessandro",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Trivisonno Andrea",
+        "Felicetti Carlo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1791546360000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -13164,8 +13417,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "08/10/2026, 13:57:42",
-    "partite": 560,
+    "salvato_il": "11/10/2026, 22:02:38",
+    "partite": 571,
     "giocatori": 60,
     "versione_app": "4.5"
   }
