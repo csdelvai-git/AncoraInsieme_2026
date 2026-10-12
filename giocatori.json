@@ -171,6 +171,10 @@
       "sede": "Levico"
     },
     {
+      "nome": "Minarski Aleksandar",
+      "sede": "Levico"
+    },
+    {
       "nome": "Mocci Jacopo",
       "sede": "Levico"
     },
@@ -13417,9 +13421,9 @@
     }
   },
   "_meta": {
-    "salvato_il": "11/10/2026, 22:02:38",
+    "salvato_il": "12/10/2026, 08:12:45",
     "partite": 571,
-    "giocatori": 60,
+    "giocatori": 61,
     "versione_app": "4.5"
   }
 }
