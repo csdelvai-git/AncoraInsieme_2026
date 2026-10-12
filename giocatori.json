@@ -13153,6 +13153,30 @@
       "importataDaDdT": true
     },
     {
+      "id": "MATCH-MV55PIGJ-R1",
+      "blu": [
+        "Galliani Luca",
+        "Sidari Giuseppe"
+      ],
+      "rossi": [
+        "Caironi Davide",
+        "Riva Alessandro"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1791545520000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true,
+      "riserva": true
+    },
+    {
       "id": "MATCH-MV4918OC-9",
       "blu": [
         "Galliani Luca",
@@ -13381,6 +13405,29 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV55PIGK-2",
+      "blu": [
+        "Bisoffi Leonardo",
+        "Pacher Matteo"
+      ],
+      "rossi": [
+        "Agostini Cristian",
+        "Bertella Lorenzo"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1791802860000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -13421,8 +13468,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "12/10/2026, 08:12:45",
-    "partite": 571,
+    "salvato_il": "12/10/2026, 13:20:37",
+    "partite": 573,
     "giocatori": 61,
     "versione_app": "4.5"
   }
