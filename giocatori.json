@@ -13428,6 +13428,167 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV5B2CFE-7",
+      "blu": [
+        "Segalla Enrico",
+        "Leonardelli Stefano"
+      ],
+      "rossi": [
+        "Biondo Alfio",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1791805560000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV5B2CFD-5",
+      "blu": [
+        "Biondo Alfio",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Zuccatti Matteo",
+        "Leonardelli Stefano"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1791805620000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV5B2CFE-6",
+      "blu": [
+        "Segalla Enrico",
+        "Leonardelli Stefano"
+      ],
+      "rossi": [
+        "Biondo Alfio",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1791805620000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV5B2CFC-4",
+      "blu": [
+        "Segalla Enrico",
+        "Zuccatti Matteo"
+      ],
+      "rossi": [
+        "Biondo Alfio",
+        "Leonardelli Stefano"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1791805680000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV5B2CFC-3",
+      "blu": [
+        "Dalsaso Matteo",
+        "Conci Andrea"
+      ],
+      "rossi": [
+        "Todesco Alessandro",
+        "Felicetti Carlo"
+      ],
+      "golBlu": 3,
+      "golRossi": 10,
+      "timestampGara": 1791806160000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV5B2CFA-1",
+      "blu": [
+        "Dalsaso Matteo",
+        "Todesco Alessandro"
+      ],
+      "rossi": [
+        "Felicetti Carlo",
+        "Conci Andrea"
+      ],
+      "golBlu": 10,
+      "golRossi": 12,
+      "timestampGara": 1791806280000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MV5B2CFB-2",
+      "blu": [
+        "Dalsaso Matteo",
+        "Felicetti Carlo"
+      ],
+      "rossi": [
+        "Todesco Alessandro",
+        "Conci Andrea"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1791806280000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -13468,8 +13629,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "12/10/2026, 13:20:37",
-    "partite": 573,
+    "salvato_il": "12/10/2026, 15:47:05",
+    "partite": 580,
     "giocatori": 61,
     "versione_app": "4.5"
   }
