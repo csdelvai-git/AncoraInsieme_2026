@@ -14187,6 +14187,213 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MVB0S3WF-9",
+      "blu": [
+        "Conci Andrea",
+        "Zuccatti Matteo"
+      ],
+      "rossi": [
+        "Tonezzer Giacomo",
+        "Felicetti Carlo"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1792130640000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MVB0S3WE-8",
+      "blu": [
+        "Morelli Riccardo",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Caironi Davide",
+        "Cattaneo Corrado"
+      ],
+      "golBlu": 3,
+      "golRossi": 10,
+      "timestampGara": 1792148580000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MVB0S3WD-7",
+      "blu": [
+        "Caironi Davide",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Morelli Riccardo",
+        "Sidari Giuseppe"
+      ],
+      "golBlu": 10,
+      "golRossi": 3,
+      "timestampGara": 1792149180000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MVB0S3WC-6",
+      "blu": [
+        "Morelli Riccardo",
+        "Cattaneo Corrado"
+      ],
+      "rossi": [
+        "Riva Alessandro",
+        "Sidari Giuseppe"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1792149600000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MVB0S3WB-5",
+      "blu": [
+        "Caironi Davide",
+        "Morelli Riccardo"
+      ],
+      "rossi": [
+        "Sidari Giuseppe",
+        "Riva Alessandro"
+      ],
+      "golBlu": 3,
+      "golRossi": 10,
+      "timestampGara": 1792149960000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MVB0S3W9-4",
+      "blu": [
+        "Dalsaso Matteo",
+        "Agostini Cristian"
+      ],
+      "rossi": [
+        "Osti Francesco",
+        "Leonardelli Stefano"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1792151040000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MVB0S3W8-3",
+      "blu": [
+        "Dalsaso Matteo",
+        "Osti Francesco"
+      ],
+      "rossi": [
+        "Agostini Cristian",
+        "Leonardelli Stefano"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1792151160000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MVB0S3W7-2",
+      "blu": [
+        "Dalsaso Matteo",
+        "Osti Francesco"
+      ],
+      "rossi": [
+        "Agostini Cristian",
+        "Leonardelli Stefano"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1792151220000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MVB0S3W6-1",
+      "blu": [
+        "Dalsaso Matteo",
+        "Bertella Lorenzo"
+      ],
+      "rossi": [
+        "Pacher Matteo",
+        "Leonardelli Stefano"
+      ],
+      "golBlu": 10,
+      "golRossi": 0,
+      "timestampGara": 1792151280000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -14227,8 +14434,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "15/10/2026, 17:16:00",
-    "partite": 606,
+    "salvato_il": "16/10/2026, 15:45:24",
+    "partite": 615,
     "giocatori": 61,
     "versione_app": "4.5"
   }
