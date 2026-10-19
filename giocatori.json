@@ -14419,6 +14419,29 @@
       "importataDaDdT": true
     },
     {
+      "id": "MATCH-MVFCWW9S-1",
+      "blu": [
+        "Osti Francesco",
+        "Leonardelli Stefano"
+      ],
+      "rossi": [
+        "D'Aquilio Annachiara",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 6,
+      "golRossi": 10,
+      "timestampGara": 1792409400000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
       "id": "MATCH-MVF7LKIY-11",
       "blu": [
         "De donato Simone",
@@ -14733,8 +14756,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "19/10/2026, 14:07:29",
-    "partite": 628,
+    "salvato_il": "19/10/2026, 16:36:18",
+    "partite": 629,
     "giocatori": 61,
     "versione_app": "4.5"
   }
