@@ -15314,6 +15314,98 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MVKX21XV-4",
+      "blu": [
+        "Zuccatti Matteo",
+        "Tonezzer Giacomo"
+      ],
+      "rossi": [
+        "Todesco Alessandro",
+        "Segalla Enrico"
+      ],
+      "golBlu": 2,
+      "golRossi": 10,
+      "timestampGara": 1792754520000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MVKX21XU-3",
+      "blu": [
+        "Segalla Enrico",
+        "Todesco Alessandro"
+      ],
+      "rossi": [
+        "Bertella Lorenzo",
+        "Agostini Cristian"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1792754760000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MVKX21XT-2",
+      "blu": [
+        "Zuccatti Matteo",
+        "Tonezzer Giacomo"
+      ],
+      "rossi": [
+        "Agostini Cristian",
+        "Bertella Lorenzo"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1792756380000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MVKX21XR-1",
+      "blu": [
+        "Zuccatti Matteo",
+        "Todesco Alessandro"
+      ],
+      "rossi": [
+        "Segalla Enrico",
+        "Tonezzer Giacomo"
+      ],
+      "golBlu": 16,
+      "golRossi": 14,
+      "timestampGara": 1792756440000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -15354,8 +15446,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "22/10/2026, 14:11:34",
-    "partite": 655,
+    "salvato_il": "23/10/2026, 13:58:50",
+    "partite": 659,
     "giocatori": 61,
     "versione_app": "4.5"
   }
