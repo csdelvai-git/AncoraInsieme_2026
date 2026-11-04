@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -16728,8 +16728,8 @@
         "Solaroli Sonia",
         "Segalla Enrico"
       ],
-      "golBlu": 13,
-      "golRossi": 11,
+      "golBlu": 11,
+      "golRossi": 13,
       "timestampGara": 1793735700000,
       "invalidati": [
         false,
@@ -16817,11 +16817,11 @@
         "Tonezzer Giacomo"
       ],
       "rossi": [
-        "Todesco Alessandro",
+        "Solaroli Sonia",
         "Segalla Enrico"
       ],
-      "golBlu": 10,
-      "golRossi": 7,
+      "golBlu": 7,
+      "golRossi": 10,
       "timestampGara": 1793738820000,
       "invalidati": [
         false,
@@ -16830,7 +16830,7 @@
         false
       ],
       "sede": "Levico",
-      "intergirone": false,
+      "intergirone": true,
       "importataDaDdT": true
     },
     {
@@ -16895,7 +16895,7 @@
     }
   },
   "_meta": {
-    "salvato_il": "04/11/2026, 07:53:10",
+    "salvato_il": "04/11/2026, 10:41:53",
     "partite": 722,
     "giocatori": 61,
     "versione_app": "4.5"
