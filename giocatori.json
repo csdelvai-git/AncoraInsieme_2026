@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -17662,6 +17662,213 @@
       "importataDaDdT": true
     },
     {
+      "id": "MATCH-MW99ZDJN-9",
+      "blu": [
+        "Angelon Francesco",
+        "Dan Cojocaru"
+      ],
+      "rossi": [
+        "Morelli Riccardo",
+        "Sidari Giuseppe"
+      ],
+      "golBlu": 10,
+      "golRossi": 7,
+      "timestampGara": 1793967300000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MW99ZDJJ-3",
+      "blu": [
+        "Morelli Riccardo",
+        "Sidari Giuseppe"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Angelon Francesco"
+      ],
+      "golBlu": 12,
+      "golRossi": 10,
+      "timestampGara": 1793968200000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MW99ZDJM-8",
+      "blu": [
+        "Delvai Claudio S.",
+        "Zuccatti Matteo"
+      ],
+      "rossi": [
+        "Conci Andrea",
+        "Castelli Stefano"
+      ],
+      "golBlu": 9,
+      "golRossi": 11,
+      "timestampGara": 1793968320000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MW99ZDJL-6",
+      "blu": [
+        "Felicetti Carlo",
+        "Kuricki Gabriele"
+      ],
+      "rossi": [
+        "Trivisonno Andrea",
+        "Biondo Alfio"
+      ],
+      "golBlu": 10,
+      "golRossi": 2,
+      "timestampGara": 1793968560000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MW99ZDJK-5",
+      "blu": [
+        "Biondo Alfio",
+        "Trivisonno Andrea"
+      ],
+      "rossi": [
+        "Kuricki Gabriele",
+        "Felicetti Carlo"
+      ],
+      "golBlu": 8,
+      "golRossi": 10,
+      "timestampGara": 1793968800000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MW99ZDJM-7",
+      "blu": [
+        "Conci Andrea",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Castelli Stefano",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1793968800000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MW99ZDJK-4",
+      "blu": [
+        "Felicetti Carlo",
+        "Trivisonno Andrea"
+      ],
+      "rossi": [
+        "Biondo Alfio",
+        "Kuricki Gabriele"
+      ],
+      "golBlu": 13,
+      "golRossi": 11,
+      "timestampGara": 1793969220000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MW99ZDJH-1",
+      "blu": [
+        "Galliani Luca",
+        "Angelon Francesco"
+      ],
+      "rossi": [
+        "Morelli Riccardo",
+        "Sidari Giuseppe"
+      ],
+      "golBlu": 10,
+      "golRossi": 12,
+      "timestampGara": 1793977440000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MW99ZDJI-2",
+      "blu": [
+        "Galliani Luca",
+        "Dan Cojocaru"
+      ],
+      "rossi": [
+        "Morelli Riccardo",
+        "Angelon Francesco"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1793977440000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
       "id": "MATCH-MW99T1NQ-6",
       "blu": [
         "Caironi Davide",
@@ -17838,8 +18045,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "09/11/2026, 14:02:01",
-    "partite": 763,
+    "salvato_il": "09/11/2026, 14:07:12",
+    "partite": 772,
     "giocatori": 61,
     "versione_app": "4.5"
   }
