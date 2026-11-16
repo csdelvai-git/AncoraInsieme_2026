@@ -19040,6 +19040,282 @@
       "sede": "Cantù",
       "intergirone": true,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWJBTDI8-12",
+      "blu": [
+        "Zuccatti Matteo",
+        "Mazzonetto Alessandro"
+      ],
+      "rossi": [
+        "Solaroli Sonia",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 14,
+      "golRossi": 12,
+      "timestampGara": 1794828720000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWJBTDI7-11",
+      "blu": [
+        "Caironi Davide",
+        "Dan Cojocaru"
+      ],
+      "rossi": [
+        "Angelon Francesco",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1794829380000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWJBTDI7-10",
+      "blu": [
+        "Marchesi Angelo",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Caironi Davide",
+        "Cattaneo Corrado"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1794830100000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWJBTDI6-9",
+      "blu": [
+        "Mazzonetto Alessandro",
+        "Riva Alessandro"
+      ],
+      "rossi": [
+        "Angelon Francesco",
+        "Zuccatti Matteo"
+      ],
+      "golBlu": 12,
+      "golRossi": 10,
+      "timestampGara": 1794830520000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": true,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWJBTDI5-8",
+      "blu": [
+        "Agostini Cristian",
+        "Leonardelli Stefano"
+      ],
+      "rossi": [
+        "Brigadue Matteo",
+        "Conci Andrea"
+      ],
+      "golBlu": 10,
+      "golRossi": 2,
+      "timestampGara": 1794832080000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWJBTDI5-7",
+      "blu": [
+        "Biscaglia Giacomo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Bertella Lorenzo",
+        "Trivisonno Andrea"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1794832920000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWJBTDI3-6",
+      "blu": [
+        "Biscaglia Giacomo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Bertella Lorenzo",
+        "Trivisonno Andrea"
+      ],
+      "golBlu": 10,
+      "golRossi": 5,
+      "timestampGara": 1794832980000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWJBTDI2-5",
+      "blu": [
+        "Biscaglia Giacomo",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Agostini Cristian",
+        "Trivisonno Andrea"
+      ],
+      "golBlu": 10,
+      "golRossi": 2,
+      "timestampGara": 1794833040000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWJBTDI2-4",
+      "blu": [
+        "Todesco Alessandro",
+        "Segalla Enrico"
+      ],
+      "rossi": [
+        "Felicetti Carlo",
+        "Kuricki Gabriele"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1794833340000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWJBTDI1-3",
+      "blu": [
+        "Todesco Alessandro",
+        "Agostini Cristian"
+      ],
+      "rossi": [
+        "Felicetti Carlo",
+        "Kuricki Gabriele"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1794833400000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWJBTDI0-1",
+      "blu": [
+        "Todesco Alessandro",
+        "Castelli Stefano"
+      ],
+      "rossi": [
+        "Felicetti Carlo",
+        "Kuricki Gabriele"
+      ],
+      "golBlu": 10,
+      "golRossi": 3,
+      "timestampGara": 1794833460000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWJBTDI0-2",
+      "blu": [
+        "Todesco Alessandro",
+        "Felicetti Carlo"
+      ],
+      "rossi": [
+        "Agostini Cristian",
+        "Conci Andrea"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1794833460000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -19080,8 +19356,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "13/11/2026, 14:29:28",
-    "partite": 817,
+    "salvato_il": "16/11/2026, 14:56:33",
+    "partite": 829,
     "giocatori": 61,
     "versione_app": "4.5"
   }
