@@ -20052,6 +20052,121 @@
       "sede": "Levico",
       "intergirone": false,
       "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWTDBRMO-5",
+      "blu": [
+        "Angelon Francesco",
+        "Mazzonetto Alessandro"
+      ],
+      "rossi": [
+        "Morelli Riccardo",
+        "Marchesi Angelo"
+      ],
+      "golBlu": 13,
+      "golRossi": 11,
+      "timestampGara": 1795435260000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWTDBRMN-4",
+      "blu": [
+        "Dan Cojocaru",
+        "Sidari Giuseppe"
+      ],
+      "rossi": [
+        "Marchesi Angelo",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 10,
+      "golRossi": 4,
+      "timestampGara": 1795435680000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWTDBRMM-3",
+      "blu": [
+        "Caironi Davide",
+        "Angelon Francesco"
+      ],
+      "rossi": [
+        "Sidari Giuseppe",
+        "Mazzonetto Alessandro"
+      ],
+      "golBlu": 10,
+      "golRossi": 8,
+      "timestampGara": 1795436160000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWTDBRML-2",
+      "blu": [
+        "Caironi Davide",
+        "Marchesi Angelo"
+      ],
+      "rossi": [
+        "Dan Cojocaru",
+        "Morelli Riccardo"
+      ],
+      "golBlu": 10,
+      "golRossi": 6,
+      "timestampGara": 1795436640000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Cantù",
+      "intergirone": false,
+      "importataDaDdT": true
+    },
+    {
+      "id": "MATCH-MWTDBRMK-1",
+      "blu": [
+        "Leonardelli Stefano",
+        "Osti Francesco"
+      ],
+      "rossi": [
+        "D'Aquilio Annachiara",
+        "Felicetti Carlo"
+      ],
+      "golBlu": 11,
+      "golRossi": 9,
+      "timestampGara": 1795437960000,
+      "invalidati": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "sede": "Levico",
+      "intergirone": false,
+      "importataDaDdT": true
     }
   ],
   "parametri": {
@@ -20092,8 +20207,8 @@
     }
   },
   "_meta": {
-    "salvato_il": "20/11/2026, 14:46:54",
-    "partite": 861,
+    "salvato_il": "23/11/2026, 15:35:58",
+    "partite": 866,
     "giocatori": 61,
     "versione_app": "4.5"
   }
