@@ -1,5 +1,5 @@
 {
-  "sedeCorrente": "Cantù",
+  "sedeCorrente": "Levico",
   "giocatori": [
     {
       "nome": "Agostini Cristian",
@@ -20822,8 +20822,8 @@
         "Zuccatti Matteo",
         "Osler Matteo"
       ],
-      "golBlu": 10,
-      "golRossi": 7,
+      "golBlu": 7,
+      "golRossi": 10,
       "timestampGara": 1795631640000,
       "invalidati": [
         false,
@@ -21104,7 +21104,7 @@
     }
   },
   "_meta": {
-    "salvato_il": "26/11/2026, 14:20:09",
+    "salvato_il": "26/11/2026, 14:52:53",
     "partite": 905,
     "giocatori": 61,
     "versione_app": "4.5"
